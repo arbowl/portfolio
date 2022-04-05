@@ -10,7 +10,27 @@
     </head>
 
     <body>
-        <div class=""container-fluid>
+        <header>
+            <div id="top-header">
+                <div id="logo">
+                    <img src="{% static 'drewbowler.jpg' %}>">
+                </div>
+
+                <nav>
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="header-image-menu">
+                <img src="{% static 'slider.jpg' %}">
+            </div>
+        </header>
+
+
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-2">
                     {% block sidebar %}
@@ -25,8 +45,6 @@
                 </div>
             </div>
         </div>
-
-
-        <img src="{% static 'drewbowler.jpg' %}" alt="Drew Bowler">
+        <div><img src="{% static 'drewbowler.jpg' %}" alt="Drew Bowler"></div>
     </body>
 </html>
