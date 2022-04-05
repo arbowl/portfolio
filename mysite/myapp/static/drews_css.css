@@ -1,10 +1,48 @@
 body {
     background-color:#2e303e;
-    color:#f8f8ff;
+    color:#bfcad0;
 }
+
+.container-fluid {
+    color: white;
+}
+    .container-fluid img {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    }
 
 .sidebar-nav {
     margin-top: 20px;
     padding: 0;
     list-style: none;
 }
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #970c10;
+    padding: 20px 10px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: #bfcad0;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #3e3e3e;
+  }
+
+  .header img {
+      border-radius: 50%;
+  }
+
