@@ -5,41 +5,44 @@
         <meta name="description" content="Portfolio">
         <meta name="keywords" content="portfolio developer programmer">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         {% load static %}
         <link href="{% static 'drews_css.css' %}" rel="stylesheet">
     </head>
 
     <body>
-        <div id="background-stripes"></div>
-        <div>
-            <header>
-                <div class="header">
-                    <img src="{% static 'logo.jpg' %}" height="75px" width="75px">
-                    <div class="header-right">
-                        <a class="active" href="#home">Home</a>
-                        <a href="contact.html">Contact</a>
-                        <a href="about.html">About</a>
-                    </div>
-                </div> 
-            </header>
+        <header>
+            <div class="header">
+                <img src="{% static 'drewbowler.jpg' %}" height="75px" width="75px">
+                <p>drew bowler's site</p>
+                <div class="header-right">
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About</a>
+                    <a href="#home">Home</a>
+                </div>
+            </div> 
+        </header>
     
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-2">
-                        {% block sidebar %}
-                        <ul class="sidebar-nav">
-                            <li><a href="/stocks.html">Stocks</a></li>
-                            <li><a href="/games.html">Games</a></li>
-                            <li><a href="/chores.html">Chores</a></li>
-                            <li><a href="/portfolio.html">Portfolio</a></li>
-                            <li><a href="/social.html">Social</a></li>
-                        </ul>
-                        {% endblock %}
+        <div class="container-fluid">
+            <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width: 200px; height: 55%; margin-top: 13px; padding-top: 5px; border-radius: 4px;">
+                <a href="/stocks.html" class="w3-bar-item w3-button">Stocks</a>
+                <a href="/chores.html" class="w3-bar-item w3-button">Chores</a>
+                <a href="/portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
+                <a href="/social.html" class="w3-bar-item w3-button">Social</a>
+                <div class="w3-dropdown-hover">
+                    <button class="w3-button">Servers
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="w3-dropdown-content w3-bar-block">
+                        <a href="/servers/valheim.html" class="w3-bar-item w3-button" style="text-indent: 20px">Valheim</a>
+                        <a href="/servers/minecraft.html" class="w3-bar-item w3-button" style="text-indent: 20px">Minecraft</a>
+                        <a href="/servers/musicbot.html" class="w3-bar-item w3-button" style="text-indent: 20px">MusicBot</a>
                     </div>
                 </div>
-                <div id="pfp">
-                    <img src="{% static 'drewbowler.jpg' %}" alt="Drew Bowler">
-                </div>
+                <p style="padding-left: 5%">____________</p>
+            </div>
+            <div id="body-text">
+                <!-- <p>Hello! This is the homepage for Drew Bowler's website, made to store </p> -->
             </div>
         </div>
     </body>
