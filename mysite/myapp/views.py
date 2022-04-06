@@ -5,14 +5,8 @@ from .models import GameServer, MusicBot
 
 
 # Create your views here.
-def index(request):
+def index(request, *args, **kwargs):
     return render(request, 'home.html')
-
-def about(request):
-    return render(request, 'about.html')
-
-def contact(request):
-    return render(request, 'contact.html')
 
 class GameView(generics.CreateAPIView):
     queryset = GameServer.objects.all()
