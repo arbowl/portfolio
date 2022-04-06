@@ -1,6 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from django.views.generic import TemplateView
+from rest_framework import generics
+from .serializers import GameServerSerializer, MusicBotSerializer
+from .models import GameServer, MusicBot
+
 
 # Create your views here.
 def index(request):
@@ -11,3 +13,11 @@ def about(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+class GameView(generics.CreateAPIView):
+    queryset = GameServer.objects.all()
+    serializer_class = GameServerSerializer
+
+class MusicView(generics.CreateAPIView):
+    queryset = MusicBot.objects.all()
+    serializer_class = MusicBotSerializer
