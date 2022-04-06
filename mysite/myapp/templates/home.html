@@ -13,7 +13,7 @@
     <body>
         <header>
             <div class="header">
-                <img src="{% static 'drewbowler.jpg' %}" height="75px" width="75px">
+                <img src="{% static 'images/drewbowler.jpg' %}" height="75px" width="75px">
                 <p>drew bowler's site</p>
                 <div class="header-right">
                     <a href="contact.html">Contact</a>
@@ -24,7 +24,7 @@
         </header>
     
         <div class="container-fluid">
-            <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width: 200px; height: 55%; margin-top: 13px; padding-top: 5px; border-radius: 4px;">
+            <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width: 200px; height: 525px; margin-top: 13px; padding-top: 5px; border-radius: 4px;">
                 <a href="/stocks.html" class="w3-bar-item w3-button">Stocks</a>
                 <a href="/chores.html" class="w3-bar-item w3-button">Chores</a>
                 <a href="/portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
@@ -40,10 +40,11 @@
                     </div>
                 </div>
                 <p style="padding-left: 5%">____________</p>
-            </div>
-            <div id="body-text">
-                <!-- <p>Hello! This is the homepage for Drew Bowler's website, made to store </p> -->
+                <a href="https://linkedin.com/in/drewbowler" class="w3-bar-item w3-button" style="margin-top: 100%;"><img src="{% static 'images/linkedin.png' %}" height="30px" width="30px"> LinkedIn</a>
+                <a href="https://github.com/arbowl" class="w3-bar-item w3-button"><img src="{% static 'images/github.jpg' %}" height="30px" width="30px"> GitHub</a>
             </div>
         </div>
+
+
     </body>
 </html>
