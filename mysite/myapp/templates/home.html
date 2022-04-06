@@ -7,7 +7,9 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         {% load static %}
-        <link href="{% static 'drews_css.css' %}" rel="stylesheet">
+        <link href="{% static 'css/drews_css.css' %}" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -23,28 +25,35 @@
             </div> 
         </header>
     
-        <div class="container-fluid">
-            <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width: 200px; height: 525px; margin-top: 13px; padding-top: 5px; border-radius: 4px;">
-                <a href="/stocks.html" class="w3-bar-item w3-button">Stocks</a>
-                <a href="/chores.html" class="w3-bar-item w3-button">Chores</a>
-                <a href="/portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
-                <a href="/social.html" class="w3-bar-item w3-button">Social</a>
-                <div class="w3-dropdown-hover">
-                    <button class="w3-button">Servers
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="w3-dropdown-content w3-bar-block">
-                        <a href="/servers/valheim" class="w3-bar-item w3-button" style="text-indent: 20px">Valheim</a>
-                        <a href="/servers/minecraft.html" class="w3-bar-item w3-button" style="text-indent: 20px">Minecraft</a>
-                        <a href="/servers/musicbot.html" class="w3-bar-item w3-button" style="text-indent: 20px">MusicBot</a>
+        <div class="container">
+            <div class="sidebar">
+                <div class="w3-sidebar w3-bar-block w3-light-grey w3-card" style="width: 200px; height: 525px; margin-top: 13px; padding-top: 5px; border-radius: 4px;">
+                    <a href="/portfolio.html" class="w3-bar-item w3-button">Portfolio</a>
+                    <a href="/social.html" class="w3-bar-item w3-button">Social</a>
+                    <a href="/chores.html" class="w3-bar-item w3-button">Chores</a>
+                    <a href="/stocks.html" class="w3-bar-item w3-button">Stock Ticker</a>
+                    
+                    <div class="w3-dropdown-hover">
+                        <button class="w3-button">Servers
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="w3-dropdown-content w3-bar-block">
+                            <a href="/servers/valheim" class="w3-bar-item w3-button" style="text-indent: 20px">Valheim</a>
+                            <a href="/servers/minecraft" class="w3-bar-item w3-button" style="text-indent: 20px">Minecraft</a>
+                            <a href="/servers/musicbot" class="w3-bar-item w3-button" style="text-indent: 20px">MusicBot</a>
+                        </div>
                     </div>
+                    <p style="padding-left: 5%">____________</p>
+                    <a href="https://linkedin.com/in/drewbowler" class="w3-bar-item w3-button" style="margin-top: 100%;"><img src="{% static 'images/linkedin.png' %}" height="30px" width="30px"> LinkedIn</a>
+                    <a href="https://github.com/arbowl" class="w3-bar-item w3-button"><img src="{% static 'images/github.jpg' %}" height="30px" width="30px"> GitHub</a>
                 </div>
-                <p style="padding-left: 5%">____________</p>
-                <a href="https://linkedin.com/in/drewbowler" class="w3-bar-item w3-button" style="margin-top: 100%;"><img src="{% static 'images/linkedin.png' %}" height="30px" width="30px"> LinkedIn</a>
-                <a href="https://github.com/arbowl" class="w3-bar-item w3-button"><img src="{% static 'images/github.jpg' %}" height="30px" width="30px"> GitHub</a>
             </div>
+            <div class="app">
+                
+            </div>
+            <script src="{% static 'frontend/main.js' %}"></script>
         </div>
-
-
+        <div style="clear: both;"></div>
+        
     </body>
 </html>

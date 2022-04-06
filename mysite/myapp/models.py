@@ -1,5 +1,6 @@
 from django.db import models
 import os
+import json
 
 # Create your models here.
 
@@ -17,8 +18,12 @@ def pull_server_data(server):
 def pull_music_bot():
     directory = '/home/drew/Documents/MusicBot'
     date = os.path.getmtime(directory)
-    version = ''
-    server = ''
+    dir_list = os.listdir(directory)
+    jar_file = [file for file in dir_list if 'jar' in file][:-4]
+    version = jar_file.split('-')[1]
+    json_file = open('/home/drew/Documents/MusicBot/serversettings.json')
+    json_data = json.load(json_file)
+    server = [val for val in json_data][0]
 
 class GameServer(models.Model):
     game = models.CharField(max_length=100, default="", unique=False)
