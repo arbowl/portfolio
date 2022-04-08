@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure-b=cticqk5!_7t=7z5=!4yn%cb%=fxjfi67*w)n2acy1wr_ay*!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '192.168.1.162',
+    'localhost',
+]
 
 
 # Application definition
@@ -135,3 +138,13 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Caches
+# https://www.tutorialspoint.com/django/django_caching.htm
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'default_cache_table',
+    }
+}

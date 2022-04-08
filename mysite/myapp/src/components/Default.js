@@ -8,7 +8,7 @@ export default class Default extends Component {
 
     render() {
         return (
-            <div>
+            <p>
                 <h1>Welcome to my site!</h1>
                 <hr></hr>
                 <p>Here is where I store personal/hobby data and show off my projects. This site is programmed in Python, powered by Django,
@@ -18,7 +18,57 @@ export default class Default extends Component {
                 <p><b>Chores:</b> The chore rotation for the roommates in my apartment on a weekly basis.</p>
                 <p><b>Stock Ticker:</b> An API which scrapes data from the web and updates stock prices in real time.</p>
                 <p><b>Servers:</b> A way to pull data from the online multiplayer servers I host in case my computer is unavailable.</p>
-            </div>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+                <p>Scroll test!</p>
+            </p>
         );
     }
 }

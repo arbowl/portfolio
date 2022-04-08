@@ -1,35 +1,30 @@
 html {
   background-color: #1a1a1a;  background: 
-  linear-gradient(-45deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 75%, rgb(64, 64, 64) 75%, rgb(64, 64, 64) 100%), 
-  linear-gradient(45deg, rgb(64, 64, 64) 0, rgb(64, 64, 64) 25%, rgba(140,140,140,0) 25%, rgba(238,238,238,0) 100%), 
-  linear-gradient(-45deg, rgb(64, 64, 64) 0, rgb(64, 64, 64) 25%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 100%), 
-  linear-gradient(45deg, rgba(0,0,0,0) 0, rgba(0,0,0,0) 75%, rgb(64, 64, 64) 75%, rgb(64, 64, 64) 100%), rgb(51, 51, 51);
-background-position: 50% 50%;
-background-size: 75px 75px;
+    linear-gradient(-45deg, #00000000 0, #00000000 75%, #1a1a1a 75%, #1a1a1a 100%), 
+    linear-gradient(45deg, #1a1a1a 0, #1a1a1a 25%, #8c8c8c00 25%, #eeeeee00 100%), 
+    linear-gradient(-45deg, #1a1a1a 0, #1a1a1a 25%, #00000000 25%, #00000000 100%), 
+    linear-gradient(45deg, #00000000 0, #00000000 75%, #1a1a1a 75%, #1a1a1a 100%), #201f1f;
+  background-position: 50% 50%;
+  background-size: 75px 75px;
 }
-
-body {
-  color:#bfcad0;
-  background-color: #2e303e;
-  height: 100%;
-  width: 1400px;
-  top: 36%;
-  left: 50%;
-  margin-left: -700px;
-  margin-top: -350px;
-  box-shadow: 2px 2px rgb(17, 17, 17);
-  position: fixed;
-}
-
-
 
 .header {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 12%;
   overflow: hidden;
   background-color: #970c10;
   padding: 20px 10px;
-  border-bottom: 2px solid #bfcad0;
-  border-radius: 4px;
+  border-bottom: 1px solid #bfcad0;
+  border-radius: 6px;
+  position: fixed;
+  box-shadow: 2px 2px rgb(17, 17, 17);
 }
+
+  .header-right {
+    margin-right: 13%;
+  }
   
   .header a {
     float: right;
@@ -47,10 +42,10 @@ body {
 
   .header p {
     font-family: 'Lucida Sans';
-    font-size: 22px;
+    font-size: 42px;
     float: left;
-    margin-top: 20px;
-    margin-left: 30px;
+    margin-top: 5px;
+    margin-left: 2%;
     color: #bfcad0
   }
   
@@ -61,57 +56,167 @@ body {
   .header img {
     border-radius: 50%;
     float: left;
-    margin-left: 10px;
+    margin-left: 15.5%;
     border: 1px solid #333333;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
   }
 
-.container {
+body {
+  color:#bfcad0;
+  background-color: #2e303e;
+  height: 88%;
+  width: 75%;
+  top: 48%;
+  left: 50%;
+  bottom: 0px;
+  margin-left: -707px;
+  margin-top: -18%;
+  box-shadow: 2px 2px rgb(17, 17, 17);
   position: fixed;
-  width: 1200px;
-  height: 50px;
-  float: left;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  overflow: hidden;
+}
 
+.container-custom {
+  width: 99%;
+  height: 98%;
+  display: inline-block;
+  overflow: hidden;
 }
 
 .w3-sidebar.w3-bar-block.w3-light-grey.w3-card {
-  width: 200px;
-  height: 100%;
-  margin-top: 0px;
-  padding-top: 5px;
+  width: 10%;
+  height: 87.8%;
+  padding-top: 1%;
   border-radius: 2px;
   background-color: rgb(218, 230, 236) !important;
-  margin-left: -15px;
+  box-shadow: 3px 3px rgb(17, 17, 17);
 }
 
 .sidebar {
-  width: 200px;
+  width: 15%;
   float: left;
+  overflow: auto;
 }
 
 #app {
   float: left;
-  height: 400px;
-  width: 844px;
+  height: 100%;
+  width: 60%;
   margin-top: 20px;
-  margin-left: 210px;
-
+  margin-left: /*210px*/15%;
+  margin-bottom: 30%;
+  padding-bottom: 1%;
+  overflow: auto;
+  padding-right: 15px;
 }
 
 #updates {
   float: right;
-  width: 300px;
+  width: 23%;
   padding-top: 20px;
   padding-left: 10px;
-  margin-right: -270px !important;
   height: 1000px;
 }
 
 .vertical-line {
   border-left: 1px solid #bfcad0;
-  height: 10000px;
+  height: 43%;
   display: inline-block;
   margin-left: 20px;
   margin-top: 12px;
   filter: blur(1px);
   position: fixed;
+}
+
+/*
+Mobile Portrait CSS
+*/
+
+@media screen and (max-width: 1000px) {
+  .header {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    overflow: hidden;
+    background-color: #970c10;
+    padding: 20px 10px;
+    border-bottom: 1px solid #bfcad0;
+    border-radius: 6px;
+    position: fixed;
+    box-shadow: 2px 2px rgb(17, 17, 17);
+    font-size: 25px;
+  }
+
+    .header p {
+      font-family: 'Lucida Sans';
+      font-size: 32px;
+      float: left;
+      margin-top: 20px;
+      margin-left: 30px;
+      color: #bfcad0;
+    }
+
+    .header a {
+      color: #bfcad0;
+      text-align: center;
+      padding: 20px;
+      margin-top: 10%;
+      text-decoration: none;
+      font-size: 28px;
+      line-height: 5px;
+      border-radius: 4px;
+      background-color: #ce3e4383;
+      float: right;
+    }
+
+    .header img {
+      border-radius: 50%;
+      float: left;
+      margin-left: 5%;
+      border: 1px solid #333333;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      transform: translate3d(0, 0, 0);
+      -webkit-transform: translate3d(0, 0, 0);
+    }
+
+  body {
+    font-size: 25px;
+    color:#bfcad0;
+    background-color: #2e303e;
+    height: 83%;
+    width: 100%;
+    top: 23%;
+    left: 72%;
+  }
+
+  .w3-sidebar.w3-bar-block.w3-light-grey.w3-card {
+    width: 20%;
+    height: 82.8%;
+    padding-top: 1%;
+    border-radius: 2px;
+    background-color: rgb(218, 230, 236) !important;
+  }
+
+    #app {
+      float: left;
+      height: 100%;
+      width: 70%;
+      margin-top: 20px;
+      margin-left: /*210px*/25%;
+      margin-bottom: 30%;
+      padding-bottom: 1%;
+      overflow: auto;
+      padding-right: 15px;
+    }
 }
