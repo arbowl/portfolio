@@ -1,0 +1,62 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add @material-iu/core
+
+PATH: 
+  /home/drew/.local/bin:/home/drew/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  16.14.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@material-iu%2fcore: Not found
+      at Request.params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/util/request-manager.js:452:18)
+      at Request.self.callback (/usr/lib/node_modules/yarn/node_modules/request/request.js:185:22)
+      at Request.emit (node:events:520:28)
+      at Request.<anonymous> (/usr/lib/node_modules/yarn/node_modules/request/request.js:1154:10)
+      at Request.emit (node:events:520:28)
+      at IncomingMessage.<anonymous> (/usr/lib/node_modules/yarn/node_modules/request/request.js:1076:12)
+      at Object.onceWrapper (node:events:639:28)
+      at IncomingMessage.emit (node:events:532:35)
+      at endReadableNT (node:internal/streams/readable:1346:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "myapp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "webpack --mode development --watch",
+      "build": "webpack --mode production"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/core": "^7.17.9",
+      "@babel/preset-env": "^7.16.11",
+      "@babel/preset-react": "^7.16.7",
+      "babel-loader": "^8.2.4",
+      "react": "^18.0.0",
+      "react-dom": "^18.0.0",
+      "webpack": "^5.71.0",
+      "webpack-cli": "^4.9.2"
+    },
+    "dependencies": {
+      "@babel/plugin-proposal-class-properties": "^7.16.7",
+      "react-router-dom": "^6.3.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

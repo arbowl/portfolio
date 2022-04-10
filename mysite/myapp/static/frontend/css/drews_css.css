@@ -76,7 +76,7 @@ body {
   bottom: 0px;
   margin-left: -707px;
   margin-top: -18%;
-  box-shadow: 2px 2px rgb(17, 17, 17);
+  box-shadow: 3px 3px rgb(17, 17, 17);
   position: fixed;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -110,7 +110,7 @@ body {
   height: 100%;
   width: 60%;
   margin-top: 20px;
-  margin-left: /*210px*/15%;
+  margin-left: 15%;
   margin-bottom: 30%;
   padding-bottom: 1%;
   overflow: auto;

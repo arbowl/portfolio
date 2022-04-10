@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Default from "./Default";
+import Default from ".//subcomponents/Default";
 import Portfolio from "./Portfolio";
 import Social from "./Social";
 import Chores from "./Chores";
