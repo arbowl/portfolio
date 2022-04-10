@@ -5,7 +5,7 @@ from .models import GameServer, MusicBot, Post
 class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
-        fields = ('id', 'title', 'author', 'body')
+        fields = ('id', 'title', 'author', 'body', 'date')
 
 # Game Servers
 class GameServerSerializer(serializers.ModelSerializer):

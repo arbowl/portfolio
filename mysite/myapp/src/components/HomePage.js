@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Default from ".//subcomponents/Default";
 import Portfolio from "./Portfolio";
-import Social from "./Social";
 import Chores from "./Chores";
 import Stocks from "./Stocks";
 import Servers from "./Servers";
@@ -23,7 +22,6 @@ export default class HomePage extends Component {
                 <Routes>
                     <Route path="/" exact={true} element={<Default />} />
                     <Route path="/portfolio" element={<Portfolio />} />
-                    <Route path="/social" element={<Social />} />
                     <Route path="/album" element={<Album />} />
                     <Route path="/chores" element={<Chores />} />
                     <Route path="/stocks" element={<Stocks />} />
