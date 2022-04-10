@@ -7,6 +7,7 @@ import Stocks from "./Stocks";
 import Servers from "./Servers";
 import About from "./About";
 import Contact from "./Contact";
+import Album from "./Album";
 import {
     BrowserRouter as Router, Routes, Route, Redirect
 } from "react-router-dom"
@@ -23,6 +24,7 @@ export default class HomePage extends Component {
                     <Route path="/" exact={true} element={<Default />} />
                     <Route path="/portfolio" element={<Portfolio />} />
                     <Route path="/social" element={<Social />} />
+                    <Route path="/album" element={<Album />} />
                     <Route path="/chores" element={<Chores />} />
                     <Route path="/stocks" element={<Stocks />} />
                     <Route path="/servers" element={<Servers />} />

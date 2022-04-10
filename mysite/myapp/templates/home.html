@@ -28,10 +28,11 @@
         <div class="container-custom">
             <div class="sidebar">
                 <div class="w3-sidebar w3-bar-block w3-light-grey w3-card">
-                    <a href="./portfolio" class="w3-bar-item w3-button">Portfolio</a>
-                    <a href="./social" class="w3-bar-item w3-button">Social</a>
-                    <a href="./chores" class="w3-bar-item w3-button">Chores</a>
-                    <a href="./stocks" class="w3-bar-item w3-button">Stock Ticker</a>
+                    <a href="../portfolio" class="w3-bar-item w3-button">Portfolio</a>
+                    <a href="../album" class="w3-bar-item w3-button">Photo Album</a>
+                    <a href="../social" class="w3-bar-item w3-button">Social</a>
+                    <a href="../chores" class="w3-bar-item w3-button">Chores</a>
+                    <a href="../stocks" class="w3-bar-item w3-button">Stock Ticker</a>
                     
                     <div class="w3-dropdown-hover">
                         <button class="w3-button">Servers</button>
@@ -46,10 +47,7 @@
                     <a href="https://github.com/arbowl" class="w3-bar-item w3-button"><img src="{% static 'images/github.jpg' %}" height="30px" width="30px"> GitHub</a>
                 </div>
             </div>
-            <div id="app">
-                {% block content %}
-                {% endblock content %}
-            </div>
+            <div id="app"></div>
             <div class="vertical-line"></div>
             <div id="updates"></div>
         </div>
