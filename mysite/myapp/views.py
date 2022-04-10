@@ -14,7 +14,7 @@ def index(request, *args, **kwargs):
 
 class PostView(ListView):
     model = Post
-    template_name = 'social.html'
+    template_name = 'home.html'
     serializer_class = PostSerializer
     queryset = Post.objects.all()
 
