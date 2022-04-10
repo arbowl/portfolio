@@ -1,9 +1,20 @@
 from django.db import models
+from django.contrib.auth.models import User
 import os
 import json
 
 # Create your models here.
 
+# Blog stuff
+class Post(models.Model):
+    title = models.CharField(max_length=80)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    body = models.TextField(max_length=10000)
+
+    def __str__(self):
+        return self.title + ' | ' + str(self.author)
+
+# Game stuff
 def pull_server_data(server):
     if server.lower() == 'valheim':
         game = server

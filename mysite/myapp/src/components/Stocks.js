@@ -16,12 +16,6 @@ export default class Stocks extends Component {
     constructor(props) {
         super(props);
     }
-
-    ComponentDidMount() {
-		getData().then(data => {
-			this.setState({ data })
-		})
-	}
     
     render() {
         return (
@@ -59,7 +53,7 @@ export default class Stocks extends Component {
                             defaultValue={"$"}
                         />
                         <FormHelperText>
-                            <div align="center">Other stock</div>
+                            <h3>Other stock</h3>
                         </FormHelperText>
                     </FormControl>
                 </Grid>

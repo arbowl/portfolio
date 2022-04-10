@@ -46,7 +46,10 @@
                     <a href="https://github.com/arbowl" class="w3-bar-item w3-button"><img src="{% static 'images/github.jpg' %}" height="30px" width="30px"> GitHub</a>
                 </div>
             </div>
-            <div id="app"></div>
+            <div id="app">
+                {% block content %}
+                {% endblock content %}
+            </div>
             <div class="vertical-line"></div>
             <div id="updates"></div>
         </div>

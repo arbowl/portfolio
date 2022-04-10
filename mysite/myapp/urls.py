@@ -1,11 +1,11 @@
 from django.urls import path
 from . import views
-from .views import GameView, MusicView
+from .views import GameView, MusicView, PostView
 
 urlpatterns = [
     path('', views.index),
     path('portfolio', views.index),
-    path('social', views.index),
+    path('social', PostView.as_view()),
     path('chores', views.index),
     path('stocks', views.index),
     path('servers', views.index),

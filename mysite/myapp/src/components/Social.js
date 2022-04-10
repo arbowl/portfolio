@@ -6,6 +6,9 @@ export default class Social extends Component {
     }
 
     render() {
-        return <h1>Social!</h1>;
+        return (
+            <div>
+            </div>
+        );
     }
 }
