@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from rest_framework import generics
+from rest_framework import generics, viewsets
 from .serializers import GameServerSerializer, MusicBotSerializer, PostSerializer
 from .models import GameServer, MusicBot, Post
 from django.views.decorators.cache import cache_page
@@ -13,8 +13,13 @@ def index(request, *args, **kwargs):
     return render(request, 'home.html')
 
 class PostView(ListView):
+    model = Post
+    template_name = 'social.html'
     serializer_class = PostSerializer
     queryset = Post.objects.all()
+
+class DetailedPostView(DetailView):
+    pass
 
 # Servers
 class GameView(generics.CreateAPIView):
