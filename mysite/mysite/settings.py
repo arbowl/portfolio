@@ -149,3 +149,11 @@ CACHES = {
         'LOCATION': 'default_cache_table',
     }
 }
+
+# Users
+
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_REDIRECT_URL = "home"
+
+EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+EMAIL_FILE_PATH = BASE_DIR / "sent_emails"

@@ -4,6 +4,9 @@ from .serializers import GameServerSerializer, MusicBotSerializer, PostSerialize
 from .models import GameServer, MusicBot, Post
 from django.views.decorators.cache import cache_page
 from django.views.generic import ListView, DetailView, CreateView
+from django.views import generic
+from django.contrib.auth.forms import UserCreationForm
+from django.urls import reverse_lazy
 
 
 # Create your views here.
@@ -23,10 +26,20 @@ class CreatePostView(CreateView):
     template_name = 'home.html'
     fields = '__all__'
 
+    def form_valid(self, form):
+        obj = form.save(commit=False)
+        obj.author = self.request.user
+        obj.save()
+        return super().form_valid(form)
+
     def get_context_data(self, **kwargs):
         kwargs['object_list'] = reversed(Post.objects.order_by('date'))
         return super(CreatePostView, self).get_context_data(**kwargs)
 
+class SignUpView(generic.CreateView):
+    form_class = UserCreationForm
+    success_url = reverse_lazy('login')
+    template_name = 'registration/signup.html'
 
 # Servers
 class GameView(generics.CreateAPIView):
