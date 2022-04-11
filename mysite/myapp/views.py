@@ -1,3 +1,4 @@
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from rest_framework import generics, viewsets
 from .serializers import GameServerSerializer, MusicBotSerializer, PostSerializer
@@ -6,6 +7,7 @@ from django.views.decorators.cache import cache_page
 from django.views.generic import ListView, DetailView, CreateView
 from django.views import generic
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
 
 
@@ -20,6 +22,12 @@ class PostView(ListView):
     template_name = 'home.html'
     serializer_class = PostSerializer
     queryset = reversed(Post.objects.order_by('date'))
+
+@login_required
+def delete_post(request, post_id=None):
+    post_to_delete=Post.objects.get(id=post_id)
+    post_to_delete.delete()
+    return HttpResponseRedirect("/")
 
 class CreatePostView(CreateView):
     model = Post

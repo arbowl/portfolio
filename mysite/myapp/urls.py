@@ -15,4 +15,5 @@ urlpatterns = [
     path('servers/musicbot', MusicView.as_view()),
     path('accounts/', include('django.contrib.auth.urls')),
     path('signup/', SignUpView.as_view(), name="signup"),
+    path('delete/<post_id>', views.delete_post, name="delete"),
 ]

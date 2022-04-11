@@ -180,6 +180,10 @@ body {
     background-color: #3e3e3e;
   }
 
+  .delete {
+    color: #0000EE;
+  }
+
 /*
 Mobile Portrait CSS
 */

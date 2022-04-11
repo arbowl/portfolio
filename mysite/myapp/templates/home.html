@@ -66,9 +66,12 @@
                     <hr></hr>
                     {% for post in object_list %}
                         <li>
-                            <strong>{{ post.title }}</strong> | <u>{{ post.author }}</u><br>
+                            <strong>{{ post.title }}</strong> | <u>{{ post.author }}</u>
+                            {% if post.author == request.user %}
+                                <small>- <u><i><a href="{% url 'delete' post.id %}">(delete)</a></i></u></small>
+                            {% endif %}<br>
                             <i>{{ post.date }}</i><br>
-                            <p>{{ post.body }}</p> <br>
+                            <p>{{ post.body }}</p>
                         </li>
                     {% endfor %}
             </div>
