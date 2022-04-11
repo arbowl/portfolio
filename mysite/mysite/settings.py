@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # Apps
     'rest_framework',
     'myapp.apps.MyappConfig',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [

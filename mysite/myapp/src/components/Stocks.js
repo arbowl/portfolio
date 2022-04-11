@@ -27,7 +27,7 @@ export default class Stocks extends Component {
                 </Grid>
                 <Grid item xs={12} align="center">
                     <FormControl component="fieldset">
-                        <RadioGroup row defaultValue="true">
+                        <RadioGroup row defaultValue="VTI">
                             <FormControlLabel
                                 value="VTI"
                                 control={<Radio color="primary"/>}
