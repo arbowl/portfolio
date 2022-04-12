@@ -4,6 +4,7 @@ from .views import GameView, MusicView, CreatePostView, SignUpView
 
 urlpatterns = [
     path('', CreatePostView.as_view(), name="home"),
+    path('resume', CreatePostView.as_view(), name="resume"),
     path('portfolio', CreatePostView.as_view(), name="portfolio"),
     path('album', CreatePostView.as_view(), name="album"),
     path('calendar', CreatePostView.as_view(), name="calendar"),
