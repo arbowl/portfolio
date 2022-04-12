@@ -184,6 +184,10 @@ body {
     color: #0000EE;
   }
 
+h4 {
+  text-align: center;
+}
+
 /*
 Mobile Portrait CSS
 */
