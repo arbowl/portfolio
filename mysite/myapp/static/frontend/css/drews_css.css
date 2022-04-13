@@ -104,12 +104,17 @@ body {
   margin-top: 0%;
   background-color: rgb(218, 230, 236) !important;
   box-shadow: 3px 3px rgb(17, 17, 17);
+  overflow: hidden;
+}
+
+#links {
+  margin-top: 200%;
 }
 
 .sidebar {
   width: 15%;
   float: left;
-  overflow: auto;
+  overflow: hidden;
 }
 
 #app {
@@ -151,7 +156,6 @@ body {
   padding-top: 5px;
   padding-left: 2px;
   padding-right: 2px;
-  /* margin-top: 46.6%; */
   margin-top: 38%;
   position: absolute;
   color: #bfcad0;

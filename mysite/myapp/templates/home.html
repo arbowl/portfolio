@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         {% load static %}
+        <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
         <link href="{% static 'frontend/css/drews_css.css' %}?{% now 'U' %}" rel="stylesheet"/>
     </head>
 
@@ -41,7 +42,7 @@
         <div class="container-custom">
             <div class="sidebar">
                 <div class="w3-sidebar w3-bar-block w3-light-grey w3-card">
-                    <a href="{% url 'resume' %}" class="3-bar-item w3-button">Resume</a>
+                    <a href="{% url 'resume' %}" class="w3-bar-item w3-button">Resume</a>
                     <a href="{% url 'portfolio' %}" class="w3-bar-item w3-button">Portfolio</a>
                     <a href="{% url 'album' %}" class="w3-bar-item w3-button">Photo Album</a>
                     <a href="{% url 'calendar' %}" class="w3-bar-item w3-button">Calendar</a>
@@ -55,9 +56,10 @@
                             <a href="/servers/musicbot" class="w3-bar-item w3-button" style="text-indent: 20px">MusicBot</a>
                         </div>
                     </div>
-                    <p style="padding-left: 5%">____________</p>
-                    <a href="https://linkedin.com/in/drewbowler" class="w3-bar-item w3-button"><img src="{% static 'images/linkedin.png' %}" height="30px" width="30px"> LinkedIn</a>
-                    <a href="https://github.com/arbowl" class="w3-bar-item w3-button"><img src="{% static 'images/github.jpg' %}" height="30px" width="30px"> GitHub</a>
+                    <div id="links">
+                        <a href="https://linkedin.com/in/drewbowler" class="w3-bar-item w3-button"><img src="{% static 'images/linkedin.png' %}" height="30px" width="30px"> LinkedIn</a>
+                        <a href="https://github.com/arbowl" class="w3-bar-item w3-button"><img src="{% static 'images/github.jpg' %}" height="30px" width="30px"> GitHub</a>
+                    </div>
                 </div>
             </div>
             <div id="app"></div>
@@ -68,11 +70,11 @@
                     {% for post in object_list %}
                         {% if forloop.counter <= 10 %}
                         <li>
-                            <strong>{{ post.title }}</strong> | <u>{{ post.author }}</u>
+                            <strong>{{ post.title }}</strong> | <i>{{ post.author }}</i>
                             {% if post.author == request.user %}
                                 <small>- <u><i><a href="{% url 'delete' post.id %}">(delete)</a></i></u></small>
                             {% endif %}<br>
-                            <i>{{ post.date }}</i><br>
+                            <u>{{ post.date }}</u><br>
                             <p>{{ post.body }}</p>
                         </li>
                         {% endif %}
