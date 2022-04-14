@@ -27,7 +27,6 @@ export default class HomePage extends Component {
                     <Route path="/album" element={<Album />} />
                     <Route path="/calendar" element={<Planner />} />
                     <Route path="/stocks" element={<Stocks />} />
-                    <Route path="/servers" element={<Servers />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact/>} />
                 </Routes>

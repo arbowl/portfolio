@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}View Files{% endblock %}
+{% block content %}
+<h1>File Uploads</h1>
+{% for item in file_list %}
+{% if forloop.counter <= 4 %}
+    <li>
+        <p>"{{ item.title }}" from {{ item.date }}</p>
+        <a href="{{ item.file.url }}" download><button>Click here to download {{item.title}}</button></a>
+        <a href="{% url 'delete_file' item.id %}"><button id="delete"><i>Delete File</i></button></a>
+        <br></br>
+    </li>
+{% endif %}
+{% endfor %}
+{% endblock %}

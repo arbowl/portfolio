@@ -51,9 +51,9 @@
                     <div class="w3-dropdown-hover">
                         <button class="w3-button">Servers</button>
                         <div class="w3-dropdown-content w3-bar-block">
-                            <a href="/servers/valheim" class="w3-bar-item w3-button" style="text-indent: 20px">Valheim</a>
-                            <a href="/servers/minecraft" class="w3-bar-item w3-button" style="text-indent: 20px">Minecraft</a>
-                            <a href="/servers/musicbot" class="w3-bar-item w3-button" style="text-indent: 20px">MusicBot</a>
+                            <a href="{% url 'download' %}"?game='valheim' class="w3-bar-item w3-button" style="text-indent: 20px">Valheim</a>
+                            <a href="{% url 'download' %}"?game='minecraft' class="w3-bar-item w3-button" style="text-indent: 20px">Minecraft</a>
+                            <a href="{% url 'download' %}"?game='musicbot' class="w3-bar-item w3-button" style="text-indent: 20px">MusicBot</a>
                         </div>
                     </div>
                     <div id="links">

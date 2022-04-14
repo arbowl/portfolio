@@ -1,6 +1,8 @@
 from django.urls import path, include
 from . import views
-from .views import GameView, MusicView, CreatePostView, SignUpView
+from .views import UploadView, CreatePostView, SignUpView
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', CreatePostView.as_view(), name="home"),
@@ -11,10 +13,14 @@ urlpatterns = [
     path('stocks', CreatePostView.as_view(), name="stocks"),
     path('about', CreatePostView.as_view(), name="about"),
     path('contact', CreatePostView.as_view(), name="contact"),
-    path('servers/valheim', GameView.as_view()),
-    path('servers/minecraft', GameView.as_view()),
-    path('servers/musicbot', MusicView.as_view()),
+    path('upload', UploadView.as_view(), name="upload"),
+    path('download/', views.DownloadListView, name="download"),
     path('accounts/', include('django.contrib.auth.urls')),
     path('signup/', SignUpView.as_view(), name="signup"),
     path('delete/<post_id>', views.delete_post, name="delete"),
+    path('delete_file/<file_id>', views.delete_file, name="delete_file"),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Upload File{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+    <h1>Upload File</h1>
+    <form method="POST" data-ajax="false" enctype="multipart/form-data">
+        <div class="content">
+            <div class="input-field">
+                {% csrf_token %}
+                {{ form.as_p }}
+            </div>
+        </div>
+        <div class="action">
+            <button type="submit">Upload</button>
+        </div>
+    </form>
+{% else %}
+<h1 style="text-align: center;">Login to upload!</h1>
+{% endif %}
+{% endblock %}
