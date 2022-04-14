@@ -96,3 +96,31 @@ span {
   background-color: #970c10;
   color: #bfcad0;
 }
+
+#delete {
+  background: #111111 !important;
+}
+
+#id_game {
+  border: none;
+  box-shadow: none;
+  background-image: none;
+  background-color: #bfcad0;
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 15px;
+  background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat 98% 50%;
+  padding-right: 40px;
+  background-color: #bfcad0;
+}
+
+#id_game select:focus {
+    outline: none;
+}
+
+#id_game select {
+	direction: rtl;
+	padding: 2px 2px 2px 25px;
+	background-position: left center;
+  
+}

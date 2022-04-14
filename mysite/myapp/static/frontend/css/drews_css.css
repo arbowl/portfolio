@@ -72,8 +72,8 @@ html {
   }
 
 body {
-  color:#bfcad0;
-  background-color: #2e303e;
+  color: #bfcad0;
+  background-color: #242333;
   height: 88%;
   width: 75%;
   top: 48%;
@@ -87,7 +87,6 @@ body {
   position: fixed;
   border: 1px solid #bfcad0;
   border-radius: 3px;
-  overflow: hidden;
 }
 
 .container-custom {
@@ -137,6 +136,7 @@ body {
   height: 65%;
   overflow: auto;
   z-index: 2;
+  font-family: 'Roboto', sans-serif;
 }
 
 .vertical-line {
@@ -225,7 +225,7 @@ Mobile Portrait CSS
       color: #bfcad0;
       text-align: center;
       padding: 20px;
-      margin-top: 10%;
+      margin-top: 2%;
       text-decoration: none;
       font-size: 28px;
       line-height: 5px;
@@ -237,7 +237,7 @@ Mobile Portrait CSS
     .header img {
       border-radius: 50%;
       float: left;
-      margin-left: 5%;
+      margin-left: 4%;
       border: 1px solid #333333;
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
@@ -268,7 +268,7 @@ Mobile Portrait CSS
     #app {
       float: left;
       height: 100%;
-      width: 70%;
+      width: 50%;
       margin-top: 20px;
       margin-left: /*210px*/25%;
       margin-bottom: 30%;
@@ -276,4 +276,55 @@ Mobile Portrait CSS
       overflow: auto;
       padding-right: 15px;
     }
+
+    .postbox {
+      width: 24%;
+      height: 50%;
+      margin-left: 76.3%;
+      padding-top: 5px;
+      padding-left: 2px;
+      padding-right: 2px;
+      margin-top: 90%;
+      position: absolute;
+      color: #bfcad0;
+    }
+    
+      .postbox hr {
+        margin-right: 4%;
+        color:#bfcad0;
+        filter: blur(1px);
+      }
+    
+      .postbox button {
+        transform: translateX(50%);
+        background: #970c10;
+        border: #970c10;
+        color: #bfcad0;
+        border-radius: 15%;
+        text-align: center;
+        font-size: 16px;
+        padding: 10px;
+        margin-left: 25%;
+        margin-top: 5px;
+      }
+    
+      .postbox button:hover {
+        background-color: #3e3e3e;
+      }
+    
+      .delete {
+        color: #0000EE;
+      }
+
+    .vertical-line {
+      border-left: 1px solid #bfcad0;
+      height: 80%;
+      display: inline-block;
+      margin-left: 20px;
+      margin-top: 12px;
+      filter: blur(1px);
+      position: fixed;
+    }
+      
 }
+
