@@ -1,14 +1,54 @@
-#pfp {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 4px solid #bfcad0;
-    display: inline-block;
-    object-position: 70% 15%;
+#contact hr {
+    filter: blur(1px);
 }
 
-#contact-me {
-    display: inline-block;
-    margin-left: 5%;
-    text-decoration: underline;
+#contact a {
+    font-family: "Lato", sans-serif;
+    outline: 0;
+    background: #970c10;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #bfcad0;
+    font-size: 15px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#contact-container {
+    width: 100%;
+    margin: auto;
+}
+
+#contact-img {
+    width: 45%;
+    float: left;
+}
+
+    #contact-img img {
+        height: 419px;
+        width: 311px;
+        margin-top: 20px;
+        border-radius: 20px;
+        border: 2px double #bfcad0;
+    }
+
+    #contact-img p {
+        text-align: center;
+    }
+
+#contact-text {
+    width: 55%;
+    float: left;
+}
+
+#contact-clr {
+    clear: both;
 }

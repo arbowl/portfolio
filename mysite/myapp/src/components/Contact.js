@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./subcomponents/contact.css"
-import pfp from "../../static/frontend/contact.png";
+import style from "./subcomponents/contact.css"
+import pfp from "../../static/frontend/headshot.jpg";
 import {
     Button,
     Grid,
@@ -13,6 +13,7 @@ import {
     FormControlLabel
 } from "@material-ui/core"
 
+
 export default class Contact extends Component {
     constructor(props) {
         super(props);
@@ -20,28 +21,67 @@ export default class Contact extends Component {
 
     render() {
         return (
-            <div>
-                <img src={pfp} id="pfp"></img>
-                <h1 id="contact-me">Contact Me:</h1>
-                <br></br>
-                <br></br>
-                <Grid container spacing={1}>
-                    <Grid item xs={4} align="center">
-                        <Typography variant="b">Email: </Typography>
-                    </Grid>
-                    <Grid item xs={8} align="center">
-                        <Typography variant="p">arbowl@tutanota.com</Typography>
-                    </Grid>
+            <div id="contact">
+                <h1>Contact</h1>
+                <hr></hr>
+                <div id="contact-container">
+                    <div id="contact-img">
+                        <img src={pfp} id="default-img"></img>
+                    </div>
+                    <div id="contact-text">
+                        <br></br>
+                        <Grid container spacing={12} alignItems="center" justifyContent="left">
+                            <Grid item xs={12}>
+                                <Typography variant="h6">
+                                    Feel free to reach out regarding questions, suggestions for the site, or business inquiries.
+                                    Please keep messages strictly related to the site or business--thank you!
+                                </Typography>
+                            </Grid>
 
-                    <Grid item xs={4} align="center">
-                        <Typography variant="strong">Phone:</Typography>
-                    </Grid>
-                    <Grid item xs={8} align="center">
-                        <Typography variant="p">(978) 763-5124</Typography>
-                    </Grid>
+                            <Grid item xs={12}>
+                                <Typography variant="h5"><hr></hr></Typography>
+                            </Grid>
 
+                            <Grid item xs={5}>
+                                <Typography variant="h5">Legal Name: </Typography>
+                            </Grid>
+                            <Grid item xs={7}>
+                                <Typography variant="p">Andrew Bowler</Typography>
+                            </Grid>
 
-                </Grid>
+                            <Grid item xs={5}>
+                                <Typography variant="h5">Preferred Name:</Typography>
+                            </Grid>
+                            <Grid item xs={7}>
+                                <Typography variant="p">Drew Bowler</Typography>
+                            </Grid>
+
+                            <Grid item xs={5}>
+                                <Typography variant="h5">Phone:</Typography>
+                            </Grid>
+                            <Grid item xs={7}>
+                                <Typography variant="p">(978) 763-5124</Typography>
+                            </Grid>
+
+                            <Grid item xs={5}>
+                                <Typography variant="h5">Email:</Typography>
+                            </Grid>
+                            <Grid item xs={7}>
+                                <Typography variant="p">arbowl@tutanota.com</Typography>
+                            </Grid>
+                        </Grid>
+
+                        <Grid item xs={12}>
+                                <Typography variant="h5"><hr></hr></Typography>
+                        </Grid>
+
+                        <a href="mailto: arbowl@tutanota.com">Email</a>
+                        <a href="https://linkedin.com/in/drewbowler">LinkedIn</a>
+                    </div>
+                    <div id="contact-clr"></div>
+                    <br></br>
+                    <hr></hr>
+                </div>
             </div>
         );
     }
