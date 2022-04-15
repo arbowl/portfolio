@@ -1,5 +1,6 @@
 #portfolio-top {
     display: inline;
+    text-align: center;
 }
 
 #portfolio-header {
@@ -16,12 +17,17 @@
     border-radius: 10%;
 }
 
-#portfolio-overlay:hover {
-    background-color: aliceblue;
-}
+    #portfolio-overlay:hover {
+        background-color: aliceblue;
+    }
 
-#portfolio-overlay img:hover {
-    cursor: pointer;
+    #portfolio-overlay img:hover {
+        cursor: pointer;
+    }
+
+#expand-img {
+    margin-left: -3px;
+    padding-bottom: 2px;
 }
 
 .portfolio-deck {
@@ -52,6 +58,10 @@
         justify-content: center;
         margin-top: 1%;
         margin-bottom: 1%;
+    }
+
+    .desc3 a {
+        margin-left: -0.5%;
     }
 
 
@@ -106,6 +116,40 @@
         border-radius: 2%;
     }
 
+#expand-4 {
+    display: none;
+}
+  
+    #expand-4 + .desc4 {
+        max-height: 57px;
+        max-width: 100%;
+        overflow: hidden;
+        transition: all .2s ease;
+    }
+    
+    #expand-4:checked + .desc4 {
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: 2%;
+    }
+
+#expand-5 {
+    display: none;
+}
+      
+    #expand-5 + .desc5 {
+        max-height: 57px;
+        max-width: 100%;
+        overflow: hidden;
+        transition: all .2s ease;
+    }
+        
+    #expand-5:checked + .desc5 {
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: 2%;
+    }
+
 #portfolio-embed {
     display: flex;
     justify-content: center;
@@ -115,6 +159,12 @@
     display: inline-block;
     vertical-align: top;
     padding-left: 10px;
+}
+
+#portfolio-img {
+    display: grid;
+    place-items: center;
+    padding: 20px;
 }
 
 #regular-link {

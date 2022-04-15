@@ -33,6 +33,28 @@
     
             </div> 
         </header>
+        <div class="sidebar">
+            <div class="w3-sidebar w3-bar-block w3-light-grey w3-card">
+                <a href="{% url 'resume' %}" class="w3-bar-item w3-button">Resume</a>
+                <a href="{% url 'portfolio' %}" class="w3-bar-item w3-button">Portfolio</a>
+                <a href="{% url 'album' %}" class="w3-bar-item w3-button">Photo Album</a>
+                <a href="{% url 'calendar' %}" class="w3-bar-item w3-button">Calendar</a>
+                <a href="{% url 'stocks' %}" class="w3-bar-item w3-button">Stock Ticker</a>
+                
+                <div class="w3-dropdown-hover">
+                    <button class="w3-button"><a href="{% url 'upload' %}">Servers</a></button>
+                    <div class="w3-dropdown-content w3-bar-block">
+                        <a href="{% url 'download' %}?game=valheim" class="w3-bar-item w3-button" style="text-indent: 20px">Valheim</a>
+                        <a href="{% url 'download' %}?game=minecraft" class="w3-bar-item w3-button" style="text-indent: 20px">Minecraft</a>
+                        <a href="{% url 'download' %}?game=musicbot" game='musicbot' class="w3-bar-item w3-button" style="text-indent: 20px">MusicBot</a>
+                    </div>
+                </div>
+                <div id="links">
+                    <a href="https://linkedin.com/in/drewbowler" class="w3-bar-item w3-button"><img src="{% static 'images/linkedin.png' %}" height="30px" width="30px"> LinkedIn</a>
+                    <a href="https://github.com/arbowl" class="w3-bar-item w3-button"><img src="{% static 'images/github.jpg' %}" height="30px" width="30px"> GitHub</a>
+                </div>
+            </div>
+        </div>
         <div class="login-form">
             {% block content %}
             {% endblock %}

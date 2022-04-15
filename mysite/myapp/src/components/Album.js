@@ -26,7 +26,7 @@ export default class Album extends Component {
     render() {
         return (
             <Grid container spacing={12} alignItems="center" justifyContent="center">
-                <Typography variant="h3">Photo Album</Typography>
+                <Typography variant="h4">Photo Album</Typography>
                 <ImageList sx={{ width: 800, height: 600 }}>
                 {itemData.map((item) => (
                     <ImageListItem key={item.img}>

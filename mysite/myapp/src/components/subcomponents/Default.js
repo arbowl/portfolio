@@ -19,7 +19,6 @@ export default class Default extends Component {
                 <p><b>Calendar:</b> The chore rotation for the roommates in my apartment on a weekly basis.</p>
                 <p><b>Stock Ticker:</b> An API which scrapes data from the web and updates stock prices in real time.</p>
                 <p><b>Servers:</b> A way to pull data from the online multiplayer servers I host in case my computer is unavailable.</p>
-                <hr></hr>
             </p>
         );
     }

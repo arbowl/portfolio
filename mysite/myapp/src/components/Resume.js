@@ -12,7 +12,7 @@ export default class Resume extends Component {
     render() {
         return (
             <div>
-                <h2>Resume</h2>
+                <h1 id="resume-header">Resume</h1>
                 <div>
                     A major facet of my resume that I want to highlight is that I am a very capable learner. I learned every technology and skill listed 
                     in my co-ops on the job to drive my projects to success, and retained the skills for my next endeavor. I am teachable, I learn quickly,
@@ -26,7 +26,7 @@ export default class Resume extends Component {
                 >
                     <Page pageIndex={0}/>
                 </Document>
-                <p><h2>Endorsements: </h2>
+                <p id="endorsements"><h2 id="endorsements-header">Endorsements: </h2>
                     <i>
                         "We hired Drew at GSSI as an intern in 2019, and on all counts he exceeded our expectations for performance. Not only did Drew
                         have an excellent work ethic, requiring little supervision, but he wasn't afraid to ask questions or ask for help and
