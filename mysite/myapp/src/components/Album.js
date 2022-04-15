@@ -16,10 +16,20 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
+
 import img01 from "../../static/frontend/drewsophiegrad.png";
 import img02 from "../../static/frontend/friends.jpg";
 import img03 from "../../static/frontend/family.jpg";
 import img04 from "../../static/frontend/claire.jpg";
+import img05 from "../../static/frontend/welly.jpg";
+import img06 from "../../static/frontend/renfaire.jpg";
+import img07 from "../../static/frontend/bread.png";
+import img08 from "../../static/frontend/toronto.png";
+import img09 from "../../static/frontend/monica.png";
+import img10 from "../../static/frontend/mowgli.png";
+import img11 from "../../static/frontend/mango.png";
+import img12 from "../../static/frontend/chriskids.png";
+
 
 export default class Album extends Component {
     constructor(props) {
@@ -55,9 +65,7 @@ export default class Album extends Component {
                 ))}
                 </ImageList>
                 <Typography variant="p">A photo album containing images I want to share. I don't use social media
-                                        very much, so this is a way for me to post the pictures I want without being
-                                        bogged down by social expectations and ramifications. There may be several
-                                        stock photos used for spacing and testing.</Typography>
+                                        very much, so this is a way for me to post the pictures I care to share.</Typography>
             </Grid>
         );
     }
@@ -85,54 +93,54 @@ const itemData = [
     {
       img: img04,
       title: 'Claire',
-      caption: 'Holding my niece Claire with my brother JT (June 2019',
+      caption: 'Holding my niece Claire with my brother JT (June 2019)',
       cols: 2,
     },
     {
-      img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-      title: 'Hats',
-      caption: '@hjrc33',
+      img: img05,
+      title: 'Welly',
+      caption: 'My nephew Wellington (June 2019)',
       cols: 2,
     },
     {
-      img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-      title: 'Honey',
-      caption: '@arwinneil',
+      img: img06,
+      title: 'Renaissance Faire',
+      caption: 'Renaissance Faire with my friends (Oct 2021)',
       rows: 2,
       cols: 2,
       featured: true,
     },
     {
-      img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-      title: 'Basketball',
-      caption: '@tjdragotta',
+      img: img07,
+      title: 'Bread',
+      caption: 'Beer bread I baked for the family of my girlfriend (Nov 2021)',
     },
     {
-      img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-      title: 'Fern',
-      caption: '@katie_wasserman',
+      img: img08,
+      title: 'Toronto',
+      caption: 'Spring break in Toronto (Mar 2019)',
     },
     {
-      img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-      title: 'Mushrooms',
-      caption: '@silverdalex',
+      img: img09,
+      title: 'Monica',
+      caption: 'A selfie with my niece Monica (Jun 2021)',
       rows: 2,
       cols: 2,
     },
     {
-      img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-      title: 'Tomato basil',
-      caption: '@shelleypauls',
+      img: img10,
+      title: 'Mowgli',
+      caption: 'My cat Mowgli (Jun 2021)',
     },
     {
-      img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-      title: 'Sea star',
-      caption: '@peterlaster',
+      img: img11,
+      title: 'Mango',
+      caption: 'My other cat, Mango, twins with Mowgli (Jun 2021)',
     },
     {
-      img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-      title: 'Bike',
-      caption: '@southside_customs',
+      img: img12,
+      title: "Chris's kids",
+      caption: 'Four of my nieces and nephews (Aug 2021)',
       cols: 2,
     },
   ];
