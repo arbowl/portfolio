@@ -17,6 +17,9 @@ import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 import img01 from "../../static/frontend/drewsophiegrad.png";
+import img02 from "../../static/frontend/friends.jpg";
+import img03 from "../../static/frontend/family.jpg";
+import img04 from "../../static/frontend/claire.jpg";
 
 export default class Album extends Component {
     constructor(props) {
@@ -51,7 +54,10 @@ export default class Album extends Component {
                     </ImageListItem>
                 ))}
                 </ImageList>
-                <Typography variant="p">A personal photo album containing images I want to share.</Typography>
+                <Typography variant="p">A photo album containing images I want to share. I don't use social media
+                                        very much, so this is a way for me to post the pictures I want without being
+                                        bogged down by social expectations and ramifications. There may be several
+                                        stock photos used for spacing and testing.</Typography>
             </Grid>
         );
     }
@@ -67,19 +73,19 @@ const itemData = [
       featured: true,
     },
     {
-      img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-      title: 'Burger',
-      caption: '@rollelflex_graphy726',
+      img: img02,
+      title: 'Vermont',
+      caption: 'Me and my friends in a winter cabin, PC: Josh (Jan 2020)',
     },
     {
-      img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-      title: 'Camera',
-      caption: '@helloimnik',
+      img: img03,
+      title: 'Family Dinner',
+      caption: 'Birthday dinner for Kim with siblings and Sophia (Jan 2022)',
     },
     {
-      img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-      title: 'Coffee',
-      caption: '@nolanissac',
+      img: img04,
+      title: 'Claire',
+      caption: 'Holding my niece Claire with my brother JT (June 2019',
       cols: 2,
     },
     {

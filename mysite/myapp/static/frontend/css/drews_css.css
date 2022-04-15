@@ -104,6 +104,7 @@ body {
   background-color: rgb(218, 230, 236) !important;
   box-shadow: 3px 3px rgb(17, 17, 17);
   overflow: hidden;
+  font-size: 20px;
 }
 
 #links {

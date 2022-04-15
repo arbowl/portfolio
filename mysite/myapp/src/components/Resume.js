@@ -16,7 +16,7 @@ export default class Resume extends Component {
                 <div>
                     A major facet of my resume that I want to highlight is that I am a very capable learner. I learned every technology and skill listed 
                     in my co-ops on the job to drive my projects to success, and retained the skills for my next endeavor. I am teachable, I learn quickly,
-                    and I'm reliable. 
+                    and I'm reliable. Be sure to check out <b>Portfolio</b> on the sidebar for in-depth looks at some of my projects listed here!
                 </div>
                 <br></br>
                 <Document
