@@ -1,0 +1,40 @@
+#default p {
+    text-indent: 40px;
+}
+
+#default hr {
+    filter: blur(1px);
+}
+
+#default-container {
+    width: 100%;
+    margin: auto;
+}
+
+#default-text {
+    width: 55%;
+    float: left;
+}
+
+#default-img {
+    width: 45%;
+    float: left;
+    box-shadow: inset 0px 0px 100px 100px #292333;
+}
+
+    #default-img img {
+        height: 350px;
+        width: 350px;
+        margin-top: 20px;
+        margin-left: 6%;
+        border-radius: 20px;
+        border: 2px double #bfcad0;
+    }
+
+    #default-img p {
+        text-align: center;
+    }
+
+#default-clr {
+    clear: both;
+}

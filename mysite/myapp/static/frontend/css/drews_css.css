@@ -73,7 +73,7 @@ html {
 
 body {
   color: #bfcad0;
-  background-color: #242333;
+  background-color: #292333;
   height: 88%;
   width: 75%;
   top: 48%;
@@ -109,6 +109,12 @@ body {
 
 #links {
   margin-top: 200%;
+}
+
+#copyright {
+  font-size: 12px;
+  margin-left: 15%;
+  margin-top: 30%;
 }
 
 .sidebar {
