@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Default from ".//subcomponents/Default";
+import Default from "./subcomponents/Default";
 import Resume from "./Resume";
 import Portfolio from "./Portfolio";
 import Planner from "./Planner";
