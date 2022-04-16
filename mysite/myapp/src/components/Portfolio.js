@@ -144,6 +144,7 @@ export default class Portfolio extends Component {
                 <div class="portfolio-deck desc4">
                     <div id="portfolio-overlay"><label for="expand-4"><img src={pfp} width="50px;" height="50px;" id="expand-img"/></label></div>
                     <h3 id="portfolio-header">GSSI Motion Control Table - Spring 2020</h3>
+                    <a href="https://github.com/arbowl/gssi">XY Table (Python) Repo</a>
                     <p>
                         Ground penetrating radar (GPR) works by sending and receiving radar waves into targets to non-destructively several
                         what could be beyond the surface via the reflectviity of each substance it penetrates. Normally, GPR devices do not

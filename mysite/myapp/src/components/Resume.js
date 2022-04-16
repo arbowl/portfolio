@@ -19,6 +19,8 @@ export default class Resume extends Component {
                     and I'm reliable. Be sure to check out <b>Portfolio</b> on the sidebar for in-depth looks at some of my projects listed here!
                 </div>
                 <br></br>
+                <br></br>
+                <br></br>
                 <Document
                     file={resume}
                     onLoadError={console.error}
