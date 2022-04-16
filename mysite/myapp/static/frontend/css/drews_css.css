@@ -74,7 +74,7 @@ html {
 body {
   color: #bfcad0;
   background-color: #292333;
-  height: 88%;
+  height: 90%;
   width: 75%;
   top: 48%;
   left: 50%;
@@ -98,7 +98,7 @@ body {
 
 .w3-sidebar.w3-bar-block.w3-light-grey.w3-card {
   width: 10%;
-  height: 87.8%;
+  height: 100%;
   padding-top: 1%;
   margin-top: 0%;
   background-color: rgb(218, 230, 236) !important;
@@ -185,10 +185,11 @@ body {
     padding: 10px;
     margin-left: 25%;
     margin-top: 5px;
+    border: 2px double #bfbfbf;
   }
 
   .postbox button:hover {
-    background-color: #3e3e3e;
+    background-color: #ce3e43;
   }
 
   .delete {
@@ -316,7 +317,7 @@ Mobile Portrait CSS
       }
     
       .postbox button:hover {
-        background-color: #3e3e3e;
+        background-color: #ce3e4383;
       }
     
       .delete {

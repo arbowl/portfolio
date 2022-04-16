@@ -1,7 +1,33 @@
 .react-pdf__Page__canvas {
     margin: 0 auto;
-    height: 85% !important;
-    width: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    justify-content: left;
+    float: left;
+}
+
+#resume hr {
+    filter:blur(1px);
+}
+
+#resume-link {
+    font-family: "Lato", sans-serif;
+    outline: 0;
+    background: #970c10;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #bfcad0;
+    font-size: 15px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 #endorsements {

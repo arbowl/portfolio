@@ -4,7 +4,6 @@ import Resume from "./Resume";
 import Portfolio from "./Portfolio";
 import Planner from "./Planner";
 import Stocks from "./Stocks";
-import About from "./About";
 import Contact from "./Contact";
 import Album from "./Album";
 import {
@@ -26,7 +25,6 @@ export default class HomePage extends Component {
                     <Route path="/album" element={<Album />} />
                     <Route path="/calendar" element={<Planner />} />
                     <Route path="/stocks" element={<Stocks />} />
-                    <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact/>} />
                 </Routes>
             </Router>

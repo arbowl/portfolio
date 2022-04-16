@@ -34,7 +34,7 @@ export default class Contact extends Component {
                             <Grid item xs={12}>
                                 <Typography variant="h6">
                                     Feel free to reach out regarding questions, suggestions for the site, or business inquiries.
-                                    Please keep messages strictly related to the site or business--thank you!
+                                    Please keep messages strictly on-topic. Thank you!
                                 </Typography>
                             </Grid>
 
