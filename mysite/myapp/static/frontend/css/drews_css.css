@@ -184,8 +184,8 @@ body {
     font-size: 16px;
     padding: 10px;
     margin-left: 25%;
-    margin-top: 5px;
-    border: 2px double #bfbfbf;
+    margin-top: 10px;
+    border: 1px solid #bfbfbf;
   }
 
   .postbox button:hover {

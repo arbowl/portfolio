@@ -56,6 +56,7 @@ export default class Resume extends Component {
                         <a href={resume} download id="resume-link">Download Resume</a>
                     </Grid>
                 </Grid>
+                <br></br>
             </div>
         );
     }
