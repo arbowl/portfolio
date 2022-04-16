@@ -53,6 +53,14 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background: #ce3e43;
+}
+
+a:hover {
+  background: #ce3e43;
+}
+
 #forgot {
   font-family: "Lato", sans-serif;
   outline: 0;
@@ -69,6 +77,10 @@ button {
   display: inline-block;
   text-align: center;
   text-decoration: none;
+}
+
+#forgot:hover {
+  background: #ce3e43;
 }
 
 li {
@@ -98,7 +110,12 @@ span {
 }
 
 #delete {
-  background: #111111 !important;
+  margin-top: 5px;
+  background: #111111;
+}
+
+#delete:hover {
+  background: #313131;
 }
 
 #id_game {

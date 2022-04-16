@@ -30,6 +30,10 @@
     margin-bottom: 1%;
 }
 
+#resume-link:hover {
+    background: #ce3e43;
+}
+
 #endorsements {
     margin: 5%;
 }

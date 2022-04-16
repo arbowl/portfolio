@@ -50,7 +50,7 @@ export default class Contact extends Component {
                             </Grid>
 
                             <Grid item xs={5}>
-                                <Typography variant="h5">Preferred Name:</Typography>
+                                <Typography variant="h5">Pref. Name:</Typography>
                             </Grid>
                             <Grid item xs={7}>
                                 <Typography variant="p">Drew Bowler</Typography>

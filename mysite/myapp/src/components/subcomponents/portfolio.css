@@ -60,6 +60,10 @@
         margin-bottom: 1%;
     }
 
+    .portfolio-deck a:hover {
+        background-color: #ce3e43;
+    }
+
     .desc3 a {
         margin-left: -0.5%;
     }
