@@ -1,19 +1,9 @@
 import React, { Component } from "react";
-import {
-    Button,
-    Grid,
-    Typography,
-    TextField,
-    FormControl,
-    FormHelperText,
-    Radio,
-    RadioGroup,
-    FormControlLabel
-} from "@material-ui/core"
+import { Grid, Typography } from "@material-ui/core"
+import style from "./subcomponents/album.css"
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
 
@@ -38,9 +28,13 @@ export default class Album extends Component {
 
     render() {
         return (
+          <div id="album">
+            <br></br>
             <Grid container spacing={12} alignItems="center" justifyContent="center">
-                <Typography variant="h4">Photo Album</Typography>
-                <ImageList sx={{ width: 800, height: 600 }}>
+              <Grid item xs={12}>
+                <Typography variant="h4">Photo Album <hr></hr></Typography>
+              </Grid>
+                <ImageList sx={{ width: 800, height: 650 }}>
                 {itemData.map((item) => (
                     <ImageListItem key={item.img}>
                     <img
@@ -64,9 +58,8 @@ export default class Album extends Component {
                     </ImageListItem>
                 ))}
                 </ImageList>
-                <Typography variant="p">A photo album containing images I want to share. I don't use social media
-                                        very much, so this is a way for me to post the pictures I care to share.</Typography>
             </Grid>
+          </div>
         );
     }
 }
