@@ -30,6 +30,8 @@ DEBUG = config("DEBUG")
 ALLOWED_HOSTS = [
     '192.168.1.162',
     'localhost',
+    'herokudjangoapp.herokuapp.com',
+    'drewbowler.com',
 ]
 
 
