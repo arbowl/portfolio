@@ -20,7 +20,6 @@ djangorestframework==3.13.1
 dnspython==2.1.0
 evdev==1.1.2
 filelock==3.0.12
-fros==1.1
 gpg==1.15.1
 gssapi==1.6.14
 gunicorn==20.1.0
