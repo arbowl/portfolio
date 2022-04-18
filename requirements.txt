@@ -23,7 +23,6 @@ filelock==3.0.12
 gssapi==1.6.14
 gunicorn==20.1.0
 humanize==0.5.1
-lutris==0.5.9.1
 lxml==4.6.5
 Mako==1.1.4
 MarkupSafe==2.0.0
