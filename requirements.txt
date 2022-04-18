@@ -50,7 +50,6 @@ PyGObject==3.42.0
 pykickstart==3.34
 pyOpenSSL==21.0.0
 pyparsing==2.4.7
-pyparted==3.11.7
 PyQt5==5.15.6
 PyQt5-sip==12.9.0
 PySocks==1.7.1
