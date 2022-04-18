@@ -26,7 +26,6 @@ humanize==0.5.1
 idna==3.2
 Jinja2==3.1.1
 jinja2-time==0.2.0
-koji==1.28.0
 lutris==0.5.9.1
 lxml==4.6.5
 Mako==1.1.4
