@@ -52,7 +52,6 @@ pyOpenSSL==21.0.0
 pyparsing==2.4.7
 PyQt5==5.15.6
 PyQt5-sip==12.9.0
-PySocks==1.7.1
 python-meh==0.50
 python-slugify==6.1.1
 python-utils==2.5.6
