@@ -50,7 +50,6 @@ PyGObject==3.42.0
 pykickstart==3.34
 pyOpenSSL==21.0.0
 pyparsing==2.4.7
-PyQt5==5.15.6
 python-meh==0.50
 python-slugify==6.1.1
 python-utils==2.5.6
