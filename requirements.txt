@@ -19,7 +19,6 @@ django-widget-tweaks==1.4.12
 djangorestframework==3.13.1
 dnspython==2.1.0
 evdev==1.1.2
-fedora-third-party==0.8
 filelock==3.0.12
 fros==1.1
 gpg==1.15.1
