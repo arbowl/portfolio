@@ -8,8 +8,6 @@ blivet==3.4.3
 cffi==1.15.0
 chardet==4.0.0
 charset-normalizer==2.0.4
-click==8.0.1
-cupshelpers==1.0
 dasbus==1.6
 dbus-python==1.2.18
 decorator==5.0.9
