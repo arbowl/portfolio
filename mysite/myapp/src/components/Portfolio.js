@@ -23,7 +23,7 @@ export default class Portfolio extends Component {
                         <Typography variant="h4">Portfolio</Typography>
                     </Grid>
                     <Grid item xs={10}>
-                        <Typography variant="h5"> - School, Projects, Hobbies</Typography>
+                        <Typography variant="h5"><div id="portfolio-mobile"> - School, Projects, Hobbies</div></Typography>
                     </Grid>
                 </Grid>
 
@@ -37,7 +37,7 @@ export default class Portfolio extends Component {
                 <input type="checkbox" id="expand-1" />
                 <div class="portfolio-deck desc1">
                     <div id="portfolio-overlay"><label for="expand-1"><img src={pfp} width="50px;" height="50px;" id="expand-img"/></label></div>
-                    <h3 id="portfolio-header">Capstone Visual Timer - UML Senior Design Project - May 2021</h3>
+                    <h3 id="portfolio-header">Bridgewell Visual Timer - UML Capstone - May 2021</h3>
                     <div id="portfolio-embed">
                         <ReactPlayer
                             url="https://www.youtube.com/watch?v=boVc1fCbjv0"
@@ -190,7 +190,7 @@ export default class Portfolio extends Component {
                                 a lot of signal noise, requiring obfuscating software filters to try to isolate the signal of interest:
                             </p>
                             <Grid item xs={12}>
-                                <img src={before_img}></img>
+                                <img src={before_img} id="philips-img"></img>
                             </Grid>
                             <p>
                                 My task was to find out which part of the test system was creating the noise. When I found it was a specific PCB,
@@ -204,7 +204,7 @@ export default class Portfolio extends Component {
                                 to create prototypes. Over the next few months, I created a replacement board that reduced signal noise by over 99.7%:
                             </p>
                             <Grid item xs={12}>
-                                <img src={after_img}></img>
+                                <img src={after_img} id="philips-img"></img>
                             </Grid>
                             <p>
                                 I spent my remaining time drafting the verification/validation/IQOQ documentation from scratch and leading a team

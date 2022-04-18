@@ -182,3 +182,24 @@
     color: #0000EE;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1000px) {
+    #portfolio-mobile{
+        margin-top: 15%;
+    }
+
+    #portfolio-header {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 12px;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    #philips-img {
+        width: 50%;
+        height: auto;
+    }
+}

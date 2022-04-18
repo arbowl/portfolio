@@ -51,3 +51,21 @@
 #resume-header {
     text-align: center;
 }
+
+@media screen and (max-width: 1000px) {
+    .react-pdf__Page__canvas {
+        margin: 0 auto;
+        width: 0% !important;
+        height: auto !important;
+        justify-content: left;
+        display: block;
+    }
+
+    #endorsements {
+        width: 200%;
+        margin-left: -150%;
+        margin-top: 100%;
+        display: block;
+        clear: both;
+    }
+}

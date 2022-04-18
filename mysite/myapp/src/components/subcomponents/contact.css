@@ -52,3 +52,17 @@
 #contact-clr {
     clear: both;
 }
+
+@media screen and (max-width: 1000px) {
+    #contact-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: 10%;
+    }
+
+    #contact-text {
+        width: 100%;
+        display: block;
+    }
+}

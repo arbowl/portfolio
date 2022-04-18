@@ -68,7 +68,10 @@ html {
   }
 
   #welcome {
-    margin-left: 12%;
+    margin-top: 1%;
+    margin-right: 20px;
+    font-size: 20px;
+    float: right;
   }
 
 body {
@@ -233,13 +236,14 @@ Mobile Portrait CSS
       color: #bfcad0;
       text-align: center;
       padding: 20px;
-      margin-top: 2%;
+      margin-top: 10%;
       text-decoration: none;
       font-size: 28px;
       line-height: 5px;
       border-radius: 4px;
       background-color: #ce3e4383;
       float: right;
+      align-items: right;
     }
 
     .header img {
@@ -253,6 +257,13 @@ Mobile Portrait CSS
       -ms-backface-visibility: hidden;
       transform: translate3d(0, 0, 0);
       -webkit-transform: translate3d(0, 0, 0);
+    }
+
+    #welcome {
+      margin-top: 1%;
+      margin-right: 5%;
+      font-size: 30px;
+      float: right;
     }
 
   body {
