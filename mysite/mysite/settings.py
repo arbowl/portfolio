@@ -34,6 +34,7 @@ ALLOWED_HOSTS = [
     'herokudjangoapp.herokuapp.com',
     'drewbowler.com',
     'drewbowler.herokuapp.com',
+    'www.drewbowler.com'
 ]
 
 
