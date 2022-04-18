@@ -5,7 +5,6 @@ Beaker==1.10.0
 beautifulsoup4==4.9.3
 binaryornot==0.4.4
 blivet==3.4.3
-Brlapi==0.8.2
 cffi==1.15.0
 chardet==4.0.0
 charset-normalizer==2.0.4
