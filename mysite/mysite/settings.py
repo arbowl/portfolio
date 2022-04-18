@@ -55,6 +55,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -87,20 +88,35 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'drewbase',
-	    'USER': '',
-	    'PASSWORD': '',
-	    'HOST': '127.0.0.1',
-	    'PORT': '',
-    }
-}
+# Default
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'drewbase',
+# 	    'USER': '',
+# 	    'PASSWORD': '',
+# 	    'HOST': '127.0.0.1',
+# 	    'PORT': '',
+#     }
+# }
 
-#
-DATABASES['default'] = dj_database_url.config()
-#
+# When attempting dockerization
+# DATABASES = {
+#     'default': {
+#         'NAME': 'rand_db',
+#         'ENGINE': 'django.db.backends.mysql',
+#         'USER': 'root',
+#         'PASSWORD': 'root',
+#         'HOST': 'db',
+#         'PORT': 3306,
+#     },
+
+# }
+
+# Heroku
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -176,3 +192,5 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_HSTS_PRELOAD = True
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
