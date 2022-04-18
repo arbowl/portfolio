@@ -32,6 +32,7 @@ ALLOWED_HOSTS = [
     'localhost',
     'herokudjangoapp.herokuapp.com',
     'drewbowler.com',
+    'drewbowler.herokuapp.com',
 ]
 
 
