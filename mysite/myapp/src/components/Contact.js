@@ -2,15 +2,8 @@ import React, { Component } from "react";
 import style from "./subcomponents/contact.css"
 import pfp from "../../static/frontend/headshot.jpg";
 import {
-    Button,
     Grid,
-    Typography,
-    TextField,
-    FormControl,
-    FormHelperText,
-    Radio,
-    RadioGroup,
-    FormControlLabel
+    Typography
 } from "@material-ui/core"
 
 

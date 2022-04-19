@@ -53,6 +53,10 @@
     float: left;
 }
 
+#contact-text a:hover {
+    background-color: #ce3e43;
+}
+
 #contact-clr {
     clear: both;
 }
