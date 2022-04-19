@@ -22,6 +22,10 @@
     margin-bottom: 1%;
 }
 
+#contact a:hover {
+    background-color: #ce3e43;
+}
+
 #contact-container {
     width: 100%;
     margin: auto;
