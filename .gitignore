@@ -24,3 +24,4 @@ db/server-cert.pem
 db/server-key.pem
 db/undo_001
 db/undo_002
+mysite/media/octordle.txt
