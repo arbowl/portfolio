@@ -75,8 +75,8 @@ export default class Contact extends Component {
                                 <Typography variant="h5"><hr></hr></Typography>
                         </Grid>
 
-                        <a href="mailto: arbowl@tutanota.com">Email</a>
-                        <a href="https://linkedin.com/in/drewbowler">LinkedIn</a>
+                        <a href="mailto: arbowl@tutanota.com" id="contact-link">Email</a>
+                        <a href="https://linkedin.com/in/drewbowler" id="contact-link">LinkedIn</a>
                     </div>
                     <div id="contact-clr"></div>
                     <br></br>
