@@ -38,3 +38,7 @@
 #default-clr {
     clear: both;
 }
+
+#default-p {
+    all: unset;
+}

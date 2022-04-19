@@ -57,8 +57,12 @@ button:hover {
   background: #ce3e43;
 }
 
-a:hover {
+.content a:hover {
   background: #ce3e43;
+}
+
+#servers a:hover {
+  background: none;
 }
 
 #forgot {

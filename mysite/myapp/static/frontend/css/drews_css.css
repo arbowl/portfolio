@@ -114,6 +114,10 @@ body {
   margin-top: 200%;
 }
 
+#servers a:hover {
+  background: none;
+}
+
 #copyright {
   font-size: 12px;
   margin-left: 15%;

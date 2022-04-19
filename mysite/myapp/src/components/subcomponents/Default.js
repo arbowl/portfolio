@@ -39,11 +39,11 @@ export default class Default extends Component {
                     <div id="default-clr"></div>
                 </div>
                 <h2>Navigation:</h2>
-                <b>Resume: </b> My resume to date and some supplementary info<br></br>
-                <b>Portfolio:</b> School/career/personal projects showing the development of my technical skills<br></br>
-                <b>Photos:</b> I don't use social media much, so this is a place for me to show off some of my photos<br></br>
-                <b>Calendar:</b> An online planner for myself to keep track of what I'm up to and what's coming up<br></br>
-                <b>Servers:</b> File hosting for the multiplayer servers I host for my friends<br></br>
+                <p id="default-p"><b>Resume: </b> My resume to date and some supplementary info</p><br></br>
+                <p id="default-p"><b>Portfolio:</b> School/career/personal projects showing the development of my technical skills</p><br></br>
+                <p id="default-p"><b>Photos:</b> I don't use social media much, so this is a place for me to show off some of my photos</p><br></br>
+                <p id="default-p"><b>Calendar:</b> An online planner for myself to keep track of what I'm up to and what's coming up</p><br></br>
+                <p id="default-p"><b>Servers:</b> File hosting for the multiplayer servers I host for my friends</p><br></br>
             </div>
         );
     }
