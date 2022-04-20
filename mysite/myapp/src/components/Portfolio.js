@@ -8,6 +8,7 @@ import before_img from "../../static/frontend/before.jpg";
 import after_img from "../../static/frontend/after.jpg";
 import board_img from "../../static/frontend/board.jpg";
 import diagram_img from "../../static/frontend/gssi_diagram.png";
+import meta_img from "../../static/frontend/meta.png";
 
 export default class Portfolio extends Component {
     constructor(props) {
@@ -34,6 +35,28 @@ export default class Portfolio extends Component {
                     based, some of it is software, and a few things are both. Click the corner arrows to expand each item.
                 </p>
 
+                <input type="checkbox" id="expand-0" />
+                <div class="portfolio-deck desc0">
+                    <div id="portfolio-overlay"><label for="expand-0"><img src={pfp} width="50px;" height="50px;" id="expand-img"/></label></div>
+                    <h3 id="portfolio-header">Portfolio Website - April 2022</h3>
+                    <div id="portfolio-description">
+                        <img src={meta_img} width="100%"/>
+                        <p>
+                            I created my portfolio website to demonstrate the projects I've made and the skills I've acquired in a
+                            more interactive and demonstrative environment than my resume, and also as a personal challenge. In the
+                            making of this site, I learned: Django, Git CLI, React.js, MySQL, PostgreSQL, Docker, Heroku, and I
+                            strengthened my Python, HTML, CSS, and Javascript.
+                        </p>
+                        <a href="https://github.com/arbowl/portfolio">Website Repo</a>
+                        <p>
+                            Feel free to register, leave a comment, and let me know if something breaks, if something could be
+                            improved, or if the site doesn't render properly on one of your devices.
+                        </p>
+                    </div>
+                </div>
+
+                <hr></hr>
+
                 <input type="checkbox" id="expand-1" />
                 <div class="portfolio-deck desc1">
                     <div id="portfolio-overlay"><label for="expand-1"><img src={pfp} width="50px;" height="50px;" id="expand-img"/></label></div>
@@ -47,8 +70,8 @@ export default class Portfolio extends Component {
                             playbackRate={2}
                         />
                     </div>
-                    <a href="https://github.com/arbowl/Capstone-2020-2021">Visual Timer Repo</a>
                     <div id="portfolio-description">
+                        <a href="https://github.com/arbowl/Capstone-2020-2021">Visual Timer Repo</a>
                         <p>
                             For my UML senior design capstone, I had to design a visual device for patients with cognitive disabilities
                             who had trouble intuitively understanding the passage of time. The device had to be portable, rechargeable,
@@ -77,7 +100,7 @@ export default class Portfolio extends Component {
                     <h3 id="portfolio-header">The Orange Box - Personal Cyberdeck - April 2021</h3>
                     <div id="portfolio-description">
                     <div id="portfolio-img">
-                            <img src={orangebox} width="100%"></img>
+                            <img src={orangebox} width="100%"/>
                         </div>
                         <p>
                             The Orange Box is a personal project inspired by the Reddit Cyberdeck community, and particularly Jay
@@ -146,34 +169,36 @@ export default class Portfolio extends Component {
                 <div class="portfolio-deck desc4">
                     <div id="portfolio-overlay"><label for="expand-4"><img src={pfp} width="50px;" height="50px;" id="expand-img"/></label></div>
                     <h3 id="portfolio-header">GSSI Motion Control Table - Spring 2020</h3>
-                    <a href="https://github.com/arbowl/gssi">XY Table (Python) Repo</a>
-                    <p>
-                        Ground penetrating radar (GPR) works by sending and receiving radar waves into targets to non-destructively several
-                        what could be beyond the surface via the reflectviity of each substance it penetrates. Normally, GPR devices do not
-                        track <i>where</i> they've been, and simply send back the radar data which is then interpreted by an operator.
-                    </p>
-                    <p>
-                        When I joined as a co-op, my task was to help the team developing a 2D positioning system which could then create
-                        real-time 3D GPR data. To do so, they needed a "control" to test their algorithm with--a way to know exactly
-                        where the antenna traveled to compare to their algorithm.
-                    </p>
-                    <p>
-                        So, given a wooden frame, I created a three-axis CNC machine by selecting the motors, the drivers, the microcontroller,
-                        and the Intel Next Unit of Computing (NUC) interface. The user drew a 2D path in Inkscape, a visual vector graphic editor,
-                        and imported the saved file into my Python script. The Python script then converted the coordinates into G-Code and sent 
-                        it over a TCP socket to the microcontroller, which was running a Lua script that I wrote which interpeted the G-Code,
-                        converted it to coordinates, sent it to the motors, then sent the timestamped position feedback data back to the Python
-                        script where it was collected and output as a .csv at the end.
-                    </p>
-                    <Grid container spacing={12} alignItems="center" justifyContent="center">
-                        <Grid item xs={12}>
-                            <img src={diagram_img} id="diagram-img"></img>
+                    <div id="portfolio-description">
+                        <a href="https://github.com/arbowl/gssi">XY Table (Python) Repo</a>
+                        <p>
+                            Ground penetrating radar (GPR) works by sending and receiving radar waves into targets to non-destructively several
+                            what could be beyond the surface via the reflectviity of each substance it penetrates. Normally, GPR devices do not
+                            track <i>where</i> they've been, and simply send back the radar data which is then interpreted by an operator.
+                        </p>
+                        <p>
+                            When I joined as a co-op, my task was to help the team developing a 2D positioning system which could then create
+                            real-time 3D GPR data. To do so, they needed a "control" to test their algorithm with--a way to know exactly
+                            where the antenna traveled to compare to their algorithm.
+                        </p>
+                        <p>
+                            So, given a wooden frame, I created a three-axis CNC machine by selecting the motors, the drivers, the microcontroller,
+                            and the Intel Next Unit of Computing (NUC) interface. The user drew a 2D path in Inkscape, a visual vector graphic editor,
+                            and imported the saved file into my Python script. The Python script then converted the coordinates into G-Code and sent 
+                            it over a TCP socket to the microcontroller, which was running a Lua script that I wrote which interpeted the G-Code,
+                            converted it to coordinates, sent it to the motors, then sent the timestamped position feedback data back to the Python
+                            script where it was collected and output as a .csv at the end.
+                        </p>
+                        <Grid container spacing={12} alignItems="center" justifyContent="center">
+                            <Grid item xs={12}>
+                                <img src={diagram_img} id="diagram-img"></img>
+                            </Grid>
                         </Grid>
-                    </Grid>
-                    <p>
-                        The table was a success and the team was able to release their new algorithm in production the following year. My
-                        manager gave exceptional feedback in a LinkedIn endorsement, which I also quoted in <b>Resume &gt; Endorsements</b>.
-                    </p>
+                        <p>
+                            The table was a success and the team was able to release their new algorithm in production the following year. My
+                            manager gave exceptional feedback in a LinkedIn endorsement, which I also quoted in <b>Resume &gt; Endorsements</b>.
+                        </p>
+                    </div>
                 </div>
 
                 <hr></hr>

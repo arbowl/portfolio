@@ -17,14 +17,14 @@ export default class Default extends Component {
                 <hr></hr>
                 <div id="default-container">
                     <div id="default-text">
-                        <p>I am a 2021 graduate of UMass Lowell with a bachelor's degree in Computer Science. I wanted a place to collect my projects,
-                            and the making of this site became a project all on its own--no fill-in-the-blank templates, no "borrowing" of designs--just
-                            my vision, a healthy amount of Stack Overflow, and an <u>unfathomable</u> number of page refreshes.
+                        <p>I am a 2021 graduate of UMass Lowell with a bachelor's degree in Computer Engineering. I wanted a place to collect my projects,
+                            and the making of this site became a project all on its own--no fill-in-the-blank templates, no borrwed designs, no guides
+                            followed down to the step.
                         </p>
                         <p>
                             This site was created using the Django framework, some Python logic, HTML/CSS layout, React.js page content, and a MySQL
-                            database, all of which I've taught myself to varying degrees throughout my time in college and beyond. My brain is a sponge
-                            and I am hugely eager for any opportunity to develop these skills professionally.
+                            database, all of which I've taught myself to varying degrees throughout my time in college and beyond. Though it's a decent 
+                            start, I am immensely eager for the opportunity to develop these skills professionally.
                         </p>
                         <p>
                             Feel free to explore, register an account, drop a comment, and reach out with questions, comments and suggestions.
