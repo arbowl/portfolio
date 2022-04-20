@@ -212,48 +212,69 @@ Mobile Portrait CSS
 */
 
 @media screen and (max-width: 1000px) {
+  html {
+    background-color: #1a1a1a;  background: 
+      linear-gradient(-45deg, #00000000 0, #00000000 75%, #1a1a1a 75%, #1a1a1a 100%), 
+      linear-gradient(45deg, #1a1a1a 0, #1a1a1a 25%, #8c8c8c00 25%, #eeeeee00 100%), 
+      linear-gradient(-45deg, #1a1a1a 0, #1a1a1a 25%, #00000000 25%, #00000000 100%), 
+      linear-gradient(45deg, #00000000 0, #00000000 75%, #1a1a1a 75%, #1a1a1a 100%), #201f1f;
+    background-position: 50% 50%;
+    background-size: 75px 75px;
+  }
+  
   .header {
     top: 0;
     left: 0;
     right: 0;
-    height: 10%;
+    height: 11%;
     overflow: hidden;
     background-color: #970c10;
     padding: 20px 10px;
     border-bottom: 1px solid #bfcad0;
     border-radius: 6px;
     position: fixed;
-    box-shadow: 2px 2px rgb(17, 17, 17);
-    font-size: 25px;
+    box-shadow: 0 0 2px 4px #111111;
+    z-index: 5;
   }
-
-    .header p {
-      font-family: 'Lucida Sans';
-      font-size: 32px;
-      float: left;
-      margin-top: 20px;
-      margin-left: 30px;
-      color: #bfcad0;
+  
+    .header-right {
+      margin-right: 1%;
+      margin-top: 0%;
+      float: right;
     }
-
+    
     .header a {
+      float: right;
       color: #bfcad0;
       text-align: center;
-      padding: 20px;
-      margin-top: 10%;
+      padding: 30px;
+      margin-top: 0%;
+      margin-right: 10px;
       text-decoration: none;
-      font-size: 28px;
+      font-size: 38px;
       line-height: 5px;
       border-radius: 4px;
       background-color: #ce3e4383;
-      float: right;
-      align-items: right;
+      position: relative;
     }
-
+  
+    .header p {
+      font-family: 'Lucida Sans';
+      font-size: 42px;
+      float: left;
+      margin-top: 5px;
+      margin-left: 2%;
+      color: #bfcad0
+    }
+    
+    .header a:hover {
+      background-color: #3e3e3e;
+    }
+  
     .header img {
       border-radius: 50%;
       float: left;
-      margin-left: 4%;
+      margin-left: 0%;
       border: 1px solid #333333;
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
@@ -262,92 +283,147 @@ Mobile Portrait CSS
       transform: translate3d(0, 0, 0);
       -webkit-transform: translate3d(0, 0, 0);
     }
-
+  
     #welcome {
       margin-top: 1%;
-      margin-right: 5%;
-      font-size: 30px;
-      float: right;
-    }
-
-  body {
-    font-size: 25px;
-    color:#bfcad0;
-    background-color: #2e303e;
-    height: 83%;
-    width: 100%;
-    top: 23%;
-    left: 72%;
-  }
-
-  .w3-sidebar.w3-bar-block.w3-light-grey.w3-card {
-    width: 20%;
-    height: 82.8%;
-    padding-top: 1%;
-    border-radius: 2px;
-    background-color: rgb(218, 230, 236) !important;
-  }
-
-    #app {
-      float: left;
-      height: 100%;
-      width: 50%;
-      margin-top: 20px;
-      margin-left: /*210px*/25%;
-      margin-bottom: 30%;
-      padding-bottom: 1%;
-      overflow: auto;
-      padding-right: 15px;
-    }
-
-    .postbox {
-      width: 24%;
-      height: 50%;
-      margin-left: 76.3%;
-      padding-top: 5px;
-      padding-left: 2px;
-      padding-right: 2px;
-      margin-top: 90%;
+      margin-left: 60%;
+      font-size: 38px;
       position: absolute;
-      color: #bfcad0;
     }
-    
-      .postbox hr {
-        margin-right: 4%;
-        color:#bfcad0;
-        filter: blur(1px);
-      }
-    
-      .postbox button {
-        transform: translateX(50%);
-        background: #970c10;
-        border: #970c10;
-        color: #bfcad0;
-        border-radius: 15%;
-        text-align: center;
-        font-size: 16px;
-        padding: 10px;
-        margin-left: 25%;
-        margin-top: 5px;
-      }
-    
-      .postbox button:hover {
-        background-color: #ce3e4383;
-      }
-    
-      .delete {
-        color: #0000EE;
-      }
-
-    .vertical-line {
-      border-left: 1px solid #bfcad0;
-      height: 80%;
-      display: inline-block;
-      margin-left: 20px;
-      margin-top: 12px;
+  
+  body {
+    color: #bfcad0;
+    background-color: #292333;
+    height: 90%;
+    width: 100%;
+    top: 22%;
+    left: 72%;
+    bottom: 0px;
+    margin-left: -72%;
+    margin-top: -20%;
+    -moz-box-shadow: 0 0 10px 15px #111111;
+    -webkit-box-shadow: 0 0 10px 15px #111111;
+    box-shadow: 0 0 10px 15px #111111;
+    position: fixed;
+    border: 1px solid #bfcad0;
+    border-radius: 3px;
+  }
+  
+  .container-custom {
+    width: 99%;
+    height: 98%;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .w3-sidebar.w3-bar-block.w3-light-grey.w3-card {
+    width: 15%;
+    height: 100%;
+    padding-top: 3%;
+    margin-top: 0%;
+    background-color: rgb(218, 230, 236) !important;
+    box-shadow: 3px 3px rgb(17, 17, 17);
+    overflow: hidden;
+    font-size: 22px;
+  }
+  
+  #links {
+    margin-top: 200%;
+    font-size: 18px;
+  }
+  
+  #servers a:hover {
+    background: none;
+  }
+  
+  #copyright {
+    font-size: 12px;
+    margin-left: 15%;
+    margin-top: 30%;
+  }
+  
+  .sidebar {
+    width: 15%;
+    float: left;
+    overflow: hidden;
+  }
+  
+  #app {
+    float: left;
+    height: 100%;
+    width: 60%;
+    margin-top: 1%;
+    margin-left: 15%;
+    margin-bottom: 30%;
+    padding-bottom: 1%;
+    overflow: auto;
+    padding-right: 15px;
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+  
+  #updates {
+    float: right;
+    width: 23%;
+    margin-top: 1%;
+    padding-left: 10px;
+    height: 65%;
+    overflow: auto;
+    z-index: 2;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .vertical-line {
+    border-left: 1px solid #bfcad0;
+    height: 85%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 12px;
+    filter: blur(1px);
+    position: fixed;
+  }
+  
+  .postbox {
+    width: 24%;
+    height: 50%;
+    margin-left: 76.3%;
+    padding-top: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-top: 100%;
+    position: absolute;
+    color: #bfcad0;
+  }
+  
+    .postbox hr {
+      margin-right: 4%;
+      color:#bfcad0;
       filter: blur(1px);
-      position: fixed;
     }
-      
+  
+    .postbox button {
+      transform: translateX(50%);
+      background: #970c10;
+      border: #970c10;
+      color: #bfcad0;
+      border-radius: 15%;
+      text-align: center;
+      font-size: 16px;
+      padding: 10px;
+      margin-left: 25%;
+      margin-top: 10px;
+      border: 1px solid #bfbfbf;
+    }
+  
+    .postbox button:hover {
+      background-color: #ce3e43;
+    }
+  
+    .delete {
+      color: #0000EE;
+    }
+  
+  h4 {
+    text-align: center;
+  }
 }
-

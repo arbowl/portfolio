@@ -81,7 +81,7 @@
     }
 
     #expand-1:checked + .desc1 {
-        max-height: 100%;
+        max-height: 200%;
         max-width: 100%;
         border-radius: 2%;
     }
@@ -98,7 +98,7 @@
     }
 
     #expand-2:checked + .desc2 {
-        max-height: 100%;
+        max-height: 200%;
         max-width: 100%;
         border-radius: 2%;
     }
@@ -115,7 +115,7 @@
     }
 
     #expand-3:checked + .desc3 {
-        max-height: 100%;
+        max-height: 200%;
         max-width: 100%;
         border-radius: 2%;
     }
@@ -132,7 +132,7 @@
     }
     
     #expand-4:checked + .desc4 {
-        max-height: 100%;
+        max-height: 200%;
         max-width: 100%;
         border-radius: 2%;
     }
@@ -149,7 +149,7 @@
     }
         
     #expand-5:checked + .desc5 {
-        max-height: 100%;
+        max-height: 200%;
         max-width: 100%;
         border-radius: 2%;
     }
@@ -184,6 +184,10 @@
 }
 
 @media screen and (max-width: 1000px) {
+    #portfolio p {
+        font-size: 22px;
+    }
+
     #portfolio-mobile{
         margin-top: 15%;
     }
@@ -201,5 +205,12 @@
     #philips-img {
         width: 50%;
         height: auto;
+    }
+
+    #portfolio-description {
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 10px;
+        overflow: auto;
     }
 }

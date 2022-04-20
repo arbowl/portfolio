@@ -66,11 +66,23 @@
         width: 100%;
         height: auto;
         display: block;
-        margin-left: 10%;
+        margin-left: 23%;
     }
 
     #contact-text {
         width: 100%;
         display: block;
     }
+
+        #contact-text h5 {
+            font-size: 32px;
+        }
+
+        #contact-text h6 {
+            font-size: 32px;
+        }
+
+        #contact-text p {
+            font-size: 28px;
+        }
 }

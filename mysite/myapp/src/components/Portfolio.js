@@ -17,7 +17,7 @@ export default class Portfolio extends Component {
 
     render() {
         return (
-            <div>
+            <div id="portfolio">
                 <Grid container spacing={12} alignItems="center" justifyContent="left">
                     <Grid item xs={2}>
                         <Typography variant="h4">Portfolio</Typography>
@@ -62,7 +62,9 @@ export default class Portfolio extends Component {
                         <p>
                             For the software, I used the open-source PyGame module to write a Python app which presented the user with a GUI 
                             that allowed them to choose pre-determined time spans and a numberpad to input their own time. Both the
-                            hardware and software incorporated design choices 
+                            hardware and software incorporated design choices which took into account potential developmental disabilities
+                            of the people using them, such as muted colors, durability, and accidental reset prevention (the user must
+                            press "Reset" or "Menu" three times to confirm, with an indicator displaying progress).
                         </p>
                     </div>
                 </div>
@@ -130,7 +132,7 @@ export default class Portfolio extends Component {
                         </p>
                         <a href="https://support.mozilla.org/en-US/products/firefox/privacy-and-security">Firefox Privacy and Security</a>
                         <p>
-                            The last big change I made was changing my OS from Windows to Fedora, a Linux-based OS which doesn't send My
+                            The last big change I made was changing my OS from Windows to Fedora, a Linux-based OS which doesn't send my
                             data to Microsoft and which I have much more control over in order to protect what data is being broadcasted
                             and who it is going to.
                         </p>

@@ -42,3 +42,52 @@
 #default-p {
     all: unset;
 }
+
+@media screen and (max-width: 1000px) {
+    #default p {
+        text-indent: 40px;
+        font-size: 20px;
+    }
+    
+    #default hr {
+        filter: blur(1px);
+    }
+    
+    #default-container {
+        width: 100%;
+        margin: auto;
+    }
+    
+    #default-text {
+        width: 100%;
+        clear: both;
+    }
+    
+    #default-img {
+        width: 100%;
+        display: inline-block;
+        clear: both;
+        box-shadow: inset 0px 0px 100px 100px #292333;
+    }
+    
+        #default-img img {
+            height: 300px;
+            width: 300px;
+            margin-top: 20px;
+            margin-left: 26%;
+            border-radius: 20px;
+            border: 2px double #bfcad0;
+        }
+    
+        #default-img p {
+            text-align: center;
+        }
+    
+    #default-clr {
+        clear: both;
+    }
+    
+    #default-p {
+        all: unset;
+    }
+}
