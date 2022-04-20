@@ -445,6 +445,7 @@ Mobile Portrait CSS
   #updates {
     width: 23%;
     height: 65%;
+    padding-top: 40px;
   }
   
   .postbox {

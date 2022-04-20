@@ -18,8 +18,8 @@ export default class Default extends Component {
                 <div id="default-container">
                     <div id="default-text">
                         <p>I am a 2021 graduate of UMass Lowell with a bachelor's degree in Computer Engineering. I wanted a place to collect my projects,
-                            and the making of this site became a project all on its own--no fill-in-the-blank templates, no borrwed designs, no guides
-                            followed down to the step.
+                            and the making of this site became a project all on its own--no fill-in-the-blank templates, no borrowed designs, no frameworks
+                            copied from guides.
                         </p>
                         <p>
                             This site was created using the Django framework, some Python logic, HTML/CSS layout, React.js page content, and a MySQL
