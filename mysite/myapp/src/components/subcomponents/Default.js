@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Typography } from "@material-ui/core";
+import { Tooltip, Grid, Typography, ButtonGroup, Button } from "@material-ui/core";
 import styles from "./default.css";
 import me from "../../../static/frontend/itsme.png";
 
@@ -29,6 +29,7 @@ export default class Default extends Component {
                         <p>
                             Feel free to explore, register an account, drop a comment, and reach out with questions, comments and suggestions.
                         </p>
+                        <hr></hr>
                     </div>
                     <div id="default-img">
                         <img src={me}></img>
@@ -38,12 +39,21 @@ export default class Default extends Component {
                     </div>
                     <div id="default-clr"></div>
                 </div>
-                <h2>Navigation:</h2>
-                <p id="default-p"><b>Resume: </b> My resume to date and some supplementary info</p><br></br>
-                <p id="default-p"><b>Portfolio:</b> School/career/personal projects showing the development of my technical skills</p><br></br>
-                <p id="default-p"><b>Photos:</b> I don't use social media much, so this is a place for me to show off some of my photos</p><br></br>
-                <p id="default-p"><b>Calendar:</b> An online planner for myself to keep track of what I'm up to and what's coming up</p><br></br>
-                <p id="default-p"><b>Servers:</b> File hosting for the multiplayer servers I host for my friends</p><br></br>
+                <Grid container spacing={12} alignItems="center" justifyContent="center">
+                    <Grid item xs={12}>
+                        <Typography variant="h4">Navigation:</Typography>
+                    </Grid>
+                
+                    <Grid item xs={12} align="center">
+                        <ButtonGroup variant="contained" size="large" aria-label="large outlined button group">
+                            <Tooltip title="A place for my resume and endorsements" placement="top"><Button href="/resume">Resume</Button></Tooltip>
+                            <Button sx={{m: 1}}>Portfolio</Button>
+                            <Button>Photos</Button>
+                            <Button>Calendar</Button>
+                            <Button>Servers</Button>
+                        </ButtonGroup>
+                    </Grid>
+                </Grid>
             </div>
         );
     }

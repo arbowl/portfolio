@@ -3,14 +3,18 @@
 {% block title %}View Files{% endblock %}
 {% block content %}
 <h1>File Uploads</h1>
+<hr id="divider" />
 {% for item in file_list %}
 {% if forloop.counter <= 4 %}
     <li>
         <p>"{{ item.title }}" from {{ item.date }}</p>
-        <a href="{{ item.file.url }}" download><button>Click here to download {{item.title}}</button></a>
+        <a href="{{ item.file.url }}" download><button>Click here to download: {{item.title}}</button></a>
         <a href="{% url 'delete_file' item.id %}">{% if user.is_authenticated %}<button id="delete"><i>Delete File</i></button></a>{% endif %}
         <br></br>
     </li>
 {% endif %}
+
+{% empty %}
+<p id="no-files"><b>No files to display.</b> Log in to upload files to the server!</p>
 {% endfor %}
 {% endblock %}

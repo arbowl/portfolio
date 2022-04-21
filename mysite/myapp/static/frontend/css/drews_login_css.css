@@ -34,20 +34,15 @@ label {
   color: #000;
 }
 
-p {
-  color: #970c10;
-}
-
-button {
+.login-form button {
   font-family: "Lato", sans-serif;
-  text-transform: uppercase;
   outline: 0;
   background: #970c10;
   width: 100%;
   border: 0;
   padding: 15px;
   color: #bfcad0;
-  font-size: 14px;
+  font-size: 16px !important;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
@@ -88,8 +83,9 @@ button:hover {
 }
 
 li {
-  color: #970c10;
+  color: #414141;
   list-style-type: none;
+  font-size: 12px;
 }
 
 input {
@@ -105,7 +101,8 @@ input {
 }
 
 span {
-  color: #970c10;
+  color: #414141;
+  font-size: 12px;
 }
 
 .action input {
@@ -143,5 +140,13 @@ span {
 	direction: rtl;
 	padding: 2px 2px 2px 25px;
 	background-position: left center;
-  
+}
+
+#divider {
+  filter: blur(1px);
+  border-top: 1px solid #111111;
+}
+
+#no-files {
+  color: #111111;
 }
