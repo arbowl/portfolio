@@ -1,7 +1,27 @@
 import React, { Component } from "react";
-import { Tooltip, Grid, Typography, ButtonGroup, Button } from "@material-ui/core";
+import {
+        Accordion,
+        AccordionSummary,
+        AccordionDetails,
+        Button,
+        Typography,
+        Divider,
+        Grid,
+        Card,
+        CardActionArea,
+        CardActions,
+        CardContent,
+        CardMedia, 
+        BottomNavigation,
+        BottomNavigationAction
+    } from "@material-ui/core";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import styles from "./default.css";
 import me from "../../../static/frontend/itsme.png";
+import { Forward, SettingsOverscanOutlined } from "@material-ui/icons";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import CodeIcon from '@material-ui/icons/Code';
 
 
 export default class Default extends Component {
@@ -12,8 +32,8 @@ export default class Default extends Component {
     render() {
         return (
             <div id="default">
-                <Typography variant="h1">Hello,</Typography>
-                <h2>I'm Drew Bowler! Engineer, Programmer, and Problem-Solver.</h2>
+                <Typography variant="h2">Hello,</Typography>
+                <h2>I'm Drew Bowler! Engineer, Programmer, and Developer.</h2>
                 <hr></hr>
                 <div id="default-container">
                     <div id="default-text">
@@ -27,7 +47,7 @@ export default class Default extends Component {
                             start, I am immensely eager for the opportunity to develop these skills professionally.
                         </p>
                         <p>
-                            Feel free to explore, register an account, drop a comment, and reach out with questions, comments and suggestions.
+                            Please feel free to explore and leave a comment!
                         </p>
                         <hr></hr>
                     </div>
@@ -39,19 +59,24 @@ export default class Default extends Component {
                     </div>
                     <div id="default-clr"></div>
                 </div>
+                <br />
+                <br />
+                <br />
                 <Grid container spacing={12} alignItems="center" justifyContent="center">
-                    <Grid item xs={12}>
-                        <Typography variant="h4">Navigation:</Typography>
+                    <Grid item xs={3} align="right">
+                        <Button href="https://linkedin.com/in/drewbowler" variant="contained" size="large" startIcon={<LinkedInIcon />}>LinkedIn</Button>
                     </Grid>
-                
-                    <Grid item xs={12} align="center">
-                        <ButtonGroup variant="contained" size="large" aria-label="large outlined button group">
-                            <Tooltip title="A place for my resume and endorsements" placement="top"><Button href="/resume">Resume</Button></Tooltip>
-                            <Button sx={{m: 1}}>Portfolio</Button>
-                            <Button>Photos</Button>
-                            <Button>Calendar</Button>
-                            <Button>Servers</Button>
-                        </ButtonGroup>
+                    <Grid item xs={1}>
+                        <Divider orientation="vertical" flexItem />
+                    </Grid>
+                    <Grid item xs={3} align="center">
+                        <Button href="https://github.com/arbowl" variant="contained" size="large" startIcon={<GitHubIcon />}>GitHub</Button>
+                    </Grid>
+                    <Grid item xs={1}>
+                        <Divider orientation="vertical" flexItem />
+                    </Grid>
+                    <Grid item xs={3} align="left">
+                        <Button href="https://github.com/arbowl/portfolio" variant="contained" size="large" startIcon={<CodeIcon />}>Source Code</Button>
                     </Grid>
                 </Grid>
             </div>

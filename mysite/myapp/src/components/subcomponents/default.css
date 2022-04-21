@@ -14,6 +14,7 @@
 #default-text {
     width: 55%;
     float: left;
+    padding-right: 10px;
 }
 
 #default-img {
@@ -97,7 +98,7 @@
         width: 100%;
         clear: both;
     }
-    
+
     #default-img {
         width: 100%;
         display: inline-block;

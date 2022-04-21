@@ -3,7 +3,7 @@ html {
     linear-gradient(-45deg, #00000000 0, #00000000 75%, #1a1a1a 75%, #1a1a1a 100%), 
     linear-gradient(45deg, #1a1a1a 0, #1a1a1a 25%, #8c8c8c00 25%, #eeeeee00 100%), 
     linear-gradient(-45deg, #1a1a1a 0, #1a1a1a 25%, #00000000 25%, #00000000 100%), 
-    linear-gradient(45deg, #00000000 0, #00000000 75%, #1a1a1a 75%, #1a1a1a 100%), #201f1f;
+    linear-gradient(45deg, #00000000 0, #00000000 75%, #1a1a1a 75%, #1a1a1a 100%), #1d1d1d;
   background-position: 50% 50%;
   background-size: 75px 75px;
 }
@@ -16,10 +16,8 @@ html {
   overflow: hidden;
   background-color: #970c10;
   padding: 20px 10px;
-  border-bottom: 1px solid #bfcad0;
   border-radius: 6px;
   position: fixed;
-  box-shadow: 0 0 2px 4px #111111;
   z-index: 5;
 }
 
@@ -32,21 +30,19 @@ html {
     color: #bfcad0;
     text-align: center;
     padding: 15px;
-    margin-top: 1%;
-    margin-right: 10px;
+    margin-top: 1.5%;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 5px;
     border-radius: 4px;
-    background-color: #ce3e4383;
   }
 
   .header p {
     font-family: 'Lucida Sans';
-    font-size: 42px;
+    font-size: 50px;
     float: left;
     margin-top: 5px;
-    margin-left: 2%;
+    margin-left: 15%;
     color: #bfcad0
   }
   
@@ -54,23 +50,10 @@ html {
     background-color: #3e3e3e;
   }
 
-  .header img {
-    border-radius: 50%;
-    float: left;
-    margin-left: 15.5%;
-    border: 1px solid #333333;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    transform: translate3d(0, 0, 0);
-    -webkit-transform: translate3d(0, 0, 0);
-  }
-
   #welcome {
-    margin-top: 1%;
+    margin-top: 1.2%;
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 24px;
     float: right;
   }
 
@@ -86,9 +69,9 @@ body {
   margin-top: -18%;
   -moz-box-shadow: 0 0 10px 15px #111111;
   -webkit-box-shadow: 0 0 10px 15px #111111;
-  box-shadow: 0 0 10px 15px #111111;
+  box-shadow: 0 0 115px 115px #111111;
   position: fixed;
-  border: 1px solid #bfcad0;
+
   border-radius: 3px;
 }
 
@@ -111,7 +94,7 @@ body {
 }
 
 #links {
-  margin-top: 200%;
+  margin-top: 250%;
 }
 
 #servers a:hover {
@@ -134,7 +117,7 @@ body {
   float: left;
   height: 100%;
   width: 60%;
-  margin-top: 1%;
+  margin-top: 1.5%;
   margin-left: 15%;
   margin-bottom: 30%;
   padding-bottom: 2%;
@@ -145,12 +128,27 @@ body {
 #updates {
   float: right;
   width: 23%;
-  margin-top: 1%;
   padding-left: 10px;
-  height: 65%;
+  height: 57%;
+  margin-top: -1%;
   overflow: auto;
   z-index: 2;
   font-family: 'Roboto', sans-serif;
+  background: #1d1824;
+  border-radius: 8px;
+  border: 1px solid #3e354d;
+}
+
+#social-feed {
+  text-indent: 6.5%;
+  margin-left: 6.5%;
+  padding-top: 20px;
+}
+
+#social-hr {
+  color:#bfcad0;
+  filter: blur(1px);
+  margin-left: 2%;
 }
 
 .vertical-line {
@@ -167,13 +165,16 @@ body {
   width: 24%;
   height: 50%;
   margin-left: 76.3%;
-  padding-top: 5px;
   padding-left: 2px;
   padding-right: 2px;
-  margin-top: 38%;
+  margin-top: 33.5%;
   position: absolute;
   color: #bfcad0;
 }
+
+  .postbox h5 {
+    margin-top: -1%;
+  }
 
   .postbox hr {
     margin-right: 4%;
@@ -182,17 +183,21 @@ body {
   }
 
   .postbox button {
-    transform: translateX(50%);
+    font-family: "Lato", sans-serif;
+    outline: 0;
     background: #970c10;
-    border: #970c10;
+    width: 96.5%;
+    border: 0;
+    padding: 15px;
     color: #bfcad0;
-    border-radius: 15%;
+    font-size: 15px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    margin-top: 3%;
+    display: inline-block;
     text-align: center;
-    font-size: 16px;
-    padding: 10px;
-    margin-left: 25%;
-    margin-top: 10px;
-    border: 1px solid #bfbfbf;
+    text-decoration: none;
   }
 
   .postbox button:hover {
@@ -200,14 +205,24 @@ body {
   }
 
   .postbox input {
-    border-radius: 8px;
     width: 82%;
+    background-color: #1d1824;
+    border-radius: 3px;
+    border: 1px solid #bfcad0;
+    border-right: none;
+    border-left: none;
+    color: #bfcad0;
   }
 
   .postbox textarea {
     resize: none;
-    border-radius: 8px;
+    border-radius: 3px;
     width: 97%;
+    border: 1px solid #bfcad0;
+    border-right: none;
+    border-left: none;
+    background-color: #1d1824;
+    color: #bfcad0;
   }
 
   .delete {
@@ -248,7 +263,7 @@ Mobile Portrait CSS
     .header a {
       float: right;
       padding: 15px;
-      margin-top: 5%;
+      margin-top: 10%;
       margin-right: 10px;
       font-size: 22px;
       line-height: 5px;
@@ -301,6 +316,16 @@ Mobile Portrait CSS
       padding-bottom: 10%;
     }
 
+    #social-feed {
+      text-indent: 4%;
+      margin-left: 4%;
+      margin-top: 1%;
+    }
+    
+    #social-hr {
+      border: none;
+    }
+
     #updates {
       padding-top: 20px;
       height: 25%;
@@ -309,6 +334,10 @@ Mobile Portrait CSS
     .postbox {
       margin-top: 10%;
     }
+
+      .postbox button {
+        margin-left: -1%;
+      }
 
     #links {
       margin-top: 0%;
@@ -353,7 +382,7 @@ Mobile Portrait CSS
     .header a {
       float: right;
       padding: 30px;
-      margin-top: 0%;
+      margin-top: 1%;
       margin-right: 10px;
       font-size: 38px;
       line-height: 5px;
@@ -447,12 +476,23 @@ Mobile Portrait CSS
     padding-right: 15px;
     padding-left: 30px;
     padding-top: 40px;
+    z-index: 6;
+  }
+
+  #social-feed {
+    text-indent: 4%;
+    margin-left: 4%;
+    margin-top: 5%;
+  }
+  
+  #social-hr {
+    border: none;
   }
   
   #updates {
     width: 23%;
     height: 65%;
-    padding-top: 40px;
+    padding-top: 20px;
   }
   
   .postbox {
