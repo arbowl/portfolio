@@ -52,7 +52,7 @@ export default class Default extends Component {
                         <p>
                             Please feel free to explore and leave a comment!
                         </p>
-                        <hr></hr>
+                        <hr />
                     </div>
                     <div id="default-img">
                         <Card>

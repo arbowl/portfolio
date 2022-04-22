@@ -1,9 +1,9 @@
 html {
-  background-color: #1a1a1a;  background: 
-    linear-gradient(-45deg, #00000000 0, #00000000 75%, #1a1a1a 75%, #1a1a1a 100%), 
-    linear-gradient(45deg, #1a1a1a 0, #1a1a1a 25%, #8c8c8c00 25%, #eeeeee00 100%), 
-    linear-gradient(-45deg, #1a1a1a 0, #1a1a1a 25%, #00000000 25%, #00000000 100%), 
-    linear-gradient(45deg, #00000000 0, #00000000 75%, #1a1a1a 75%, #1a1a1a 100%), #1d1d1d;
+  background-color: #e2e2e2;  background: 
+    linear-gradient(-45deg, #00000000 0, #00000000 75%, #e2e2e2 75%, #e2e2e2 100%), 
+    linear-gradient(45deg, #e2e2e2 0, #e2e2e2 25%, #8c8c8c00 25%, #eeeeee00 100%), 
+    linear-gradient(-45deg, #e2e2e2 0, #e2e2e2 25%, #00000000 25%, #00000000 100%), 
+    linear-gradient(45deg, #00000000 0, #00000000 75%, #e2e2e2 75%, #e2e2e2 100%), #e7e7e7;
   background-position: 50% 50%;
   background-size: 75px 75px;
 }
@@ -16,7 +16,6 @@ html {
   overflow: hidden;
   background-color: #970c10;
   padding: 20px 10px;
-  border-radius: 6px;
   position: fixed;
   z-index: 5;
 }
@@ -35,14 +34,14 @@ html {
     font-size: 24px;
     line-height: 5px;
     border-radius: 4px;
+    font-family: 'Roboto';
   }
 
   .header p {
-    font-family: 'Lucida Sans';
+    font-family: 'Roboto';
     font-size: 50px;
     float: left;
-    margin-top: 5px;
-    margin-left: 15%;
+    margin-left: 14%;
     color: #bfcad0
   }
   
@@ -59,7 +58,7 @@ html {
 
 body {
   color: #bfcad0;
-  background-color: #292333;
+  background-color: #16131b;
   height: 90%;
   width: 75%;
   top: 48%;
@@ -67,11 +66,10 @@ body {
   bottom: 0px;
   margin-left: -707px;
   margin-top: -18%;
-  -moz-box-shadow: 0 0 10px 15px #111111;
-  -webkit-box-shadow: 0 0 10px 15px #111111;
-  box-shadow: 0 0 115px 115px #111111;
+  box-shadow: 0 0 20px 20px #111111;
   position: fixed;
-
+  font-family: 'Arial';
+  font-size: 16px;
   border-radius: 3px;
 }
 
