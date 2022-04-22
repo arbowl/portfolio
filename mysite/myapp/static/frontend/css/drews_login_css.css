@@ -82,6 +82,23 @@ button:hover {
   background: #ce3e43;
 }
 
+#hr {
+  border-top: 1px solid #292333 !important;
+  filter: blur(1px);
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+#new-users {
+  color: #000;
+  text-align: center;
+}
+
+  #new-users a{
+    color: #970c10;
+    text-decoration: underline;
+  }
+
 li {
   color: #414141;
   list-style-type: none;
