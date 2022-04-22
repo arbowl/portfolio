@@ -7,8 +7,19 @@ import {
         Grid,
         Accordion,
         AccordionSummary,
-        AccordionDetails
+        AccordionDetails,
+        Card,
+        CardMedia,
+        CardContent
     } from "@material-ui/core";
+
+import FolderSharedIcon from '@material-ui/icons/FolderShared';
+import AccessTimeIcon from '@material-ui/icons/AccessTime';
+import CameraIcon from '@material-ui/icons/Camera';
+import SecurityIcon from '@material-ui/icons/Security';
+import SignalWifi0BarIcon from '@material-ui/icons/SignalWifi0Bar';
+import SsidChartIcon from '@mui/icons-material/SsidChart';
+
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import orangebox from "../../static/frontend/orangebox.png";
 import before_img from "../../static/frontend/before.jpg";
@@ -45,23 +56,42 @@ export default class Portfolio extends Component {
                         aria-controls="panel1a-content"
                         id="panel1a-header"
                     >
-                        <Typography variant="h5">Portfolio Website - April 2022</Typography>
+                        <FolderSharedIcon /><Typography variant="h5">Portfolio Website - April 2022</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <div>
-                            <img src={meta_img} width="100%"/>
-                            <p>
-                                I created my portfolio website to demonstrate the projects I've made and the skills I've acquired in a
-                                more interactive and demonstrative environment than my resume, and also as a personal challenge. In the
-                                making of this site, I learned: Django, Git CLI, React.js, MySQL, PostgreSQL, Docker, Heroku, and I
-                                strengthened my Python, HTML, CSS, and Javascript.
-                            </p>
-                            <a href="https://github.com/arbowl/portfolio" id="special-link">Website Repo</a>
-                            <p>
-                                Feel free to register, leave a comment, and let me know if something breaks, if something could be
-                                improved, or if the site doesn't render properly on one of your devices.
-                            </p>
-                        </div>
+                        <Grid container spacing={12}>
+                            <Grid item xs={12} align="center">
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardMedia
+                                        component="img"
+                                        height="500"
+                                        image="/static/frontend/meta.png"
+                                        alt="Front page"
+                                    />
+                                    <CardContent>
+                                        <Typography variant="body2" color="text.secondary">
+                                            The first revision of my website with CSS applied for the first time
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <br />
+                            </Grid>
+                            <Grid item xs={12}>
+                                <p>
+                                    I created my portfolio website to demonstrate the projects I've made and the skills I've acquired in a
+                                    more interactive and demonstrative environment than my resume, and also as a personal challenge. In the
+                                    making of this site, I learned: Django, Git CLI, React.js, MySQL, PostgreSQL, Docker, Heroku, and I
+                                    strengthened my Python, HTML, CSS, and Javascript.
+                                </p>
+                                <a href="https://github.com/arbowl/portfolio" id="special-link">Website Repo</a>
+                                <p>
+                                    Feel free to register, leave a comment, and let me know if something breaks, if something could be
+                                    improved, or if the site doesn't render properly on one of your devices.
+                                </p>
+                            </Grid>
+                        </Grid>
                     </AccordionDetails>
                 </Accordion>
                 <hr />
@@ -71,18 +101,25 @@ export default class Portfolio extends Component {
                         aria-controls="panel2a-content"
                         id="panel2a-header"
                     >
-                        <Typography variant="h5">Bridgewell Visual Timer - UML Capstone - May 2021</Typography>
+                        <AccessTimeIcon /><Typography variant="h5">Bridgewell Visual Timer - UML Capstone - May 2021</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Grid container spacing={12} alignItems="center" justifyContent="left">
                             <Grid item xs={12} align="center">
-                                <ReactPlayer
-                                    url="https://www.youtube.com/watch?v=boVc1fCbjv0"
-                                    controls={true}
-                                    height={"360px"}
-                                    width={"640px"}
-                                    playbackRate={2}
-                                />
+                                <Card sx={{ maxWidth: 400 }}>
+                                    <ReactPlayer
+                                        url="https://www.youtube.com/watch?v=boVc1fCbjv0"
+                                        controls={true}
+                                        height={"360px"}
+                                        width={"640px"}
+                                        playbackRate={2}
+                                    />
+                                    <CardContent>
+                                        <Typography variant="body2" color="text.secondary">
+                                            <i>A video demonstration of the Visual Timer and its main features</i>
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
                             </Grid>
                             <Grid item xs={12}>
                                 <a href="https://github.com/arbowl/Capstone-2020-2021" id="special-link">Visual Timer Repo</a>
@@ -116,12 +153,26 @@ export default class Portfolio extends Component {
                         aria-controls="panel3a-content"
                         id="panel3a-header"
                     >
-                        <Typography variant="h5">The Orange Box - Personal Cyberdeck - April 2021</Typography>
+                        <CameraIcon /><Typography variant="h5">The Orange Box - Personal Cyberdeck - April 2021</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Grid container spacing={12} alignItems="left" justifyContent="left">
                             <Grid item xs={12} align="center">
-                                <img src={orangebox} width="100%"/>
+                                <Card>
+                                    <CardMedia
+                                        component="img"
+                                        image="/static/frontend/orangebox.png"
+                                        alt="Front page"
+                                    />
+                                    <CardContent>
+                                        <Typography variant="body2" color="text.secondary">
+                                            <i>The "Orange Box" folded up, unfolded, and turned on</i>
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <br />
                             </Grid>
                             <Grid item xs={12} align="left">
                                 <p>
@@ -152,7 +203,7 @@ export default class Portfolio extends Component {
                         aria-controls="panel4a-content"
                         id="panel4a-header"
                     >
-                        <Typography variant="h5">Personal Cyber Privacy and Security - August 2020</Typography>
+                        <SecurityIcon /><Typography variant="h5">Personal Cyber Privacy and Security - August 2020</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Grid container spacing={12} alignItems="center" justifyContent="left">
@@ -199,12 +250,11 @@ export default class Portfolio extends Component {
                         aria-controls="panel5a-content"
                         id="panel5a-header"
                     >
-                        <Typography variant="h5">GSSI Motion Control Table - Spring 2020</Typography>
+                        <SignalWifi0BarIcon /><Typography variant="h5">GSSI Motion Control Table - Spring 2020</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Grid container spacing={12} alignItems="center" justifyContent="left">
                             <Grid item xs={12} align="left">
-                                <a href="https://github.com/arbowl/gssi" id="special-link">XY Table (Python) Repo</a>
                                 <p>
                                     Ground penetrating radar (GPR) works by sending and receiving radar waves into targets to non-destructively several
                                     what could be beyond the surface via the reflectviity of each substance it penetrates. Normally, GPR devices do not
@@ -223,9 +273,21 @@ export default class Portfolio extends Component {
                                     converted it to coordinates, sent it to the motors, then sent the timestamped position feedback data back to the Python
                                     script where it was collected and output as a .csv at the end.
                                 </p>
+                                <a href="https://github.com/arbowl/gssi" id="special-link">XY Table (Python) Repo</a>
                             </Grid>
-                            <Grid item xs={12}>
-                                <img src={diagram_img} id="diagram-img"></img>
+                            <Grid item xs={12} align="center">
+                                <Card>
+                                    <CardMedia
+                                        component="img"
+                                        image="/static/frontend/gssi_diagram.png"
+                                        alt="Front page"
+                                    />
+                                    <CardContent>
+                                        <Typography variant="body2" color="text.secondary">
+                                            <i>A high-level flowchart describing my project</i>
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
                             </Grid>
                             <Grid item xs={12}>
                                 <p>
@@ -243,21 +305,47 @@ export default class Portfolio extends Component {
                         aria-controls="panel6a-content"
                         id="panel6a-header"
                     >
-                        <Typography variant="h5">Philips Pogo Pin PCB Respin - Spring 2019</Typography>
+                        <SsidChartIcon /><Typography variant="h5">Philips Pogo Pin PCB Respin - Spring 2019</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                         <Grid container spacing={12} alignItems="center" justifyContent="center">
-                            <div id="portfolio-img">
-                                <img src={board_img} height="250px" width="250px"></img>
-                            </div>
-                            <div id="portfolio-description">
+                            <Grid item xs={4} align="center">
+                                <Card>
+                                    <CardMedia
+                                        component="img"
+                                        image="/static/frontend/board.jpg"
+                                        alt="My PCB"
+                                    />
+                                    <CardContent>
+                                        <Typography variant="body2" color="text.secondary">
+                                            <i>The final revision of my PCB</i>
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <br />
+                            </Grid>
+                            <Grid item xs={12}>
                                 <p>
                                     In 2019, when I began my co-op at Philips, a test interface was being examined because the signal path produced
                                     a lot of signal noise, requiring obfuscating software filters to try to isolate the signal of interest:
                                 </p>
-                                <Grid item xs={12}>
-                                    <img src={before_img} id="philips-img"></img>
-                                </Grid>
+                            </Grid>
+                            <Grid item xs={12} align="center">
+                                <Card>
+                                    <CardMedia
+                                        component="img"
+                                        image="/static/frontend/before.jpg"
+                                        alt="Before signal"
+                                    />
+                                    <CardContent>
+                                        <Typography variant="body2" color="text.secondary">
+                                            <i>The noisy signal from the old PCB</i>
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            </Grid>
                                 <p>
                                     My task was to find out which part of the test system was creating the noise. When I found it was a specific PCB,
                                     I realized it would be a great learning opportunity trying to figure the reason out. I spent the next few months
@@ -269,8 +357,19 @@ export default class Portfolio extends Component {
                                     only known by the engineers at Philips on the west coast, which slowed down engineers on the east coast when trying
                                     to create prototypes. Over the next few months, I created a replacement board that reduced signal noise by over 99.7%:
                                 </p>
-                                <Grid item xs={12}>
-                                    <img src={after_img} id="philips-img"></img>
+                                <Grid item xs={12} align="center">
+                                    <Card>
+                                        <CardMedia
+                                            component="img"
+                                            image="/static/frontend/after.jpg"
+                                            alt="After signal"
+                                        />
+                                        <CardContent>
+                                            <Typography variant="body2" color="text.secondary">
+                                                <i>The signal with reduced noise using my PCB</i>
+                                            </Typography>
+                                        </CardContent>
+                                    </Card>
                                 </Grid>
                                 <p>
                                     I spent my remaining time drafting the verification/validation/IQOQ documentation from scratch and leading a team
@@ -278,9 +377,8 @@ export default class Portfolio extends Component {
                                     their own test platforms. In 2021, Philips ultrasounds tested using my board hit hospitals for the first time.
                                 </p>
                                 <p>
-                                    My manager gave exceptional feedback to my co-op supervisor, which I quoted in <b>Resume &gt; Endorsements</b>.
+                                    My manager gave exceptional feedback to my co-op supervisor, which I quoted on my <a href="/resume">Resume</a> page.
                                 </p>
-                            </div>
                         </Grid>
                     </AccordionDetails>
                 </Accordion>

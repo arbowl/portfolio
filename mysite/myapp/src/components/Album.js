@@ -34,7 +34,7 @@ export default class Album extends Component {
               <Grid item xs={12}>
                 <Typography variant="h4">Photo Album <hr></hr></Typography>
               </Grid>
-                <ImageList sx={{ width: 800, height: 650 }}>
+                <ImageList sx={{ width: 800}}>
                 {itemData.map((item) => (
                     <ImageListItem key={item.img}>
                     <img

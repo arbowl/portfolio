@@ -39,7 +39,6 @@
 
 #endorsements {
     width: 45%;
-    margin-top: 2%;
     float: right;
     font-size: 14px;
 }
@@ -52,7 +51,7 @@
 
 #endorsements-header {
     text-align: center;
-    margin-top: -8%;
+    margin-top: -9%;
 }
 
 #resume-header {
