@@ -292,7 +292,7 @@ export default class Portfolio extends Component {
                             <Grid item xs={12}>
                                 <p>
                                     The table was a success and the team was able to release their new algorithm in production the following year. My
-                                    manager gave exceptional feedback in a LinkedIn endorsement, which I also quoted in <b>Resume &gt; Endorsements</b>.
+                                    manager gave exceptional feedback in a LinkedIn endorsement, which I also quoted my <a href="/resume"><u>Resume</u></a> page.
                                 </p>
                             </Grid>
                         </Grid>
@@ -377,7 +377,7 @@ export default class Portfolio extends Component {
                                     their own test platforms. In 2021, Philips ultrasounds tested using my board hit hospitals for the first time.
                                 </p>
                                 <p>
-                                    My manager gave exceptional feedback to my co-op supervisor, which I quoted on my <a href="/resume">Resume</a> page.
+                                    My manager gave exceptional feedback to my co-op supervisor, which I quoted on my <a href="/resume"><u>Resume</u></a> page.
                                 </p>
                         </Grid>
                     </AccordionDetails>
