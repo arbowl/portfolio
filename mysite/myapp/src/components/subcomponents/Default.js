@@ -67,8 +67,8 @@ export default class Default extends Component {
                                         Philips, 2019
                                     </Typography>
                                     <Typography variant="body2" color="textSecondary" component="p">
-                                        My last day of my co-op. My coworkers made me
-                                        a pipe cleaner crown and a golden stapler for a job well done
+                                        My last day of my co-op at Philips before returning post-graduation
+                                        in 2021
                                     </Typography>
                                 </CardContent>
                             </CardActionArea>
