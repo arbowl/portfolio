@@ -24,12 +24,8 @@
 }
 
     #default-img img {
-        height: 350px;
-        width: 350px;
-        margin-top: 20px;
-        margin-left: 6%;
-        border-radius: 20px;
-        border: 2px double #bfcad0;
+        height: 250px;
+        object-position: 0px 0px;
     }
 
     #default-img p {

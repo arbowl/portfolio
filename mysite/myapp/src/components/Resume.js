@@ -19,7 +19,7 @@ export default class Resume extends Component {
                     <p>
                         A major facet of my resume that I want to highlight is that I am a very capable learner. I learned every technology and skill listed 
                         in my co-ops on the job to drive my projects to success, and retained the skills for my next endeavor. I am teachable, I learn quickly,
-                        and I'm reliable. Be sure to check out <b>Portfolio</b> on the sidebar for in-depth looks at some of my projects listed here!
+                        and I'm reliable. Be sure to check out my <a href="/portfolio"><u>Portfolio</u></a>!
                     </p>
                 </div>
                 <hr></hr>
@@ -54,6 +54,7 @@ export default class Resume extends Component {
                         <u>- Manager, Philips Healthcare (UML Co-Op Evaluation)</u>
                     </p>
                 </div>
+                <br></br>
                 <a href={resume} download id="resume-link">Download Resume</a>
                 <br></br>
             </div>

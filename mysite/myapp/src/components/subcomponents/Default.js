@@ -23,11 +23,14 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import CodeIcon from '@material-ui/icons/Code';
 
+const     colorArray = [41,35,51];
 
 export default class Default extends Component {
     constructor(props) {
         super(props);
     }
+
+
 
     render() {
         return (
@@ -52,32 +55,107 @@ export default class Default extends Component {
                         <hr></hr>
                     </div>
                     <div id="default-img">
-                        <img src={me}></img>
-                        <p>
-                            <i>Philips 2019 Co-op, last day</i>
-                        </p>
+                        <Card>
+                            <CardActionArea>
+                                <CardMedia
+                                    component="img"
+                                    image= "/static/frontend/itsme.png"
+                                    title="Me"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        Philips, 2019
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p">
+                                        My last day of my co-op. My coworkers made me
+                                        a pipe cleaner crown and a golden stapler for a job well done
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
                     </div>
                     <div id="default-clr"></div>
                 </div>
                 <br />
-                <br />
-                <br />
                 <Grid container spacing={12} alignItems="center" justifyContent="center">
-                    <Grid item xs={3} align="right">
-                        <Button href="https://linkedin.com/in/drewbowler" variant="contained" size="large" startIcon={<LinkedInIcon />}>LinkedIn</Button>
+                    <Grid item xs={4} align="center">
+                        <Card>
+                            <CardActionArea>
+                                <CardMedia
+                                    component="img"
+                                    image="/static/frontend/linkedin_prof.png"
+                                    title="LinkedIn Profile"
+                                    height="120px"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        Join my network!
+                                    </Typography>
+                                    <Button
+                                        href="https://linkedin.com/in/drewbowler"
+                                        variant="contained"
+                                        color="primary"
+                                        startIcon={<LinkedInIcon />}
+                                        size="large"
+                                    >
+                                        LinkedIn
+                                    </Button>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
                     </Grid>
-                    <Grid item xs={1}>
-                        <Divider orientation="vertical" flexItem />
+                    <Grid item xs={4} align="center">
+                        <Card>
+                            <CardActionArea>
+                                <CardMedia
+                                    component="img"
+                                    image="/static/frontend/github_prof.png"
+                                    title="GitHub Profile"
+                                    height="120px"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        View my work!
+                                    </Typography>
+                                    <Button
+                                        href="https://github.com/arbowl"
+                                        variant="contained"
+                                        size="large"
+                                        startIcon={<GitHubIcon />}
+                                    >
+                                        GitHub
+                                    </Button>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
                     </Grid>
-                    <Grid item xs={3} align="center">
-                        <Button href="https://github.com/arbowl" variant="contained" size="large" startIcon={<GitHubIcon />}>GitHub</Button>
+                    <Grid item xs={4} align="center">
+                        <Card>
+                            <CardActionArea>
+                                <CardMedia
+                                    component="img"
+                                    image="/static/frontend/code_example.png"
+                                    title="Source Code"
+                                    height="120px"
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2">
+                                        Behind the scenes!
+                                    </Typography>
+                                    <Button
+                                        href="https://github.com/arbowl/portfolio"
+                                        variant="contained"
+                                        size="large"
+                                        color="secondary"
+                                        startIcon={<CodeIcon />}
+                                    >
+                                        Source
+                                    </Button>
+                                </CardContent>
+                            </CardActionArea>
+                        </Card>
                     </Grid>
-                    <Grid item xs={1}>
-                        <Divider orientation="vertical" flexItem />
-                    </Grid>
-                    <Grid item xs={3} align="left">
-                        <Button href="https://github.com/arbowl/portfolio" variant="contained" size="large" startIcon={<CodeIcon />}>Source Code</Button>
-                    </Grid>
+                        
                 </Grid>
             </div>
         );

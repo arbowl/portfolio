@@ -33,12 +33,10 @@
     "d3-dsv": "^3.0.1",
     "d3-time-format": "^4.1.0",
     "react-big-calendar": "^0.40.0",
-    "react-calendar": "^3.7.0",
     "react-date-time-picker-popup": "^1.0.3",
     "react-pdf": "^5.7.2",
     "react-player": "^2.10.0",
     "react-router-dom": "^6.3.0",
-    "react-stockcharts": "^0.7.8",
     "style-loader": "^3.3.1",
     "typeface-roboto": "^1.1.13"
   }

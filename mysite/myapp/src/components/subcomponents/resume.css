@@ -3,6 +3,7 @@
     width: 95% !important;
     height: auto !important;
     float: left;
+    padding-bottom: 15px;
 }
 
 #resume hr {
@@ -25,8 +26,6 @@
     text-align: center;
     text-decoration: none;
     justify-content: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
 }
 
 #resume-link:hover {
@@ -48,6 +47,7 @@
 #resume-header {
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: -1%;
 }
 
 #endorsements-header {
