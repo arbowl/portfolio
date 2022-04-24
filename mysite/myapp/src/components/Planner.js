@@ -8,12 +8,7 @@ import style from "./subcomponents/planner.css";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import moment from "moment";
 
-
 const localizer = momentLocalizer(moment);
-
-const myEventsList = [
-    { start: new Date(), end: new Date(), title: "Now" }
-];
 
 export default class Planner extends Component {
     constructor(props) {
@@ -23,9 +18,11 @@ export default class Planner extends Component {
     render() {
         return (
             <div className="App">
-                <h1>Calendar</h1>
-                <hr></hr>
                 <Grid container spacing={12}>
+                    <Grid item xs={12} align="center">
+                        <h1>Calendar</h1>
+                        <hr />
+                    </Grid>
                     <Grid item xs={12}>
                         <Calendar
                             localizer={localizer}
@@ -47,3 +44,26 @@ export default class Planner extends Component {
         );
     }
 }
+
+const myEventsList = [
+    {
+        start: new Date(),
+        end: new Date(),
+        title: "Now"
+    },
+    {
+        start: "2022-08-04 00:00:00",
+        end: "2022-08-04 23:59:59",
+        title: "My birthday"
+    },
+    {
+        start: "2022-04-27 00:00:00",
+        end: "2022-04-27 23:59:59",
+        title: "Tom Brennan's Birthday"
+    },
+    {
+        start: "2022-04-29 00:00:00",
+        end: "2022-04-29 23:59:59",
+        title: "Henry's Birthday"
+    }
+];

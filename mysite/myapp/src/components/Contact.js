@@ -3,7 +3,8 @@ import style from "./subcomponents/contact.css"
 import pfp from "../../static/frontend/headshot.jpg";
 import {
     Grid,
-    Typography
+    Typography,
+    Paper
 } from "@material-ui/core"
 
 
@@ -16,7 +17,7 @@ export default class Contact extends Component {
         return (
             <div id="contact">
                 <h1>Contact</h1>
-                <hr></hr>
+                <hr />
                 <div id="contact-container">
                     <div id="contact-img">
                         <img src={pfp} id="default-img"></img>
