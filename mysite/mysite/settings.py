@@ -54,7 +54,6 @@ INSTALLED_APPS = [
     'myapp.apps.MyappConfig',
     'widget_tweaks',
     'django.contrib.admin',
-    'storages',
 ]
 
 MIDDLEWARE = [
@@ -200,25 +199,3 @@ MEDIA_URL = 'media/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-S3_ENABLED = config('S3_ENABLED', cast=bool, default=False)
-LOCAL_SERVE_MEDIA_FILES = config('LOCAL_SERVE_MEDIA_FILES', cast=bool, default=not S3_ENABLED)
-
-if S3_ENABLED:
-    AWS_ACCESS_KEY_ID = config('BUCKETEER_AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = config('BUCKETEER_AWS_SECRET_ACCESS_KEY')
-    AWS_STORAGE_BUCKET_NAME = config('BUCKETEER_BUCKET_NAME')
-    AWS_S3_REGION_NAME = config('BUCKETEER_AWS_REGION')
-    AWS_DEFAULT_ACL = None
-    AWS_S3_SIGNATURE_VERSION = config('S3_SIGNATURE_VERSION', default='s3v4')
-    AWS_S3_ENDPOINT_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-    AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
-
-if not LOCAL_SERVE_MEDIA_FILES:
-    PUBLIC_MEDIA_DEFAULT_ACL = 'public-read'
-    PUBLIC_MEDIA_LOCATION = 'media/public'
-
-    MEDIA_URL = f'{AWS_S3_ENDPOINT_URL}/{PUBLIC_MEDIA_LOCATION}/'
-    DEFAULT_FILE_STORAGE = 'example.utils.storage_backends.PublicMediaStorage'
-
-
