@@ -1,4 +1,5 @@
 from django.urls import path, include
+from django.contrib import admin
 from . import views
 from .views import UploadView, CreatePostView, SignUpView
 from django.conf import settings
@@ -17,6 +18,7 @@ urlpatterns = [
     path('download/', views.DownloadListView, name="download"),
     path('accounts/', include('django.contrib.auth.urls')),
     path('signup/', SignUpView.as_view(), name="signup"),
+    path('admin/', admin.site.urls),
     path('delete/<post_id>', views.delete_post, name="delete"),
     path('delete_file/<file_id>', views.delete_file, name="delete_file"),
 ]

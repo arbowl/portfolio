@@ -9,7 +9,7 @@
     <li>
         <p>"{{ item.title }}" from {{ item.date }}</p>
         <a href="{{ item.file.url }}" download><button>Click here to download: {{item.title}}</button></a>
-        <a href="{% url 'delete_file' item.id %}">{% if user.is_authenticated %}<button id="delete"><i>Delete File</i></button></a>{% endif %}
+        <a href="{% url 'delete_file' item.id %}">{% if user.is_superuser %}<button id="delete"><i>Delete File</i></button></a>{% endif %}
         <br></br>
     </li>
 {% endif %}
