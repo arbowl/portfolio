@@ -15,6 +15,7 @@ import { Forward, SettingsOverscanOutlined } from "@material-ui/icons";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import CodeIcon from '@material-ui/icons/Code';
+import img01 from "../../../static/frontend/itsme.png";
 
 const     colorArray = [41,35,51];
 
@@ -50,7 +51,7 @@ export default class Default extends Component {
                             <CardActionArea>
                                 <CardMedia
                                     component="img"
-                                    image="../../static/frontend/itsme.png"
+                                    src="{% static 'frontend/itsme.png' %}"
                                     title="Me"
                                 />
                                 <CardContent>

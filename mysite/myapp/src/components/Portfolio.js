@@ -65,7 +65,7 @@ export default class Portfolio extends Component {
                                     <CardMedia
                                         component="img"
                                         height="500"
-                                        image="/static/frontend/meta.png"
+                                        image={`{meta_img}`}
                                         alt="Front page"
                                     />
                                     <CardContent>
