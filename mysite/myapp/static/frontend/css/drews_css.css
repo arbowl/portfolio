@@ -59,13 +59,13 @@ html {
 body {
   color: #bfcad0;
   background-color: #1f1a25;
-  height: 90%;
+  height: 92%;
   width: 75%;
   top: 48%;
   left: 50%;
   bottom: 0px;
   margin-left: -707px;
-  margin-top: -18%;
+  margin-top: -19%;
   box-shadow: 0 0 20px 20px #111111;
   position: fixed;
   font-family: 'Arial';
@@ -83,7 +83,7 @@ body {
 .w3-sidebar.w3-bar-block.w3-light-grey.w3-card {
   width: 10%;
   height: 100%;
-  padding-top: 1%;
+  padding-top: 1.5%;
   margin-top: 0%;
   background-color: rgb(218, 230, 236) !important;
   box-shadow: 3px 3px rgb(17, 17, 17);
@@ -115,7 +115,7 @@ body {
   float: left;
   height: 100%;
   width: 60%;
-  margin-top: 1.5%;
+  margin-top: 2.5%;
   margin-left: 15%;
   margin-bottom: 30%;
   padding-bottom: 5px;
@@ -127,7 +127,7 @@ body {
   float: right;
   width: 23%;
   padding-left: 10px;
-  height: 56%;
+  height: 55%;
   margin-top: -1%;
   overflow: auto;
   z-index: 2;
@@ -141,12 +141,13 @@ body {
   text-indent: 6.5%;
   margin-left: 6.5%;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #social-hr {
   color:#bfcad0;
   filter: blur(1px);
-  margin-left: 2%;
+
 }
 
 .vertical-line {
@@ -165,7 +166,7 @@ body {
   margin-left: 76.3%;
   padding-left: 2px;
   padding-right: 2px;
-  margin-top: 32.7%;
+  margin-top: 34.5%;
   position: absolute;
   color: #bfcad0;
 }
