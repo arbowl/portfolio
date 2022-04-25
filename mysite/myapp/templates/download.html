@@ -8,13 +8,18 @@
 {% if forloop.counter <= 4 %}
     <li>
         <p>"{{ item.title }}" from {{ item.date }}</p>
-        <a href="{{ item.file.url }}" download><button>Click here to download: {{item.title}}</button></a>
+        <a href="{{ item.file.url }}" download><button>Click here to download: {{ item.title }}</button></a>
         <a href="{% url 'delete_file' item.id %}">{% if user.is_superuser %}<button id="delete"><i>Delete File</i></button></a>{% endif %}
         <br></br>
     </li>
 {% endif %}
 
 {% empty %}
-<p id="no-files"><b>No files to display.</b> Log in to upload files to the server!</p>
+<p id="no-files"><b>No files to display.</b>
+    {% if user.is_authenticated %}
+        <a href="{% url 'upload' %}" id="login-link">Click here</a> to upload a file!</p>
+    {% else %}
+        Log in to upload files to the server!</p>
+    {% endif %}
 {% endfor %}
 {% endblock %}

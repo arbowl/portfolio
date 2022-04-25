@@ -32,6 +32,7 @@ class GamePost(models.Model):
         VALHEIM = 'VALHEIM', 'Valheim'
         MINECRAFT = 'MINECRAFT', 'Minecraft'
         MUSICBOT = 'MUSICBOT', 'MusicBot'
+        KEEPASSXC = 'KEEPASSXC', 'KeePassXC'
     game = models.CharField(max_length=100, choices=Game.choices, default=Game.VALHEIM)
     file = models.FileField()
 

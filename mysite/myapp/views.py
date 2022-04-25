@@ -63,8 +63,6 @@ class UploadView(CreateView):
 
 def DownloadListView(request):
     game_request = request.GET['game'].upper()
-    print(game_request)
     file_list = GamePost.objects.filter(game=game_request)
-    print(file_list)
     return render(request, 'download.html', {'file_list' : file_list})
 

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Default from "./subcomponents/Default";
 import Resume from "./Resume";
 import Portfolio from "./Portfolio";
+import Hobbies from "./Hobbies";
 import Planner from "./Planner";
 import Contact from "./Contact";
 import Album from "./Album";
@@ -21,6 +22,7 @@ export default class HomePage extends Component {
                     <Route path="/" exact={true} element={<Default />} />
                     <Route path="/resume" element={<Resume />} />
                     <Route path="/portfolio" element={<Portfolio />} />
+                    <Route path="/hobbies" element={<Hobbies />} />
                     <Route path="/album" element={<Album />} />
                     <Route path="/calendar" element={<Planner />} />
                     <Route path="/contact" element={<Contact/>} />

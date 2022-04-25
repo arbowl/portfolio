@@ -1,19 +1,12 @@
 import React, { Component } from "react";
 import {
-        Accordion,
-        AccordionSummary,
-        AccordionDetails,
         Button,
         Typography,
-        Divider,
         Grid,
         Card,
         CardActionArea,
-        CardActions,
         CardContent,
-        CardMedia, 
-        BottomNavigation,
-        BottomNavigationAction
+        CardMedia
     } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import styles from "./default.css";
@@ -29,8 +22,6 @@ export default class Default extends Component {
     constructor(props) {
         super(props);
     }
-
-
 
     render() {
         return (

@@ -1,0 +1,13 @@
+.MuiTab-root {
+    color: #bfcad0 !important;
+    font-size: 22px !important;
+    text-transform: none !important;
+}
+
+.MuiTabs-indicator {
+    background-color: #970c10 !important;
+}
+
+.MuiDivider-root {
+    background-color: rgba(227, 0, 0, 0.22) !important;
+}
