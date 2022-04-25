@@ -10,14 +10,11 @@ import {
     } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import styles from "./default.css";
-import me from "../../../static/frontend/itsme.png";
 import { Forward, SettingsOverscanOutlined } from "@material-ui/icons";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import CodeIcon from '@material-ui/icons/Code';
-import img01 from "../../../static/frontend/itsme.png";
 
-const     colorArray = [41,35,51];
 
 export default class Default extends Component {
     constructor(props) {
@@ -51,7 +48,7 @@ export default class Default extends Component {
                             <CardActionArea>
                                 <CardMedia
                                     component="img"
-                                    src="{% static 'frontend/itsme.png' %}"
+                                    image= "/static/frontend/itsme.png"
                                     title="Me"
                                 />
                                 <CardContent>
