@@ -220,7 +220,7 @@ export default function BasicTabs() {
         </TabPanel>
 
         <TabPanel value={value} index={1}>
-            Also under construction...
+            Carving a few things, check back soon!
         </TabPanel>
 
         <TabPanel value={value} index={2}>
