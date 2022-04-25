@@ -50,7 +50,7 @@ export default class Default extends Component {
                             <CardActionArea>
                                 <CardMedia
                                     component="img"
-                                    image= "/static/frontend/itsme.png"
+                                    image="../../static/frontend/itsme.png"
                                     title="Me"
                                 />
                                 <CardContent>
