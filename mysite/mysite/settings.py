@@ -187,7 +187,7 @@ EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
 # CSRF_COOKIE_SECURE = True
 # SECURE_HSTS_PRELOAD = True
 
-#STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 #STATIC_URL = '/static/'
 #STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
