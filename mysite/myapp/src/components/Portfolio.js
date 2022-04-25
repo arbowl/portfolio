@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import ReactPlayer from "react-player";
 import style from "./subcomponents/portfolio.css";
-import pfp from "../../static/frontend/expand.png";
 import {
         Typography,
         Grid,
@@ -19,14 +18,7 @@ import CameraIcon from '@material-ui/icons/Camera';
 import SecurityIcon from '@material-ui/icons/Security';
 import SignalWifi0BarIcon from '@material-ui/icons/SignalWifi0Bar';
 import SsidChartIcon from '@mui/icons-material/SsidChart';
-
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import orangebox from "../../static/frontend/orangebox.png";
-import before_img from "../../static/frontend/before.jpg";
-import after_img from "../../static/frontend/after.jpg";
-import board_img from "../../static/frontend/board.jpg";
-import diagram_img from "../../static/frontend/gssi_diagram.png";
-import meta_img from "../../static/frontend/meta.png";
 
 export default class Portfolio extends Component {
     constructor(props) {

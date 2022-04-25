@@ -30,7 +30,7 @@ export default class Default extends Component {
                 <div id="default-container">
                     <div id="default-text">
                         <p>I am a 2021 graduate of UMass Lowell with a bachelor's degree in Computer Engineering. I wanted a place to collect my projects,
-                            and the making of this site became a project all on its own--no fill-in-the-blank templates, no borrowed designs, no frameworks
+                            and the making of this site became a project all on its own—no fill-in-the-blank templates, no borrowed designs, no frameworks
                             copied from guides.
                         </p>
                         <p>

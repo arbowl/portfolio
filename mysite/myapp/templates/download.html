@@ -19,7 +19,7 @@
     {% if user.is_authenticated %}
         <a href="{% url 'upload' %}" id="login-link">Click here</a> to upload a file!</p>
     {% else %}
-        Log in to upload files to the server!</p>
+        <a href="{% url 'login' %}" id="login-link">Log in</a> to upload files to the server!</p>
     {% endif %}
 {% endfor %}
 {% endblock %}
