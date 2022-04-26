@@ -52,18 +52,18 @@ const myEventsList = [
         title: "Now"
     },
     {
-        start: "2022-08-04 00:00:00",
-        end: "2022-08-04 23:59:59",
+        start: new Date("2022-08-04 00:00:00"),
+        end: new Date("2022-08-04 23:59:59"),
         title: "My birthday"
     },
     {
-        start: "2022-04-27 00:00:00",
-        end: "2022-04-27 23:59:59",
+        start: new Date("2022-04-27 00:00:00"),
+        end: new Date("2022-04-27 23:59:59"),
         title: "Tom Brennan's Birthday"
     },
     {
-        start: "2022-04-29 00:00:00",
-        end: "2022-04-29 23:59:59",
+        start: new Date("2022-04-29 00:00:00"),
+        end: new Date("2022-04-29 23:59:59"),
         title: "Henry's Birthday"
     }
 ];

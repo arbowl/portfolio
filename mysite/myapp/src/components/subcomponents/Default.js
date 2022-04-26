@@ -34,8 +34,8 @@ export default class Default extends Component {
                             copied from guides.
                         </p>
                         <p>
-                            This site was created using the Django framework, some Python logic, HTML/CSS layout, React.js page content, and a MySQL
-                            database, all of which I've taught myself to varying degrees throughout my time in college and beyond. Though it's a decent 
+                            This site was created using the Django framework, some Python logic, HTML/CSS layout, React.js page content, and a PostgreSQL
+                            database, all of which I've self-taught to varying degrees throughout my time in college and beyond. Though it's a decent 
                             start, I am immensely eager for the opportunity to develop these skills professionally.
                         </p>
                         <p>
