@@ -87,12 +87,12 @@ export default function BasicTabs() {
 
         <TabPanel value={value} index={0}>
             <Grid container spacing={12}>
-                <Grid item xs={8}>
+                <Grid item xs={6}>
                     <Card sx={{ maxWidth: 100 }}>
                         <CardMedia
                             component="img"
                             height="200"
-                            image="../../static/frontend/bread.png"
+                            image="https://media.discordapp.net/attachments/544627499016126474/968570408100053063/66199204801__A4737EA7-B648-49D8-8168-313B2AEB0F0D.fullsizerender.jpg?width=508&height=678"
                             alt="Beer Bread"
                         />
                         <CardContent>
@@ -103,118 +103,281 @@ export default function BasicTabs() {
                                 A soft chewy bread with a thick crust. Perfect as a side dish at dinner and
                                 great with butter.
                             </Typography>
+                            <br />
+                            <Accordion>
+                                <AccordionSummary
+                                    expandIcon={<DehazeIcon />}
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header"
+                                >
+                                    <Typography>Ratings</Typography>
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                        <List>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Difficulty" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={5} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Crust" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={4} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Dough" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={5} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Snack Base" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={2} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Overall" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={5} readOnly />
+                                            </ListItem>
+                                        </List>
+                                </AccordionDetails>
+                            </Accordion>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs={4}>
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<DehazeIcon />}
-                            aria-controls="panel1a-content"
-                            id="panel1a-header"
-                        >
-                                                        <List>
-                                <ListSubheader component="div">
-                                    Ingredients
-                                </ListSubheader>
-                                <ListItem>
-                                    <ListItemIcon>
-                                        <ArrowRightIcon />
-                                    </ListItemIcon>
-                                    <ListItemText primary="Olive Oil" />
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemIcon>
-                                        <ArrowRightIcon />
-                                    </ListItemIcon>
-                                    <ListItemText primary="Water" />
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemIcon>
-                                        <ArrowRightIcon />
-                                    </ListItemIcon>
-                                    <ListItemText primary="Yeast" />
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemIcon>
-                                        <ArrowRightIcon />
-                                    </ListItemIcon>
-                                    <ListItemText primary="Beer" />
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemIcon>
-                                        <ArrowRightIcon />
-                                    </ListItemIcon>
-                                    <ListItemText primary="Salt" />
-                                </ListItem>
-                            </List>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography color="text.secondary">
-                                (Insert Recipe Here)
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
-                </Grid>
-                <Grid item xs={12}>
-                    <br />
-                </Grid>
-                <Grid item xs={8}>
+                <Grid item xs={6}>
                     <Card sx={{ maxWidth: 100 }}>
                         <CardMedia
                             component="img"
                             height="200"
-                            image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Adkyl3wiKsvIlTAXeryTuQHaE8%26pid%3DApi&f=1"
-                            alt="Beer Bread"
+                            image="https://media.discordapp.net/attachments/544627499016126474/968570015488028732/C95D79B7-2351-4D35-83B9-F44735D4BDF2.JPG?width=508&height=678"
+                            alt="Baguettes"
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="p" ml={5}>
                                 Baguettes
                             </Typography>
                             <Typography variant="body2">
-                                Pourous and great for slicing, this is a good option for building snacks and pairing with
+                                Porous and great for slicing, this is a good option for building snacks and pairing with
                                 savory toppings.
                             </Typography>
+                            <br />
+                            <Accordion>
+                                <AccordionSummary
+                                    expandIcon={<DehazeIcon />}
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header"
+                                >
+                                    <Typography>Ratings</Typography>
+                                </AccordionSummary>
+                                    <AccordionDetails>
+                                        <List>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Difficulty" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={3} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Crust" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={2} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Dough" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={4} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Snack Base" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={5} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Overall" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={4} readOnly />
+                                            </ListItem>
+                                        </List>
+                                </AccordionDetails>
+                            </Accordion>
                         </CardContent>
                     </Card>
                 </Grid>
-                <Grid item xs={4}>
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<DehazeIcon />}
-                            aria-controls="panel1a-content"
-                            id="panel1a-header"
-                        >
-                            <List>
-                                <ListSubheader component="div">
-                                    Ingredients
-                                </ListSubheader>
-                                <ListItem>
-                                    <ListItemIcon>
-                                        <ArrowRightIcon />
-                                    </ListItemIcon>
-                                    <ListItemText primary="Olive Oil" />
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemIcon>
-                                        <ArrowRightIcon />
-                                    </ListItemIcon>
-                                    <ListItemText primary="Water" />
-                                </ListItem>
-                                <ListItem>
-                                    <ListItemIcon>
-                                        <ArrowRightIcon />
-                                    </ListItemIcon>
-                                    <ListItemText primary="Yeast" />
-                                </ListItem>
-                            </List>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography color="text.secondary">
-                                (Insert Recipe Here)
+                <Grid item xs={6}>
+                    <Card sx={{ maxWidth: 100 }}>
+                        <CardMedia
+                            component="img"
+                            height="200"
+                            image="https://media.discordapp.net/attachments/544627499016126474/968570193053880320/IMG_6750.JPG?width=508&height=678"
+                            alt="Challah"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="p" ml={5}>
+                                Challah
                             </Typography>
-                        </AccordionDetails>
-                    </Accordion>
+                            <Typography variant="body2">
+                                Sweet, soft, and firm, this is a dense bread which is very absorbent making it tasty on
+                                its own but perfect for making french toast with.
+                            </Typography>
+                            <br />
+                            <Accordion>
+                                <AccordionSummary
+                                    expandIcon={<DehazeIcon />}
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header"
+                                >
+                                    <Typography>Ratings</Typography>
+                                </AccordionSummary>
+                                    <AccordionDetails>
+                                        <List>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Difficulty" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={2} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Crust" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={2} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Dough" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={5} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Snack Base" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={5} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Overall" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={4} readOnly />
+                                            </ListItem>
+                                        </List>
+                                </AccordionDetails>
+                            </Accordion>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={6}>
+                    <Card sx={{ maxWidth: 100 }}>
+                        <CardMedia
+                            component="img"
+                            height="200"
+                            image="https://media.discordapp.net/attachments/544627499016126474/968572537841811476/IMG_7445.jpg?width=508&height=678"
+                            alt="Pita"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="p" ml={5}>
+                                Pita
+                            </Typography>
+                            <Typography variant="body2">
+                                Warm flaky rounds of bread; tasty on their own but perfect for creating snacks with
+                                or dipping in warm spiced olive oil at social events.
+                            </Typography>
+                            <br />
+                            <Accordion>
+                                <AccordionSummary
+                                    expandIcon={<DehazeIcon />}
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header"
+                                >
+                                    <Typography>Ratings</Typography>
+                                </AccordionSummary>
+                                    <AccordionDetails>
+                                        <List>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Difficulty" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={5} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Crust" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={1} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Dough" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={3} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Snack Base" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={5} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Overall" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={3} readOnly />
+                                            </ListItem>
+                                        </List>
+                                </AccordionDetails>
+                            </Accordion>
+                        </CardContent>
+                    </Card>
                 </Grid>
             </Grid>
         </TabPanel>
