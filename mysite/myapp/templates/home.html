@@ -73,14 +73,14 @@
                 <div id="updates">
                     {% for post in object_list %}
                         {% if forloop.counter <= 10 %}
-                        <li>
+                        <ul>
                             <strong>{{ post.title }}</strong> | <i>{{ post.author }}</i>
                             {% if post.author == request.user %}
                                 <small>- <u><i><a href="{% url 'delete' post.id %}">(delete)</a></i></u></small>
                             {% endif %}<br>
                             <u>{{ post.date }}</u><br>
                             <p>{{ post.body | safe }}</p>
-                        </li>
+                        </ul>
                         {% endif %}
                     {% endfor %}
                 </div>
