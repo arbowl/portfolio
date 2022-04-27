@@ -16,7 +16,7 @@
 
     <header>
         <div class="header">
-            <p>drew bowler's site</p>
+            <p>Drew Bowler's Site</p>
 
             <div class="header-right">
                 {% if user.is_authenticated %}
@@ -77,7 +77,7 @@
                             <small>- <u><i><a href="{% url 'delete' post.id %}">(delete)</a></i></u></small>
                         {% endif %}<br>
                         <u>{{ post.date }}</u><br>
-                        <p>{{ post.body }}</p>
+                        <p>{{ post.body | safe }}</p>
                     </li>
                     {% endif %}
                 {% endfor %}
@@ -89,7 +89,7 @@
                         {% load widget_tweaks %}
                         <h5><b>User:</b> {{ request.user }}</h5>
                         <h5><b>Title:</b> {{ form.title|attr:"cols:10" }}</h5>
-                        {{ form.body|attr:"rows:4"|attr:"cols:30"}}
+                        {{ form.body | attr:"rows:4" | attr:"cols:30" }}
                         <br>
                         <button>Submit</button>
                     </form>
