@@ -27,8 +27,8 @@ export default class Contact extends Component {
                         <Grid container spacing={12} alignItems="center" justifyContent="left">
                             <Grid item xs={12}>
                                 <Typography variant="h6">
-                                    Feel free to reach out regarding questions, suggestions for the site, or business inquiries. Email
-                                    is preferred!
+                                    Feel free to reach out regarding questions, suggestions for the site, business inquiries, or
+                                    collaborations!
                                 </Typography>
                             </Grid>
 

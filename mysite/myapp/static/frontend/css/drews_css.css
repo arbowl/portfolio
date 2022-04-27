@@ -139,6 +139,10 @@ body {
   color: #007bff;
 }
 
+  #updates p a:hover {
+    color: #bfcad0;
+  }
+
 #social-feed {
   text-indent: 6.5%;
   margin-left: 6.5%;
@@ -154,7 +158,7 @@ body {
 
 .vertical-line {
   border-left: 1px solid #bfcad0;
-  height: 85%;
+  height: 80%;
   display: inline-block;
   margin-left: 20px;
   margin-top: 3%;
