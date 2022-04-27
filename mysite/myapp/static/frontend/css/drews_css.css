@@ -57,12 +57,10 @@ html {
 body {
   color: #bfcad0;
   background-color: #1f1a25;
-  height: 92%;
+  height: 100%;
   width: 75%;
-  top: 48%;
   left: 12.5%;
   bottom: 0px;
-  margin-top: -19%;
   box-shadow: 0 0 20px 20px #111111;
   position: fixed;
   font-family: 'Arial';
@@ -73,15 +71,16 @@ body {
 .container-custom {
   width: 99%;
   height: 98%;
+  margin-top: 6%;
   display: inline-block;
   overflow: hidden;
 }
 
 .w3-sidebar.w3-bar-block.w3-light-grey.w3-card {
   width: 10%;
-  height: 100%;
-  padding-top: 3%;
-  margin-top: 0%;
+  height: 200%;
+  padding-top: 13%;
+  margin-top: -10%;
   background-color: rgb(218, 230, 236) !important;
   box-shadow: 3px 3px rgb(17, 17, 17);
   overflow: hidden;
@@ -115,20 +114,30 @@ body {
   margin-top: 4%;
   margin-left: 15%;
   margin-bottom: 30%;
-  padding-bottom: 20px;
+  padding-bottom: 4%;
   overflow: auto;
   padding-right: 15px;
 }
 
+.feed-container {
+  margin-left: 77%;
+  height: 100%;
+  margin-top: 3%;
+}
+
+  .feed-container hr {
+    filter: blur(1px);
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
 #updates {
-  float: right;
-  width: 23%;
+  width: 100%;
   padding-left: 18px;
-  height: 55%;
+  height: 50%;
   margin-top: -1%;
   overflow: auto;
   z-index: 2;
-  font-family: 'Roboto', sans-serif;
   background: #131018;
   border-radius: 8px;
   border: 1px solid #3e354d;
@@ -144,16 +153,8 @@ body {
   }
 
 #social-feed {
-  text-indent: 6.5%;
-  margin-left: 6.5%;
-  padding-top: 3%;
-  padding-bottom: 20px;
-}
-
-#social-hr {
-  color:#bfcad0;
-  filter: blur(1px);
-
+  text-align: center;
+  padding-top: 4%;
 }
 
 .vertical-line {
@@ -167,13 +168,11 @@ body {
 }
 
 .postbox {
-  width: 24%;
-  height: 50%;
-  margin-left: 76.3%;
+  width: 100%;
+  height: 15%;
   padding-left: 2px;
   padding-right: 2px;
-  margin-top: 33%;
-  position: absolute;
+  margin-top: 3%;
   color: #bfcad0;
 }
 
@@ -191,7 +190,7 @@ body {
     font-family: "Lato", sans-serif;
     outline: 0;
     background: #970c10;
-    width: 96.5%;
+    width: 100%;
     border: 0;
     padding: 15px;
     color: #bfcad0;
@@ -210,7 +209,7 @@ body {
   }
 
   .postbox input {
-    width: 82%;
+    width: 100%;
     background-color: #131018;
     border-radius: 3px;
     border: 1px solid #bfcad0;
@@ -222,7 +221,7 @@ body {
   .postbox textarea {
     resize: none;
     border-radius: 3px;
-    width: 97%;
+    width: 100%;
     border: 1px solid #bfcad0;
     border-right: none;
     border-left: none;
@@ -308,7 +307,7 @@ Mobile Portrait CSS
     body {
       height: 100%;
       width: 100%;
-      top: 70%;
+      top: 55%;
       left: 72%;
       bottom: 0px;
       margin-left: -72%;
@@ -318,31 +317,20 @@ Mobile Portrait CSS
     .w3-sidebar.w3-bar-block.w3-light-grey.w3-card {
       width: 15%;
       height: 100%;
-      padding-top: 3%;
-      margin-top: 0%;
+      padding-top: 13%;
+      margin-top: -7%;
       overflow: hidden;
       font-size: 20px;
     }
 
     #app {
       padding-left: 20px;
-      padding-top: 20px;
       padding-bottom: 10%;
-    }
-
-    #social-feed {
-      text-indent: 4%;
-      margin-left: 4%;
-      margin-top: 1%;
-    }
-    
-    #social-hr {
-      border: none;
     }
 
     #updates {
       padding-top: 20px;
-      height: 25%;
+      height: -1%;
     }
 
     .postbox {
@@ -351,6 +339,16 @@ Mobile Portrait CSS
 
       .postbox button {
         margin-left: -1%;
+      }
+
+      .postbox textarea {
+        resize: none;
+        border-radius: 3px;
+        border: 1px solid #bfcad0;
+        border-right: none;
+        border-left: none;
+        background-color: #131018;
+        color: #bfcad0;
       }
 
     #links {
@@ -433,11 +431,9 @@ Mobile Portrait CSS
   body {
     height: 91%;
     width: 100%;
-    top: 22%;
     left: 72%;
     bottom: 0px;
     margin-left: -72%;
-    margin-top: -22%;
     position: fixed;
     border-radius: 3px;
   }
@@ -445,13 +441,14 @@ Mobile Portrait CSS
   .container-custom {
     width: 99%;
     height: 98%;
+    margin-top: -0%;
     display: inline-block;
     overflow: hidden;
   }
   
   .w3-sidebar.w3-bar-block.w3-light-grey.w3-card {
     width: 15%;
-    height: 100%;
+    height: 200%;
     padding-top: 40px;
     margin-top: 0%;
     overflow: hidden;
@@ -489,34 +486,24 @@ Mobile Portrait CSS
     padding-top: 40px;
     z-index: 6;
   }
-
-  #social-feed {
-    text-indent: 4%;
-    margin-left: 4%;
-    margin-top: 5%;
-  }
   
   #social-hr {
     border: none;
   }
   
   #updates {
-    width: 23%;
     height: 65%;
-    padding-top: 20px;
+    padding-top: 10px;
   }
   
   .postbox {
     width: 24%;
     height: 50%;
-    margin-left: 76.3%;
-    margin-top: 100%;
     position: absolute;
   }
   
   .postbox input {
     border-radius: 8px;
-    width: 75%;
   }
   
 }

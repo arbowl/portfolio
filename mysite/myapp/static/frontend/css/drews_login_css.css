@@ -15,8 +15,6 @@ body {
 .login-form {
   background: #e7e4e4;
   width: 500px;
-  margin: 65px auto;
-  display: -webkit-box;
   padding: 10px;
   display: flex;
   -webkit-box-orient: vertical;
@@ -24,6 +22,12 @@ body {
   flex-direction: column;
   border-radius: 4px;
   box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+  margin-top: 15%;
+  margin-left: 35%;
+}
+
+.w3-sidebar.w3-bar-block.w3-light-grey.w3-card {
+  margin-top: -5.5% !important;
 }
 
 h1 {
@@ -166,4 +170,13 @@ span {
 
 #no-files {
   color: #111111;
+}
+
+@media only screen
+  and (min-width: 320px)
+  and (max-device-width: 480px)
+  and (orientation: portrait) {
+  .w3-sidebar.w3-bar-block.w3-light-grey.w3-card {
+    padding-top: 9.5% !important;
+  }
 }
