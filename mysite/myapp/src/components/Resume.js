@@ -29,6 +29,13 @@ export default class Resume extends Component {
                     </p>
                 </div>
                 <hr></hr>
+                <Grid container spacing={12}>
+                    <Grid item xs={12}>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <a href={resume} download id="resume-link">Download Resume</a>
+                    </Grid>
+                </Grid>
                 <div id="resume-pdf">
                     <Document
                         file={resume}
@@ -87,9 +94,6 @@ export default class Resume extends Component {
                         </Grid>
                     </Grid>
                 </div>
-                <br></br>
-                <a href={resume} download id="resume-link">Download Resume</a>
-                <br></br>
             </div>
         );
     }
