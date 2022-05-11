@@ -27,6 +27,10 @@ hr {
     margin-bottom: 1%;
 }
 
+#special-link:hover {
+    background: #ce3e43;
+}
+
 #portfolio-img {
     display: grid;
     place-items: center;

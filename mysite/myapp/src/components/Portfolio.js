@@ -246,7 +246,24 @@ export default class Portfolio extends Component {
                     </AccordionSummary>
                     <AccordionDetails>
                         <Grid container spacing={12} alignItems="center" justifyContent="left">
+                            <Grid item xs={12} align="center">
+                                <Card sx={{ maxWidth: 400 }}>
+                                    <ReactPlayer
+                                        url="https://youtu.be/gNgh1LItjgU"
+                                        controls={true}
+                                        height={"360px"}
+                                        width={"640px"}
+                                        playbackRate={1}
+                                    />
+                                    <CardContent>
+                                        <Typography variant="body2" color="text.secondary">
+                                            <i>A demonstration of my motion control table, from drawing a path to exporting the path taken</i>
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            </Grid>
                             <Grid item xs={12} align="left">
+                                <br />
                                 <p>
                                     Ground penetrating radar (GPR) works by sending and receiving radar waves into targets to non-destructively several
                                     what could be beyond the surface via the reflectviity of each substance it penetrates. Normally, GPR devices do not
