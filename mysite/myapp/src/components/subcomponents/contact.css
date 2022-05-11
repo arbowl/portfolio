@@ -29,6 +29,9 @@
 #contact-container {
     width: 100%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #contact-img {
@@ -37,8 +40,8 @@
 }
 
     #contact-img img {
-        height: 419px;
-        width: 311px;
+        width: 90%;
+        height: auto;
         margin-top: 20px;
         border-radius: 20px;
         border: 2px double #bfcad0;
@@ -51,6 +54,7 @@
 #contact-text {
     width: 55%;
     float: left;
+    display: inline;
 }
 
 #contact-text a:hover {

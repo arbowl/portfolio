@@ -8,7 +8,7 @@ import {
         CardContent
     } from "@material-ui/core";
 import style from "./subcomponents/resume.css";
-import resume from "../../static/frontend/resume.pdf";
+import resume from "../../static/frontend/bowler_resume.pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
 export default class Resume extends Component {
@@ -29,6 +29,7 @@ export default class Resume extends Component {
                     </p>
                 </div>
                 <hr></hr>
+                <a href={resume} download id="resume-link">Download Resume</a>
                 <div id="resume-pdf">
                     <Document
                         file={resume}
@@ -87,7 +88,6 @@ export default class Resume extends Component {
                         </Grid>
                     </Grid>
                 </div>
-                <a href={resume} download id="resume-link">Download Resume</a>
             </div>
         );
     }

@@ -12,7 +12,7 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  height: 12%;
+  height: 12vh;
   overflow: hidden;
   background-color: #970c10;
   padding: 20px 10px;
@@ -29,15 +29,15 @@ html {
     color: #bfcad0;
     text-align: center;
     padding: 15px;
-    margin-top: 1.5%;
+    margin-top: 2vh;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 3vh;
     line-height: 5px;
     border-radius: 4px;
   }
 
   .header p {
-    font-size: 50px;
+    font-size: 6vh;
     float: left;
     margin-left: 14%;
     color: #bfcad0
@@ -48,9 +48,9 @@ html {
   }
 
   #welcome {
-    margin-top: 1.2%;
+    margin-top: 14px;
     margin-right: 20px;
-    font-size: 24px;
+    font-size: 3vh;
     float: right;
   }
 
@@ -84,7 +84,7 @@ body {
   background-color: rgb(218, 230, 236) !important;
   box-shadow: 3px 3px rgb(17, 17, 17);
   overflow: hidden;
-  font-size: 20px;
+  font-size: 2.1vh;
 }
 
 #links {
@@ -160,6 +160,7 @@ body {
 #social-feed {
   text-align: center;
   padding-top: 4%;
+  font-size: 4vh;
 }
 
 .vertical-line {
