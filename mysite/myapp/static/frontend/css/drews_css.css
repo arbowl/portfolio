@@ -22,37 +22,38 @@ html {
 
   .header-right {
     margin-right: 13%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0%;
+    float: right;
   }
   
   .header a {
     float: right;
     color: #bfcad0;
     text-align: center;
-    padding: 15px;
-    margin-top: 2vh;
+    padding: 1vw;
     text-decoration: none;
     font-size: 3vh;
     line-height: 5px;
-    border-radius: 4px;
   }
 
   .header p {
     font-size: 6vh;
     float: left;
     margin-left: 14%;
-    color: #bfcad0
+    color: #bfcad0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
   
   .header a:hover {
     color: #3e3e3e;
   }
 
-  #welcome {
-    margin-top: 14px;
-    margin-right: 20px;
-    font-size: 3vh;
-    float: right;
-  }
+
 
 body {
   color: #bfcad0;
@@ -79,16 +80,20 @@ body {
 .w3-sidebar.w3-bar-block.w3-light-grey.w3-card {
   width: 10%;
   height: 200%;
-  padding-top: 13%;
-  margin-top: -10%;
+  padding-top: 25vh;
+  top: -10vh;
   background-color: rgb(218, 230, 236) !important;
   box-shadow: 3px 3px rgb(17, 17, 17);
   overflow: hidden;
   font-size: 2.1vh;
 }
 
+.w3-dropdown-content {
+  z-index: 100;
+}
+
 #links {
-  margin-top: 170%;
+  margin-top: 25vh;
 }
 
 #servers a:hover {
@@ -132,9 +137,9 @@ body {
   }
 
 #updates {
-  width: 100%;
-  padding-left: 18px;
-  height: 50%;
+  width: 99%;
+  padding-left: 1%;
+  height: 50vh;
   margin-top: -1%;
   overflow: auto;
   z-index: 2;
@@ -164,13 +169,13 @@ body {
 }
 
 .vertical-line {
-  border-left: 1px solid #bfcad0;
-  height: 80%;
+  border-left: 0.1vw solid #bfcad0;
+  height: 80vh;
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 0.5vw;
   margin-top: 3%;
-  filter: blur(1px);
-  position: fixed;
+  filter: blur(0.1vh);
+  position: absolute;
 }
 
 .postbox {
@@ -184,6 +189,7 @@ body {
 
   .postbox h5 {
     margin-top: -1%;
+    font-size: 1.8vh;
   }
 
   .postbox hr {
@@ -222,6 +228,7 @@ body {
     border-right: none;
     border-left: none;
     color: #bfcad0;
+    height: 3vh;
   }
 
   .postbox textarea {
@@ -233,6 +240,8 @@ body {
     border-left: none;
     background-color: #131018;
     color: #bfcad0;
+    height: 10vh;
+    font-size: 2vh;
   }
 
   .delete {

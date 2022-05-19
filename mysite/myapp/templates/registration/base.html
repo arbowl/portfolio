@@ -23,16 +23,13 @@
                     {% endif %}
                     <a href="{% url 'contact' %}">Contact</a>
                     <a href="{% url 'home' %}">Home</a>
-                </div>
-    
-                <div class="authentication">
                     {% if user.is_authenticated %}
-                        <p id="welcome">Hi, <u>{{ user.username }}</u>!</p>
+                        <a id="welcome">Hi, <u>{{ user.username }}</u>!</a>
                     {% endif %}
                 </div>
-    
             </div> 
         </header>
+
         <div class="sidebar">
             <div class="w3-sidebar w3-bar-block w3-light-grey w3-card">
                 <a href="{% url 'resume' %}" class="w3-bar-item w3-button">Resume</a>
@@ -40,14 +37,13 @@
                 <a href="{% url 'hobbies' %}" class="w3-bar-item w3-button">Hobbies</a>
                 <a href="{% url 'album' %}" class="w3-bar-item w3-button">Photos</a>
                 <a href="{% url 'calendar' %}" class="w3-bar-item w3-button">Calendar</a>
-                
                 <div class="w3-dropdown-hover">
-                    <button class="w3-button"><a href="{% url 'upload' %}" id="servers">Hosting</a></button>
+                    <button class="w3-button"><a href="{% url 'upload' %}">Hosting</a></button>
                     <div class="w3-dropdown-content w3-bar-block">
-                        <a href="{% url 'download' %}?game=valheim" class="w3-bar-item w3-button" style="text-indent: 20px">Valheim</a>
-                        <a href="{% url 'download' %}?game=minecraft" class="w3-bar-item w3-button" style="text-indent: 20px">Minecraft</a>
-                        <a href="{% url 'download' %}?game=musicbot" game='musicbot' class="w3-bar-item w3-button" style="text-indent: 20px">MusicBot</a>
-                        <a href="{% url 'download' %}?game=keepassxc" class="w3-bar-item w3-button" style="text-indent: 20px">KeePass</a>
+                        <a href="{% url 'download' %}?game=valheim" class="w3-bar-item w3-button" style="text-indent: 10px">Valheim</a>
+                        <a href="{% url 'download' %}?game=minecraft" class="w3-bar-item w3-button" style="text-indent: 10px">Minecraft</a>
+                        <a href="{% url 'download' %}?game=musicbot" class="w3-bar-item w3-button" style="text-indent: 10px">MusicBot</a>
+                        <a href="{% url 'download' %}?game=keepassxc" class="w3-bar-item w3-button" style="text-indent: 10px">KeePass</a>
                     </div>
                 </div>
                 <div id="links">
