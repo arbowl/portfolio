@@ -276,49 +276,6 @@ Mobile Portrait CSS
   and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (orientation: landscape) {
-  .header {
-    height: 27%;
-    overflow: hidden;
-    position: fixed;
-  }
-  
-    .header-right {
-      margin-right: 1%;
-      margin-top: 0%;
-      float: right;
-    }
-    
-    .header a {
-      float: right;
-      padding: 15px;
-      margin-top: 10%;
-      margin-right: 10px;
-      font-size: 22px;
-      line-height: 5px;
-      position: relative;
-    }
-  
-    .header p {
-      font-size: 42px;
-      float: left;
-      margin-left: 2%;
-    }
-    
-    .header a:hover {
-      background-color: #3e3e3e;
-    }
-  
-    .header img {
-      margin-left: 0%;
-    }
-  
-    #welcome {
-      margin-top: -1.5%;
-      margin-left: 75%;
-      font-size: 22px;
-      position: absolute;
-    }
-
     body {
       height: 100%;
       width: 100%;
@@ -330,30 +287,42 @@ Mobile Portrait CSS
     }
 
     .w3-sidebar.w3-bar-block.w3-light-grey.w3-card {
-      width: 15%;
-      height: 100%;
-      padding-top: 13%;
-      margin-top: -7%;
+      width: 12% !important;
+      height: 200%;
+
       overflow: hidden;
-      font-size: 20px;
+      font-size: 3vh !important;
+    }
+
+    #links {
+      margin-top: 4vh !important;
+      font-size: 2vh !important;
+    }
+
+    #copyright {
+      margin-top: 2vh !important;
     }
 
     #app {
-      padding-left: 20px;
+      padding-left: 5px !important;
       padding-bottom: 10%;
+    }
+
+    #social-feed {
+      font-size: 5vh !important;
     }
 
     #updates {
       padding-top: 20px;
-      height: -1%;
+      height: 30vh !important;
     }
 
     .postbox {
-      margin-top: 10%;
+      margin-top: 1vh;
     }
 
       .postbox button {
-        margin-left: -1%;
+        margin-left: -1% !important;
       }
 
       .postbox textarea {
@@ -394,10 +363,10 @@ Mobile Portrait CSS
 
 @media only screen
   and (min-width: 320px)
-  and (max-device-width: 480px)
+  and (max-device-width: 480px) 
   and (orientation: portrait) {
   .header {
-    height: 11%;
+    height: 8vh;
   }
   
     .header-right {
@@ -408,10 +377,8 @@ Mobile Portrait CSS
     
     .header a {
       float: right;
-      padding: 30px;
       margin-top: 1%;
-      margin-right: 10px;
-      font-size: 38px;
+      font-size: 1.8vh;
       line-height: 5px;
     }
   
@@ -444,7 +411,7 @@ Mobile Portrait CSS
     }
   
   body {
-    height: 91%;
+    height: 93%;
     width: 100%;
     left: 72%;
     bottom: 0px;
@@ -463,11 +430,8 @@ Mobile Portrait CSS
   
   .w3-sidebar.w3-bar-block.w3-light-grey.w3-card {
     width: 15%;
-    height: 200%;
-    padding-top: 40px;
-    margin-top: 0%;
-    overflow: hidden;
-    font-size: 22px;
+    padding-top: 20vh;
+    font-size: 1.5vh;
   }
   
   #links {
@@ -487,6 +451,10 @@ Mobile Portrait CSS
     overflow: hidden;
   }
   
+  #social-feed {
+    font-size: 2vh;
+  }
+
   #app {
     float: left;
     height: 100%;
