@@ -92,18 +92,32 @@ body {
   z-index: 100;
 }
 
-#links {
-  margin-top: 25vh;
-}
+  
 
 #servers a:hover {
   background: none;
 }
 
 #copyright {
-  font-size: 12px;
-  margin-left: 10%;
-  margin-top: 30%;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+}
+
+  #copyright p {
+    font-size: 1.5vh;
+    text-indent: 0.1vw;
+  }
+
+  #copyright img {
+    max-width: 3vh;
+    width: auto;
+    height: auto;
+  }
+
+#links {
+  width: 10vw;
+  margin-bottom: 2vh;
 }
 
 .sidebar {
@@ -195,7 +209,7 @@ body {
   .postbox hr {
     margin-right: 4%;
     color:#bfcad0;
-    filter: blur(1px);
+    filter: blur(0.1vh);
   }
 
   .postbox button {
