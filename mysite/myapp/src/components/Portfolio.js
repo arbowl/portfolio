@@ -42,51 +42,7 @@ export default class Portfolio extends Component {
 
                 <hr />
 
-                <Accordion>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                    >
-                        <FolderSharedIcon /><Typography variant="h5">Portfolio Website - April 2022</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Grid container spacing={12}>
-                            <Grid item xs={12} align="center">
-                                <Card sx={{ maxWidth: 345 }}>
-                                    <CardMedia
-                                        component="img"
-                                        height="500"
-                                        image="/static/frontend/meta.png"
-                                        alt="Front page"
-                                    />
-                                    <CardContent>
-                                        <Typography variant="body2" color="text.secondary">
-                                            The first revision of my website with CSS applied for the first time
-                                        </Typography>
-                                    </CardContent>
-                                </Card>
-                            </Grid>
-                            <Grid item xs={12}>
-                                <br />
-                            </Grid>
-                            <Grid item xs={12}>
-                                <p>
-                                    I created my portfolio website to demonstrate the projects I've made and the skills I've acquired in a
-                                    more interactive and demonstrative environment than my resume, and also as a personal challenge. In the
-                                    making of this site, I learned: Django, Git CLI, React.js, MySQL, PostgreSQL, Docker, Heroku, and I
-                                    strengthened my Python, HTML, CSS, and Javascript.
-                                </p>
-                                <a href="https://github.com/arbowl/portfolio" id="special-link">Website Repo</a>
-                                <p>
-                                    Feel free to register, leave a comment, and let me know if something breaks, if something could be
-                                    improved, or if the site doesn't render properly on one of your devices.
-                                </p>
-                            </Grid>
-                        </Grid>
-                    </AccordionDetails>
-                </Accordion>
-                <hr />
+
                 <Accordion>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
@@ -184,53 +140,6 @@ export default class Portfolio extends Component {
                                     and the drivers for various popular console controllers, which allows it to serve as a multimedia
                                     hub for games, movies, music, and internet browsing, whether you're on the move or away at a friend's.
                                 </p>
-                            </Grid>
-                        </Grid>
-                    </AccordionDetails>
-                </Accordion>
-                <hr />
-                <Accordion>
-                    <AccordionSummary
-                        expandIcon={<ExpandMoreIcon />}
-                        aria-controls="panel4a-content"
-                        id="panel4a-header"
-                    >
-                        <SecurityIcon /><Typography variant="h5">Personal Cyber Privacy and Security - August 2020</Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                        <Grid container spacing={12} alignItems="center" justifyContent="left">
-                            <Grid item xs={12} align="left">
-                            <p>
-                                In early 2020, the password for one of my online accounts was leaked, which prompted me to invest in deeper
-                                online security and privacy measures. One of the first things I did was create a KeePassXC database, which is
-                                a deentralized offline password manager and database, so that all my passwords would be extremely difficult to crack.
-                            </p>
-                            <a href="https://keepassxc.org/" id="special-link">KeePassXC</a>
-                            <p>
-                                This got me thinking about online privacy, and I realized there was more to be stolen than just passwords and
-                                everything they protect--my data was also exposed. After deleting most of my social media, I turned a spare
-                                Raspberry Pi into a Pi-hole, a DNS-level ad and tracker blocker.
-                            </p>
-                            <a href="https://pi-hole.net/" id="special-link">Pi-hole</a>
-                            <p>
-                                Next, I wanted a more secure email provider, knowing that Google was free to gather as much information as they
-                                wanted through my email (and search history). As a result, I started using Tutanota, a Germany-based encrypted
-                                email provider.
-                            </p>
-                            <a href="https://tutanota.com/" id="special-link">Tutanota</a>
-                            <p>
-                                As I started to shift my focus from security to privacy as well, I made several browsing habit changes. I
-                                changed my browser from Chrome to Firefox, set my search engine to DuckDuckGo, and installed uBlock Origin,
-                                DecentralEyes, Privacy Possum/Badger, and ClearURLs to block trackers, anonymize my browsing, and obfuscate
-                                whatever I did leave behind.
-                            </p>
-                            <a href="https://support.mozilla.org/en-US/products/firefox/privacy-and-security" id="special-link">Firefox Privacy and Security</a>
-                            <p>
-                                The last big change I made was changing my OS from Windows to Fedora, a Linux-based OS which doesn't send my
-                                data to Microsoft and which I have much more control over in order to protect what data is being broadcasted
-                                and who it is going to.
-                            </p>
-                            <a href="https://fedoraproject.org/wiki/Legal:PrivacyPolicy" id="special-link">Fedora OS</a>
                             </Grid>
                         </Grid>
                     </AccordionDetails>
@@ -388,6 +297,98 @@ export default class Portfolio extends Component {
                                 <p>
                                     My manager gave exceptional feedback to my co-op supervisor, which I quoted on my <a href="/resume"><u>Resume</u></a> page.
                                 </p>
+                        </Grid>
+                    </AccordionDetails>
+                </Accordion>
+                <hr />
+                <Accordion>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                    >
+                        <FolderSharedIcon /><Typography variant="h5">Portfolio Website</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Grid container spacing={12}>
+                            <Grid item xs={12} align="center">
+                                <Card sx={{ maxWidth: 345 }}>
+                                    <CardMedia
+                                        component="img"
+                                        height="500"
+                                        image="/static/frontend/meta.png"
+                                        alt="Front page"
+                                    />
+                                    <CardContent>
+                                        <Typography variant="body2" color="text.secondary">
+                                            The first revision of my website with CSS applied for the first time
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <br />
+                            </Grid>
+                            <Grid item xs={12}>
+                                <p>
+                                    I created my portfolio website to demonstrate the projects I've made and the skills I've acquired in a
+                                    more interactive and demonstrative environment than my resume, and also as a personal challenge. In the
+                                    making of this site, I learned: Django, Git CLI, React.js, MySQL, PostgreSQL, Docker, Heroku, and I
+                                    strengthened my Python, HTML, CSS, and Javascript.
+                                </p>
+                                <a href="https://github.com/arbowl/portfolio" id="special-link">Website Repo</a>
+                                <p>
+                                    Feel free to register, leave a comment, and let me know if something breaks, if something could be
+                                    improved, or if the site doesn't render properly on one of your devices.
+                                </p>
+                            </Grid>
+                        </Grid>
+                    </AccordionDetails>
+                </Accordion>
+                <hr />
+                <Accordion>
+                    <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel4a-content"
+                        id="panel4a-header"
+                    >
+                        <SecurityIcon /><Typography variant="h5">Personal Cyber Privacy and Security</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails>
+                        <Grid container spacing={12} alignItems="center" justifyContent="left">
+                            <Grid item xs={12} align="left">
+                                <p>
+                                    In early 2020, the password for one of my online accounts was leaked, which prompted me to invest in deeper
+                                    online security and privacy measures. One of the first things I did was create a KeePassXC database, which is
+                                    a deentralized offline password manager and database, so that all my passwords would be extremely difficult to crack.
+                                </p>
+                                <a href="https://keepassxc.org/" id="special-link">KeePassXC</a>
+                                <p>
+                                    This got me thinking about online privacy, and I realized there was more to be stolen than just passwords and
+                                    everything they protect--my data was also exposed. After deleting most of my social media, I turned a spare
+                                    Raspberry Pi into a Pi-hole, a DNS-level ad and tracker blocker.
+                                </p>
+                                <a href="https://pi-hole.net/" id="special-link">Pi-hole</a>
+                                <p>
+                                    Next, I wanted a more secure email provider, knowing that Google was free to gather as much information as they
+                                    wanted through my email (and search history). As a result, I started using Tutanota, a Germany-based encrypted
+                                    email provider.
+                                </p>
+                                <a href="https://tutanota.com/" id="special-link">Tutanota</a>
+                                <p>
+                                    As I started to shift my focus from security to privacy as well, I made several browsing habit changes. I
+                                    changed my browser from Chrome to Firefox, set my search engine to DuckDuckGo, and installed uBlock Origin,
+                                    DecentralEyes, Privacy Possum/Badger, and ClearURLs to block trackers, anonymize my browsing, and obfuscate
+                                    whatever I did leave behind.
+                                </p>
+                                <a href="https://support.mozilla.org/en-US/products/firefox/privacy-and-security" id="special-link">Firefox Privacy and Security</a>
+                                <p>
+                                    The last big change I made was changing my OS from Windows to Fedora, a Linux-based OS which doesn't send my
+                                    data to Microsoft and which I have much more control over in order to protect what data is being broadcasted
+                                    and who it is going to.
+                                </p>
+                                <a href="https://fedoraproject.org/wiki/Legal:PrivacyPolicy" id="special-link">Fedora OS</a>
+                            </Grid>
                         </Grid>
                     </AccordionDetails>
                 </Accordion>

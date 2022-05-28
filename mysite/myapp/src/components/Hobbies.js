@@ -118,7 +118,7 @@ export default function BasicTabs() {
                                                 <ListItemIcon>
                                                     <ArrowRightIcon />
                                                 </ListItemIcon>
-                                                <ListItemText primary="Difficulty" />
+                                                <ListItemText primary="Easiness" />
                                                 <Divider orientation="vertical" variant="middle" />
                                                 <Rating name="read-only" value={5} readOnly />
                                             </ListItem>
@@ -191,7 +191,7 @@ export default function BasicTabs() {
                                                 <ListItemIcon>
                                                     <ArrowRightIcon />
                                                 </ListItemIcon>
-                                                <ListItemText primary="Difficulty" />
+                                                <ListItemText primary="Easiness" />
                                                 <Divider orientation="vertical" variant="middle" />
                                                 <Rating name="read-only" value={3} readOnly />
                                             </ListItem>
@@ -264,7 +264,7 @@ export default function BasicTabs() {
                                                 <ListItemIcon>
                                                     <ArrowRightIcon />
                                                 </ListItemIcon>
-                                                <ListItemText primary="Difficulty" />
+                                                <ListItemText primary="Easiness" />
                                                 <Divider orientation="vertical" variant="middle" />
                                                 <Rating name="read-only" value={2} readOnly />
                                             </ListItem>
@@ -337,7 +337,7 @@ export default function BasicTabs() {
                                                 <ListItemIcon>
                                                     <ArrowRightIcon />
                                                 </ListItemIcon>
-                                                <ListItemText primary="Difficulty" />
+                                                <ListItemText primary="Easiness" />
                                                 <Divider orientation="vertical" variant="middle" />
                                                 <Rating name="read-only" value={5} readOnly />
                                             </ListItem>
@@ -372,6 +372,152 @@ export default function BasicTabs() {
                                                 <ListItemText primary="Overall" />
                                                 <Divider orientation="vertical" variant="middle" />
                                                 <Rating name="read-only" value={3} readOnly />
+                                            </ListItem>
+                                        </List>
+                                </AccordionDetails>
+                            </Accordion>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={6}>
+                    <Card sx={{ maxWidth: 100 }}>
+                        <CardMedia
+                            component="img"
+                            height="200"
+                            image="https://media.discordapp.net/attachments/544627499016126474/978354454258663424/IMG_8035.jpg?width=761&height=678"
+                            alt="Brioche"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="p" ml={5}>
+                                Brioche
+                            </Typography>
+                            <Typography variant="body2">
+                                A dense but airy bread with a buttery crust and sweet taste. Makes for an amazing
+                                breakfast side similar to coffee cake.
+                            </Typography>
+                            <br />
+                            <Accordion>
+                                <AccordionSummary
+                                    expandIcon={<DehazeIcon />}
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header"
+                                >
+                                    <Typography>Ratings</Typography>
+                                </AccordionSummary>
+                                    <AccordionDetails>
+                                        <List>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Easiness" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={2} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Crust" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={4} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Dough" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={3} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Snack Base" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={5} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Overall" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={4} readOnly />
+                                            </ListItem>
+                                        </List>
+                                </AccordionDetails>
+                            </Accordion>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={6}>
+                    <Card sx={{ maxWidth: 100 }}>
+                        <CardMedia
+                            component="img"
+                            height="200"
+                            image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.momsdish.com%2Fwp-content%2Fuploads%2F2018%2F09%2FIMG_1740-1200x1800.jpg&f=1&nofb=1"
+                            alt="Pizza Dough"
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="p" ml={5}>
+                                Pizza Dough
+                            </Typography>
+                            <Typography variant="body2">
+                                I make my own pizza dough whenever I make pizza from scratch. I use beer instead of
+                                water to give it a nice crust.
+                            </Typography>
+                            <br />
+                            <Accordion>
+                                <AccordionSummary
+                                    expandIcon={<DehazeIcon />}
+                                    aria-controls="panel1a-content"
+                                    id="panel1a-header"
+                                >
+                                    <Typography>Ratings</Typography>
+                                </AccordionSummary>
+                                    <AccordionDetails>
+                                        <List>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Easiness" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={5} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Crust" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={4} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Dough" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={4} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Snack Base" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={1} readOnly />
+                                            </ListItem>
+                                            <ListItem>
+                                                <ListItemIcon>
+                                                    <ArrowRightIcon />
+                                                </ListItemIcon>
+                                                <ListItemText primary="Overall" />
+                                                <Divider orientation="vertical" variant="middle" />
+                                                <Rating name="read-only" value={4} readOnly />
                                             </ListItem>
                                         </List>
                                 </AccordionDetails>
