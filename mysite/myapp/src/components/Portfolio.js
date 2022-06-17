@@ -74,8 +74,8 @@ export default class Portfolio extends Component {
                             </Grid>
                             <Grid item xs={12}>
                                 <p>
-                                    For my UML senior design capstone, I had to design a visual device for patients with cognitive disabilities
-                                    who had trouble intuitively understanding the passage of time. The device had to be portable, rechargeable,
+                                    For my UML senior design capstone, I had to design a device for patients with cognitive disabilities
+                                    who have trouble intuitively understanding the passage of time. The device had to be portable, rechargeable,
                                     have few buttons, and not be over-stimulating.
                                 </p>
                                 <p>
@@ -85,10 +85,11 @@ export default class Portfolio extends Component {
                                 </p>
                                 <p>
                                     For the software, I used the open-source PyGame module to write a Python app which presented the user with a GUI 
-                                    that allowed them to choose pre-determined time spans and a numberpad to input their own time. Both the
+                                    that allowed them to choose pre-determined time spans as well as a numberpad to input their own time. Both the
                                     hardware and software incorporated design choices which took into account potential developmental disabilities
                                     of the people using them, such as muted colors, durability, and accidental reset prevention (the user must
-                                    press "Reset" or "Menu" three times to confirm, with an indicator displaying progress).
+                                    press "Reset" or "Menu" three times within a few seconds to confirm their choice, with an indicator displaying
+                                    progress, to avoid resetting the timer by accident and losing progress).
                                 </p>
                             </Grid>
                         </Grid>
@@ -125,7 +126,8 @@ export default class Portfolio extends Component {
                             <Grid item xs={12} align="left">
                                 <p>
                                     The Orange Box is a personal project inspired by the Reddit Cyberdeck community, and particularly Jay
-                                    Doscher's <a href="https://back7.co/home/project-retrospective-raspberry-pi-field-unit-from-2015-bbbb" id="regular-link">"Raspberry Pi Field Unit"</a>, a portable Raspberry Pi. The purpose of these builds is to emulate
+                                    Doscher's <a href="https://back7.co/home/project-retrospective-raspberry-pi-field-unit-from-2015-bbbb" id="regular-link">"Raspberry Pi Field Unit"</a>, 
+                                    a portable Raspberry Pi. The purpose of these builds is to emulate
                                     cyberpunk-esque devices popular in 80s dystopian sci-fi.
                                 </p>
                                 <p>
@@ -174,8 +176,8 @@ export default class Portfolio extends Component {
                             <Grid item xs={12} align="left">
                                 <br />
                                 <p>
-                                    Ground penetrating radar (GPR) works by sending and receiving radar waves into targets to non-destructively several
-                                    what could be beyond the surface via the reflectviity of each substance it penetrates. Normally, GPR devices do not
+                                    Ground penetrating radar (GPR) works by sending and receiving radar waves into targets to non-destructively detect
+                                    what lies beyond the surface via the reflectviity of each substance it penetrates. Normally, GPR devices do not
                                     track <i>where</i> they've been, and simply send back the radar data which is then interpreted by an operator.
                                 </p>
                                 <p>
@@ -185,10 +187,10 @@ export default class Portfolio extends Component {
                                 </p>
                                 <p>
                                     So, given a wooden frame, I created a three-axis CNC machine by selecting the motors, the drivers, the microcontroller,
-                                    and the Intel Next Unit of Computing (NUC) interface. The user drew a 2D path in Inkscape, a visual vector graphic editor,
-                                    and imported the saved file into my Python script. The Python script then converted the coordinates into G-Code and sent 
-                                    it over a TCP socket to the microcontroller, which was running a Lua script that I wrote which interpeted the G-Code,
-                                    converted it to coordinates, sent it to the motors, then sent the timestamped position feedback data back to the Python
+                                    and the Intel Next Unit of Computing (NUC) interface. The user could draw a 2D path in Inkscape (a visual vector graphic editor) and
+                                    import the saved file into my Python script. The Python script would then convert the coordinates into G-Code, send 
+                                    it over a TCP socket to the microcontroller running a Lua script that I wrote, the software would interpret the G-Code,
+                                    convert it to coordinates, send it to the motors, then send the timestamped 3D position feedback data back to the Python
                                     script where it was collected and output as a .csv at the end.
                                 </p>
                                 <a href="https://github.com/arbowl/gssi" id="special-link">XY Table (Python) Repo</a>
@@ -210,7 +212,7 @@ export default class Portfolio extends Component {
                             <Grid item xs={12}>
                                 <p>
                                     The table was a success and the team was able to release their new algorithm in production the following year. My
-                                    manager gave exceptional feedback in a LinkedIn endorsement, which I also quoted my <a href="/resume"><u>Resume</u></a> page.
+                                    manager gave exceptional feedback in a LinkedIn endorsement, which I also quoted on my <a href="/resume"><u>Resume</u></a> page.
                                 </p>
                             </Grid>
                         </Grid>
@@ -360,7 +362,7 @@ export default class Portfolio extends Component {
                                 <p>
                                     In early 2020, the password for one of my online accounts was leaked, which prompted me to invest in deeper
                                     online security and privacy measures. One of the first things I did was create a KeePassXC database, which is
-                                    a deentralized offline password manager and database, so that all my passwords would be extremely difficult to crack.
+                                    a decentralized offline password manager and database, so that all my passwords would be extremely difficult to crack.
                                 </p>
                                 <a href="https://keepassxc.org/" id="special-link">KeePassXC</a>
                                 <p>
@@ -371,7 +373,7 @@ export default class Portfolio extends Component {
                                 <a href="https://pi-hole.net/" id="special-link">Pi-hole</a>
                                 <p>
                                     Next, I wanted a more secure email provider, knowing that Google was free to gather as much information as they
-                                    wanted through my email (and search history). As a result, I started using Tutanota, a Germany-based encrypted
+                                    wanted through my email in conjunction with my search history. As a result, I started using Tutanota, a Germany-based encrypted
                                     email provider.
                                 </p>
                                 <a href="https://tutanota.com/" id="special-link">Tutanota</a>
