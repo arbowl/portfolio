@@ -177,7 +177,7 @@ export default class Portfolio extends Component {
                                 <br />
                                 <p>
                                     Ground penetrating radar (GPR) works by sending and receiving radar waves into targets to non-destructively detect
-                                    what lies beyond the surface via the reflectviity of each substance it penetrates. Normally, GPR devices do not
+                                    what lies beyond the surface via the reflectivity of each substance it penetrates. Normally, GPR devices do not
                                     track <i>where</i> they've been, and simply send back the radar data which is then interpreted by an operator.
                                 </p>
                                 <p>
